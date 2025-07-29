@@ -3,6 +3,9 @@
 
 A tool to help find where to stream movies mentioned in the *Too Scary; Didn't Watch* podcast.
 
+## Github
+https://github.com/SerialForBreakfast/TooScaryDidntStream
+
 ## What it does
 
 - Tracks episodes and the movies they mention.

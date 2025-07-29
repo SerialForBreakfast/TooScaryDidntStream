@@ -1,0 +1,7 @@
+description: "Rules for maintaining code quality in the TooScaryDidntStream project"
+globs: "**/*"
+
+Don't ever add emojis to the codebase.
+Write expressive variable, class, and function names.
+maintain the /memlog/ folder with tasks.md, and directory_tree.md
+---
