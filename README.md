@@ -9,7 +9,7 @@ https://github.com/SerialForBreakfast/TooScaryDidntStream
 ## What it does
 
 - Tracks episodes and the movies they mention.
-- Queries the JustWatch API to find current streaming availability.
+- Queries streaming APIs (Watchmode + TMDB) to find current streaming availability.
 - Outputs a clean HTML page with posters, streaming providers, and episode groupings.
 - Auto-updates via GitHub Actions and deploys with GitHub Pages.
 
@@ -18,34 +18,190 @@ https://github.com/SerialForBreakfast/TooScaryDidntStream
 ```
 .
 ├── data/
-│   └── movies.json         # Source of truth for episodes and movies
+│   ├── movies.json         # Source of truth for episodes and movies
+│   └── streaming_data.json # Generated streaming availability data
 ├── output/
 │   └── index.html          # Auto-generated HTML page
 ├── scripts/
-│   ├── fetch_streaming_info.py  # Gets movie metadata from JustWatch
+│   ├── fetch_streaming_info.py  # Gets streaming data from APIs
 │   └── generate_html.py         # Builds HTML view from data
 ├── .github/
 │   └── workflows/
 │       └── update.yaml     # GitHub Actions workflow
+├── venv/                   # Python virtual environment
+├── requirements.txt        # Python dependencies
 └── README.md
 ```
 
 ## Getting Started
 
-1. Clone this repository.
-2. Add your own `data/movies.json` file with podcast movie mentions.
-3. Run:
+### 1. Clone and Setup
 
-   ```bash
-   python scripts/fetch_streaming_info.py
-   python scripts/generate_html.py
-   ```
+```bash
+git clone https://github.com/SerialForBreakfast/TooScaryDidntStream.git
+cd TooScaryDidntStream
 
-4. Commit and push changes to trigger the GitHub Actions deployment.
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### 2. Get API Keys (Free)
+
+You'll need at least one of these free API keys:
+
+#### Watchmode API (Recommended - Primary source)
+1. Visit https://api.watchmode.com/
+2. Sign up for a free account
+3. Get your API key from the dashboard
+
+#### TMDB API (Fallback source)
+1. Visit https://www.themoviedb.org/settings/api
+2. Create an account and request an API key
+3. Use the v3 API key
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+# Copy the example and edit with your keys
+cp .env.example .env
+```
+
+Edit `.env` with your API keys:
+```
+WATCHMODE_API_KEY=your_watchmode_api_key_here
+TMDB_API_KEY=your_tmdb_api_key_here
+```
+
+Or set them in your shell:
+```bash
+export WATCHMODE_API_KEY="your_key_here"
+export TMDB_API_KEY="your_key_here"
+```
+
+### 4. Run the Scripts
+
+```bash
+# Activate virtual environment
+source venv/bin/activate
+
+# Fetch streaming data for all movies
+python scripts/fetch_streaming_info.py
+
+# Generate HTML output (coming soon)
+python scripts/generate_html.py
+```
+
+### 5. View Results
+
+- Streaming data will be saved to `data/streaming_data.json`
+- HTML output will be generated in `output/index.html`
+
+## Data Format
+
+### Input (`data/movies.json`)
+```json
+{
+  "episodes": [
+    {
+      "episode_number": 234,
+      "title": "The Strangers: Prey at Night",
+      "air_date": "2024-01-15",
+      "description": "Episode description",
+      "movies": [
+        {
+          "title": "The Strangers: Prey at Night",
+          "year": 2018,
+          "imdb_id": "tt1285009",
+          "notes": "Main movie discussed in episode"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Output (`data/streaming_data.json`)
+```json
+{
+  "episodes": [
+    {
+      "episode_number": 234,
+      "movies": [
+        {
+          "title": "The Strangers: Prey at Night",
+          "year": 2018,
+          "streaming_sources": [
+            {
+              "name": "Netflix",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://netflix.com/title/..."
+            }
+          ],
+          "data_sources": ["watchmode", "tmdb"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+## API Data Sources
+
+### Primary: Watchmode API
+- **Comprehensive streaming data** for movies and TV shows
+- **Multiple regions** supported (US, UK, Canada, etc.)
+- **Real-time availability** across subscription, rental, and purchase services
+- **Free tier available** with generous limits
+
+### Fallback: TMDB API
+- **Movie metadata** (posters, descriptions, cast)
+- **Watch providers** (powered by JustWatch partnership)
+- **Completely free** with high rate limits
+- **Rich movie database** with extensive coverage
+
+## Development
+
+### Adding New Episodes
+
+1. Edit `data/movies.json` to add new episodes and movies
+2. Run `python scripts/fetch_streaming_info.py` to update streaming data
+3. Run `python scripts/generate_html.py` to rebuild the site
+4. Commit and push to trigger automatic deployment
+
+### Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
 ## Hosting
 
-This project is deployed via GitHub Pages. Output lives in the `output/` directory and updates automatically via GitHub Actions.
+This project is deployed via GitHub Pages with automated updates using GitHub Actions and secure API key management.
+
+### Quick Deployment
+1. **Add API keys to GitHub Secrets** (see [Deployment Guide](docs/DEPLOYMENT.md))
+2. **Enable GitHub Pages** in repository settings
+3. **Push changes** to trigger automatic deployment
+
+### Automated Features
+- **Auto-updates** when movie data changes
+- **Daily refresh** of streaming availability
+- **Secure API key handling** via GitHub Secrets
+- **Zero-downtime deployments** 
+
+For detailed setup instructions, see: **[Deployment Guide](docs/DEPLOYMENT.md)**
+
+## License
+
+MIT License - see LICENSE file for details.
 
 ---
-Created with ❤️ for movie nerds.

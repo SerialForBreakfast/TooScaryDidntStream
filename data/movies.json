@@ -1,0 +1,77 @@
+{
+  "episodes": [
+    {
+      "episode_number": 234,
+      "title": "The Strangers: Prey at Night",
+      "air_date": "2024-01-15",
+      "description": "The gang discusses this 2018 horror sequel and its streaming availability",
+      "movies": [
+        {
+          "title": "The Strangers: Prey at Night",
+          "year": 2018,
+          "imdb_id": "tt1285009",
+          "notes": "Main movie discussed in episode"
+        },
+        {
+          "title": "The Strangers", 
+          "year": 2008,
+          "imdb_id": "tt0482606",
+          "notes": "Referenced as comparison to original"
+        }
+      ]
+    },
+    {
+      "episode_number": 233,
+      "title": "M3GAN",
+      "air_date": "2024-01-08", 
+      "description": "Horror AI doll movie discussion",
+      "movies": [
+        {
+          "title": "M3GAN",
+          "year": 2022,
+          "imdb_id": "tt8760708",
+          "notes": "Main movie discussed in episode"
+        },
+        {
+          "title": "Child's Play",
+          "year": 1988,
+          "imdb_id": "tt0094862", 
+          "notes": "Referenced killer doll comparison"
+        }
+      ]
+    },
+    {
+      "episode_number": 232,
+      "title": "Scream VI", 
+      "air_date": "2024-01-01",
+      "description": "Latest Scream franchise entry discussion",
+      "movies": [
+        {
+          "title": "Scream VI",
+          "year": 2023,
+          "imdb_id": "tt17663992",
+          "notes": "Main movie discussed in episode"
+        },
+        {
+          "title": "Scream",
+          "year": 1996,
+          "imdb_id": "tt0117571",
+          "notes": "Original movie referenced"
+        },
+        {
+          "title": "Scream 2",
+          "year": 1997, 
+          "imdb_id": "tt0120082",
+          "notes": "Sequel comparison"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "podcast_name": "Too Scary; Didn't Watch",
+    "last_updated": "2024-01-15",
+    "total_episodes": 3,
+    "data_format_version": "1.0",
+    "justwatch_locale": "en_US"
+  }
+} 
