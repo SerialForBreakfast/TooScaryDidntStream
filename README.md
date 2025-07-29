@@ -3,6 +3,11 @@
 
 A tool to help find where to stream movies mentioned in the *Too Scary; Didn't Watch* podcast.
 
+## Live Site
+**output/index.html** - Generated HTML output from the scripts
+
+*Automatically updated via GitHub Actions when data changes or daily*
+
 ## Github
 https://github.com/SerialForBreakfast/TooScaryDidntStream
 
