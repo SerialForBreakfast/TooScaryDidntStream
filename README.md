@@ -14,7 +14,17 @@ https://github.com/SerialForBreakfast/TooScaryDidntStream
 - Tracks episodes and the movies they mention.
 - Queries streaming APIs (Watchmode + TMDB) to find current streaming availability.
 - Outputs a clean HTML page with posters, streaming providers, and episode groupings.
+- Features responsive design that works on desktop, tablet, and mobile devices.
 - Auto-updates via GitHub Actions and deploys with GitHub Pages.
+
+## Features
+
+- **Episode Organization**: Movies grouped by podcast episode
+- **Streaming Sources**: Shows where each movie is available to stream
+- **Movie Posters**: Real movie posters from TMDB (with fallback placeholders)
+- **Responsive Design**: Works on desktop, tablet, and mobile with adaptive poster sizes
+- **Search & Filter**: Find episodes and filter by streaming service
+- **Auto-updates**: Fresh streaming data via GitHub Actions
 
 ## Project Structure
 
@@ -87,7 +97,18 @@ export WATCHMODE_API_KEY="your_key_here"
 export TMDB_API_KEY="your_key_here"
 ```
 
-### 4. Run the Scripts
+### 4. Setup Movie Posters (Optional)
+
+To enable real movie posters in the HTML output:
+
+```bash
+# Run the TMDB setup script
+python scripts/setup_tmdb.py
+```
+
+This will guide you through getting a free TMDB API key and configuring it for poster fetching.
+
+### 5. Run the Scripts
 
 ```bash
 # Activate virtual environment
@@ -96,7 +117,7 @@ source venv/bin/activate
 # Fetch streaming data for all movies
 python scripts/fetch_streaming_info.py
 
-# Generate HTML output (coming soon)
+# Generate HTML output with posters
 python scripts/generate_html.py
 ```
 

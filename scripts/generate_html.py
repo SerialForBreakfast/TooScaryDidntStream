@@ -5,6 +5,7 @@ Generate HTML output for the movie streaming tracker.
 
 import json
 import logging
+import requests
 from datetime import datetime
 from typing import Dict, List, Any
 
@@ -16,6 +17,47 @@ class HTMLGenerator:
     def __init__(self):
         self.movies_data = None
         self.streaming_data = None
+        # TMDB API configuration - you can set this as an environment variable
+        self.tmdb_api_key = None  # Set your TMDB API key here or use environment variable
+        self.tmdb_base_url = "https://api.themoviedb.org/3"
+        self.tmdb_poster_base_url = "https://image.tmdb.org/t/p"
+
+    def configure_tmdb_api(self, api_key: str = None):
+        """Configure TMDB API key for poster fetching."""
+        if api_key:
+            self.tmdb_api_key = api_key
+            logger.info("TMDB API key configured")
+        else:
+            # Try to load from .env file first
+            self._load_env_file()
+            
+            # Try to get from environment variable
+            import os
+            env_api_key = os.getenv('TMDB_API_KEY')
+            if env_api_key:
+                self.tmdb_api_key = env_api_key
+                logger.info("TMDB API key loaded from environment variable")
+            else:
+                logger.warning("No TMDB API key provided. Posters will use placeholder images.")
+                logger.info("To enable real movie posters, run: python scripts/setup_tmdb.py")
+
+    def _load_env_file(self):
+        """Load environment variables from .env file."""
+        try:
+            import os
+            from pathlib import Path
+            
+            env_file = Path('.env')
+            if env_file.exists():
+                with open(env_file, 'r') as f:
+                    for line in f:
+                        line = line.strip()
+                        if line and not line.startswith('#') and '=' in line:
+                            key, value = line.split('=', 1)
+                            os.environ[key] = value
+                logger.info("Loaded environment variables from .env file")
+        except Exception as e:
+            logger.debug(f"Could not load .env file: {e}")
 
     def load_data(self):
         """Load movies and streaming data."""
@@ -151,11 +193,73 @@ class HTMLGenerator:
         """Format source type for display."""
         return source_type.lower()
 
+    def search_movie_on_tmdb(self, title: str, year: int) -> Dict[str, Any]:
+        """Search for a movie on TMDB API."""
+        if not self.tmdb_api_key:
+            return None
+        
+        try:
+            url = f"{self.tmdb_base_url}/search/movie"
+            params = {
+                'api_key': self.tmdb_api_key,
+                'query': title,
+                'year': year,
+                'language': 'en-US'
+            }
+            
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            
+            data = response.json()
+            if data.get('results'):
+                return data['results'][0]  # Return the first (most relevant) result
+            
+        except Exception as e:
+            logger.warning(f"Error searching TMDB for '{title}': {e}")
+        
+        return None
+
     def get_movie_poster_url(self, movie_title: str, year: int) -> str:
         """Get movie poster URL from TMDB or return a placeholder."""
-        # For now, return a placeholder. In a real implementation, you'd query TMDB API
-        # This would require the TMDB API key and a search request
-        return "https://via.placeholder.com/300x450/cccccc/666666?text=Movie+Poster"
+        # Try to get poster from TMDB
+        movie_data = self.search_movie_on_tmdb(movie_title, year)
+        
+        if movie_data and movie_data.get('poster_path'):
+            poster_path = movie_data['poster_path']
+            # Use w500 size for good quality and reasonable file size
+            return f"{self.tmdb_poster_base_url}/w500{poster_path}"
+        
+        # Fallback to a better placeholder with movie info
+        encoded_title = movie_title.replace(' ', '+')
+        return f"https://via.placeholder.com/500x750/2c3e50/ffffff?text={encoded_title}+({year})"
+
+    def get_movie_poster_urls(self, movie_title: str, year: int) -> Dict[str, str]:
+        """Get multiple poster sizes for responsive design."""
+        movie_data = self.search_movie_on_tmdb(movie_title, year)
+        
+        poster_urls = {}
+        
+        if movie_data and movie_data.get('poster_path'):
+            poster_path = movie_data['poster_path']
+            # Multiple sizes for responsive design
+            poster_urls = {
+                'small': f"{self.tmdb_poster_base_url}/w185{poster_path}",
+                'medium': f"{self.tmdb_poster_base_url}/w342{poster_path}",
+                'large': f"{self.tmdb_poster_base_url}/w500{poster_path}",
+                'original': f"{self.tmdb_poster_base_url}/original{poster_path}"
+            }
+        else:
+            # Fallback placeholder
+            encoded_title = movie_title.replace(' ', '+')
+            placeholder_url = f"https://via.placeholder.com/500x750/2c3e50/ffffff?text={encoded_title}+({year})"
+            poster_urls = {
+                'small': placeholder_url,
+                'medium': placeholder_url,
+                'large': placeholder_url,
+                'original': placeholder_url
+            }
+        
+        return poster_urls
 
     def get_podcast_episode_url(self, episode_number: int) -> str:
         """Generate podcast episode URL based on episode number."""
@@ -271,8 +375,8 @@ class HTMLGenerator:
         imdb_id = movie.get("imdb_id", "")
         notes = movie.get("notes", "")
         
-        # Get movie poster
-        poster_url = self.get_movie_poster_url(title, year)
+        # Get movie poster URLs for responsive design
+        poster_urls = self.get_movie_poster_urls(title, year)
         
         # Find streaming data
         streaming_sources = self.find_streaming_data(episode_number, title)
@@ -281,7 +385,12 @@ class HTMLGenerator:
         <div class="movie">
             <div class="movie-content">
                 <div class="movie-poster">
-                    <img src="{poster_url}" alt="{title} poster" class="poster-image" onerror="this.style.display='none'">
+                    <picture class="poster-container">
+                        <source media="(min-width: 768px)" srcset="{poster_urls['large']}">
+                        <source media="(min-width: 480px)" srcset="{poster_urls['medium']}">
+                        <img src="{poster_urls['small']}" alt="{title} poster" class="poster-image" 
+                             loading="lazy" onerror="this.style.display='none'">
+                    </picture>
                 </div>
                 <div class="movie-details">
                     <div class="movie-header">
@@ -806,14 +915,43 @@ class HTMLGenerator:
 
         .movie-poster {
             flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .poster-container {
+            position: relative;
+            display: block;
         }
 
         .poster-image {
             width: 120px;
             height: 180px;
             object-fit: cover;
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .poster-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive poster sizes */
+        @media screen and (max-width: 768px) {
+            .poster-image {
+                width: 100px;
+                height: 150px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .poster-image {
+                width: 80px;
+                height: 120px;
+            }
         }
 
         .movie-details {
@@ -978,11 +1116,18 @@ class HTMLGenerator:
 
             .movie-content {
                 flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
 
-            .poster-image {
-                width: 100%;
-                height: auto;
+            .movie-poster {
+                margin-bottom: 15px;
+            }
+
+            .movie-header {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
             }
 
             .streaming-section {
@@ -991,6 +1136,39 @@ class HTMLGenerator:
 
             .section-sources {
                 flex-direction: column;
+                align-items: center;
+            }
+
+            .source {
+                justify-content: center;
+                min-width: 120px;
+            }
+        }
+
+        /* Extra small screens */
+        @media screen and (max-width: 480px) {
+            .main-content {
+                padding: 15px;
+            }
+
+            .episode {
+                padding: 10px;
+            }
+
+            .movie {
+                padding: 15px;
+            }
+
+            .header-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .episode-header h3 {
+                font-size: 1.1rem;
+            }
+
+            .movie-header h4 {
+                font-size: 1rem;
             }
         }
         </style>
@@ -1293,6 +1471,10 @@ def main():
     logger.info("Starting HTML generation...")
     
     generator = HTMLGenerator()
+    
+    # Configure TMDB API for poster fetching
+    generator.configure_tmdb_api()
+    
     generator.load_data()
     
     html_content = generator.generate_html()
