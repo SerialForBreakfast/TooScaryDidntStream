@@ -132,8 +132,8 @@ jobs:
             echo "# 📊 Change Summary" > pr_summary.txt
             echo "" >> pr_summary.txt
             echo "## 🔗 Site Links" >> pr_summary.txt
-            echo "- **Production:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/output/index.html" >> pr_summary.txt
-            echo "- **Staging:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/" >> pr_summary.txt
+            echo "- **Production:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html" >> pr_summary.txt
+            echo "- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/" >> pr_summary.txt
             echo "" >> pr_summary.txt
             echo "## 📁 Files Changed" >> pr_summary.txt
             echo "PR summary script not available. Please check the changes manually." >> pr_summary.txt
@@ -144,8 +144,8 @@ jobs:
           echo "# 📊 Change Summary" > pr_summary.txt
           echo "" >> pr_summary.txt
           echo "## 🔗 Site Links" >> pr_summary.txt
-          echo "- **Production:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/output/index.html" >> pr_summary.txt
-          echo "- **Staging:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/" >> pr_summary.txt
+          echo "- **Production:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html" >> pr_summary.txt
+          echo "- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/" >> pr_summary.txt
           echo "" >> pr_summary.txt
           echo "## 📁 Files Changed" >> pr_summary.txt
           echo "Scripts directory not available. Please check the changes manually." >> pr_summary.txt
@@ -167,12 +167,12 @@ jobs:
           
           const comment = `## 🚀 Staging Deployment Complete
           
-          **Preview URL:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/
-          **Production URL:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/output/index.html
+          **Preview URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+          **Production URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
           
           **Before & After Comparison:**
-          - **Before (Production):** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/output/index.html
-          - **After (Staging):** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/
+          - **Before (Production):** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
+          - **After (Staging):** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
           
           **Change Summary:**
           ${summary}

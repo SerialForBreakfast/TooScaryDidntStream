@@ -13,7 +13,7 @@ from typing import Dict, List, Any
 
 class PRSummaryGenerator:
     def __init__(self):
-        self.repo_owner = "SerialForBreakfast"
+        self.repo_owner = "serialforbreakfast"
         self.repo_name = "TooScaryDidntStream"
         self.production_url = f"https://{self.repo_owner}.github.io/{self.repo_name}/output/index.html"
         self.staging_url = f"https://{self.repo_owner}.github.io/{self.repo_name}/staging/"
