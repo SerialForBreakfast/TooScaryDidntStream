@@ -38,6 +38,12 @@
             left: 0;
             top: 0;
             box-sizing: border-box;
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .sidebar.hidden {
+            transform: translateX(-100%);
         }
 
         .sidebar-header {
@@ -46,10 +52,78 @@
             background: #f8f9fa;
         }
 
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
         .sidebar-header h3 {
-            margin-bottom: 15px;
+            margin-bottom: 0;
             color: #495057;
             font-size: 1.2rem;
+            flex: 1;
+        }
+
+        .toggle-sidebar-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .toggle-sidebar-btn:hover {
+            background: #e9ecef;
+            border-color: #adb5bd;
+        }
+
+        .toggle-sidebar-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .toggle-icon {
+            font-size: 1rem;
+        }
+
+        .toggle-text {
+            font-weight: 500;
+        }
+
+        .sidebar-toggle-float {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            display: none;
+        }
+
+        .sidebar-toggle-float.show {
+            display: block;
+        }
+
+        .toggle-sidebar-btn.float {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .toggle-sidebar-btn.float:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
         .search-container {
@@ -232,6 +306,12 @@
             max-width: calc(100vw - 350px);
             box-sizing: border-box;
             flex-wrap: wrap;
+            transition: margin-left 0.3s ease;
+        }
+
+        .main-content.sidebar-hidden {
+            margin-left: 0;
+            max-width: 100vw;
         }
 
         .header {
@@ -568,6 +648,23 @@
                 position: relative;
             }
 
+            .sidebar-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 15px;
+            }
+
+            .toggle-sidebar-btn {
+                align-self: flex-end;
+                font-size: 0.8rem;
+                padding: 6px 10px;
+            }
+
+            .sidebar-toggle-float {
+                top: 10px;
+                left: 10px;
+            }
+
             .main-content {
                 margin-left: 0;
                 max-width: 100%;
@@ -650,9 +747,13 @@
         <body>
             <div class="container">
                 
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <h3>Episodes</h3>
+                <button id="toggle-sidebar" class="toggle-sidebar-btn">
+                    <span class="toggle-icon">◀</span>
+                    <span class="toggle-text">Hide Sidebar</span>
+                </button>
             </div>
             
             <div class="filter-section">
@@ -3449,7 +3550,13 @@
         </div>
         
                 
-                <div class="main-content">
+                <div class="main-content" id="main-content">
+                    <div class="sidebar-toggle-float" id="sidebar-toggle-float">
+                        <button class="toggle-sidebar-btn float">
+                            <span class="toggle-icon">▶</span>
+                            <span class="toggle-text">Show Sidebar</span>
+                        </button>
+                    </div>
                     <div class="header">
                         <div class="header-content">
                             <div class="header-text">
@@ -15858,7 +15965,14 @@
         document.addEventListener('DOMContentLoaded', function() {
             const filterInput = document.getElementById('episode-filter');
             const episodeItems = document.querySelectorAll('.episode-item');
+            const toggleSidebarBtn = document.getElementById('toggle-sidebar');
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            const sidebarToggleFloat = document.getElementById('sidebar-toggle-float');
+            const toggleText = document.querySelector('#toggle-sidebar .toggle-text');
+            const floatToggleText = document.querySelector('#sidebar-toggle-float .toggle-text');
             let debounceTimer;
+            let sidebarVisible = true;
 
             function filterEpisodes() {
                 const searchTerm = filterInput.value.toLowerCase().trim();
@@ -16076,6 +16190,31 @@
             // Event listeners
             applyFilterBtn.addEventListener('click', filterByStreamingServices);
             clearFilterBtn.addEventListener('click', clearStreamingFilter);
+
+            // Toggle sidebar functionality
+            function toggleSidebar() {
+                sidebarVisible = !sidebarVisible;
+                
+                if (sidebarVisible) {
+                    sidebar.classList.remove('hidden');
+                    mainContent.classList.remove('sidebar-hidden');
+                    sidebarToggleFloat.classList.remove('show');
+                    toggleText.textContent = 'Hide Sidebar';
+                    floatToggleText.textContent = 'Show Sidebar';
+                } else {
+                    sidebar.classList.add('hidden');
+                    mainContent.classList.add('sidebar-hidden');
+                    sidebarToggleFloat.classList.add('show');
+                    toggleText.textContent = 'Show Sidebar';
+                    floatToggleText.textContent = 'Hide Sidebar';
+                }
+            }
+
+            toggleSidebarBtn.addEventListener('click', toggleSidebar);
+            
+            // Floating toggle button
+            const floatToggleBtn = document.querySelector('#sidebar-toggle-float .toggle-sidebar-btn');
+            floatToggleBtn.addEventListener('click', toggleSidebar);
         });
         </script>
         

@@ -112,24 +112,41 @@ jobs:
             });
           }
 
+    - name: Generate PR Summary
+      if: github.event_name == 'pull_request'
+      run: |
+        python scripts/generate_pr_summary.py > pr_summary.txt
+
     - name: Comment on PR
       if: github.event_name == 'pull_request'
       uses: actions/github-script@v7
       with:
         script: |
+          const fs = require('fs');
+          let summary = '';
+          try {
+            summary = fs.readFileSync('pr_summary.txt', 'utf8');
+          } catch (e) {
+            summary = 'Could not generate summary';
+          }
+          
           const comment = `## 🚀 Staging Deployment Complete
           
           **Preview URL:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/
+          **Production URL:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/output/index.html
           
-          **Changes:**
-          - Generated HTML with latest streaming data
-          - Updated movie posters and responsive design
-          - Ready for review before production deployment
+          **Before & After Comparison:**
+          - **Before (Production):** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/output/index.html
+          - **After (Staging):** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/
+          
+          **Change Summary:**
+          ${summary}
           
           **Next Steps:**
-          1. Review the staging site
+          1. Compare staging vs production using the links above
           2. Test functionality and responsive design
-          3. Approve and merge to trigger production deployment
+          3. Complete the testing checklist in the PR template
+          4. Approve and merge to trigger production deployment
           
           ---
           *This is an automated staging deployment for PR #${{ github.event.pull_request.number }}*`;

@@ -133,6 +133,19 @@ python scripts/fetch_streaming_info.py
 python scripts/generate_html.py
 ```
 
+### 7. Create Pull Requests
+
+```bash
+# Generate PR summary with change analysis
+python scripts/generate_pr_summary.py
+```
+
+This will create a comprehensive PR summary with:
+- Links to production and staging sites
+- Before/after comparison
+- Detailed change analysis
+- Testing instructions
+
 ### 5. View Results
 
 - Streaming data will be saved to `data/streaming_data.json`
