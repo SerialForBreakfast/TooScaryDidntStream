@@ -25,6 +25,7 @@ https://github.com/SerialForBreakfast/TooScaryDidntStream
 - **Responsive Design**: Works on desktop, tablet, and mobile with adaptive poster sizes
 - **Search & Filter**: Find episodes and filter by streaming service
 - **Auto-updates**: Fresh streaming data via GitHub Actions
+- **CI/CD Pipeline**: Staging environment for preview, production deployment
 
 ## Project Structure
 
@@ -108,7 +109,18 @@ python scripts/setup_tmdb.py
 
 This will guide you through getting a free TMDB API key and configuring it for poster fetching.
 
-### 5. Run the Scripts
+### 5. Setup CI/CD Environments (Optional)
+
+To enable staging and production deployments:
+
+```bash
+# Setup GitHub environments and CI/CD
+python scripts/setup_environments.py
+```
+
+This will guide you through setting up staging and production environments with proper CI/CD pipelines.
+
+### 6. Run the Scripts
 
 ```bash
 # Activate virtual environment

@@ -1,0 +1,168 @@
+name: Staging Environment
+
+on:
+  # Run on pull requests to main branch
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - '.github/workflows/**'
+
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - preview
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        # For PRs, checkout the PR branch
+        ref: ${{ github.head_ref }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Validate data format
+      run: |
+        python -c "
+        import json
+        with open('data/movies.json', 'r') as f:
+            data = json.load(f)
+        print(f'✅ Validated {len(data.get(\"episodes\", []))} episodes')
+        "
+
+    - name: Fetch streaming data (staging)
+      env:
+        TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      run: |
+        python scripts/fetch_streaming_info.py
+
+    - name: Generate HTML (staging)
+      run: |
+        python scripts/generate_html.py
+
+    - name: Upload staging artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: staging-build
+        path: |
+          output/
+          data/streaming_data.json
+        retention-days: 7
+
+  deploy-staging:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    environment: staging
+    
+    steps:
+    - name: Download staging artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: staging-build
+
+    - name: Deploy to staging environment
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+        publish_branch: staging-pages
+        destination_dir: staging
+
+    - name: Create staging deployment
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const { data: deployments } = await github.rest.repos.listDeployments({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            environment: 'staging'
+          });
+          
+          if (deployments.length > 0) {
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: deployments[0].id,
+              state: 'success',
+              environment_url: 'https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/',
+              description: 'Staging deployment successful'
+            });
+          }
+
+    - name: Comment on PR
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const comment = `## 🚀 Staging Deployment Complete
+          
+          **Preview URL:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/
+          
+          **Changes:**
+          - Generated HTML with latest streaming data
+          - Updated movie posters and responsive design
+          - Ready for review before production deployment
+          
+          **Next Steps:**
+          1. Review the staging site
+          2. Test functionality and responsive design
+          3. Approve and merge to trigger production deployment
+          
+          ---
+          *This is an automated staging deployment for PR #${{ github.event.pull_request.number }}*`;
+          
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: comment
+          });
+
+  cleanup-staging:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    needs: deploy-staging
+    
+    steps:
+    - name: Cleanup staging deployment
+      uses: actions/github-script@v7
+      with:
+        script: |
+          // Delete staging artifacts when PR is closed
+          const { data: artifacts } = await github.rest.actions.listArtifactsForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo
+          });
+          
+          for (const artifact of artifacts.artifacts) {
+            if (artifact.name === 'staging-build' && artifact.created_at < new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)) {
+              await github.rest.actions.deleteArtifact({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                artifact_id: artifact.id
+              });
+            }
+          } 

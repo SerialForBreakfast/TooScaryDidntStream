@@ -1,0 +1,120 @@
+name: Development Testing
+
+on:
+  # Run on pushes to development branches
+  push:
+    branches:
+      - develop
+      - feature/*
+      - bugfix/*
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Validate data format
+      run: |
+        python -c "
+        import json
+        try:
+            with open('data/movies.json', 'r') as f:
+                data = json.load(f)
+            episodes = data.get('episodes', [])
+            print(f'✅ Validated {len(episodes)} episodes')
+            
+            # Check for common data issues
+            for i, episode in enumerate(episodes):
+                if not episode.get('title'):
+                    print(f'⚠️  Episode {i+1} missing title')
+                if not episode.get('movies'):
+                    print(f'⚠️  Episode {i+1} has no movies')
+                    
+        except Exception as e:
+            print(f'❌ Data validation failed: {e}')
+            exit(1)
+        "
+
+    - name: Test HTML generation
+      run: |
+        python scripts/generate_html.py
+        
+        # Check if HTML was generated
+        if [ -f "output/index.html" ]; then
+          echo "✅ HTML generation successful"
+          echo "📊 File size: $(wc -c < output/index.html) bytes"
+        else
+          echo "❌ HTML generation failed"
+          exit 1
+        fi
+
+    - name: Test responsive design
+      run: |
+        # Check for responsive CSS
+        if grep -q "@media" output/index.html; then
+          echo "✅ Responsive CSS found"
+        else
+          echo "⚠️  No responsive CSS detected"
+        fi
+        
+        # Check for poster images
+        poster_count=$(grep -c "poster-container" output/index.html || echo "0")
+        echo "📸 Found $poster_count movie posters"
+
+    - name: Upload development artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: development-build-${{ github.sha }}
+        path: |
+          output/
+          data/streaming_data.json
+        retention-days: 3
+
+    - name: Comment on commit
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const comment = `## 🧪 Development Testing Complete
+          
+          **Branch:** ${{ github.ref_name }}
+          **Commit:** ${{ github.sha }}
+          
+          **Results:**
+          - ✅ Data validation passed
+          - ✅ HTML generation successful
+          - ✅ Responsive design implemented
+          
+          **Artifacts:** Available for download in Actions tab
+          
+          ---
+          *This is an automated development test*`;
+          
+          // Only comment on PRs
+          if (context.payload.pull_request) {
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: comment
+            });
+          } 

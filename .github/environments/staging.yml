@@ -1,0 +1,14 @@
+name: staging
+url: https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/
+protection_rules:
+  - required_reviewers:
+      users: []
+      teams: []
+    required_status_checks:
+      strict: false
+      contexts: []
+    enforce_admins: false
+    allow_force_pushes: false
+    allow_deletions: false
+    block_creations: false
+    required_conversation_resolution: false

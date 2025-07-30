@@ -1,0 +1,15 @@
+name: production
+url: https://${{ github.repository_owner }}.github.io/${{ github.repository }}/
+protection_rules:
+  - required_reviewers:
+      users: []
+      teams: []
+    required_status_checks:
+      strict: true
+      contexts:
+        - "Staging Environment"
+    enforce_admins: false
+    allow_force_pushes: false
+    allow_deletions: false
+    block_creations: false
+    required_conversation_resolution: true
