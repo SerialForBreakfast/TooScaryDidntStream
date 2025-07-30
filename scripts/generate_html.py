@@ -151,6 +151,18 @@ class HTMLGenerator:
         """Format source type for display."""
         return source_type.lower()
 
+    def get_movie_poster_url(self, movie_title: str, year: int) -> str:
+        """Get movie poster URL from TMDB or return a placeholder."""
+        # For now, return a placeholder. In a real implementation, you'd query TMDB API
+        # This would require the TMDB API key and a search request
+        return "https://via.placeholder.com/300x450/cccccc/666666?text=Movie+Poster"
+
+    def get_podcast_episode_url(self, episode_number: int) -> str:
+        """Generate podcast episode URL based on episode number."""
+        # Actual Apple Podcasts ID for "Too Scary; Didn't Watch"
+        podcast_id = "1476552025"
+        return f"https://podcasts.apple.com/us/podcast/too-scary-didnt-watch/id{podcast_id}?i=1000{episode_number:04d}"
+
     def generate_episode_sidebar(self) -> str:
         """Generate the episode sidebar with filtering."""
         episodes = self.movies_data.get("episodes", [])
@@ -259,16 +271,24 @@ class HTMLGenerator:
         imdb_id = movie.get("imdb_id", "")
         notes = movie.get("notes", "")
         
+        # Get movie poster
+        poster_url = self.get_movie_poster_url(title, year)
+        
         # Find streaming data
         streaming_sources = self.find_streaming_data(episode_number, title)
         
         html = f'''
         <div class="movie">
-            <div class="movie-header">
-                <h4>{title} ({year})</h4>
-                {f'<div class="imdb-link"><a href="https://www.imdb.com/title/{imdb_id}" target="_blank">IMDB</a></div>' if imdb_id else ''}
-            </div>
-            <div class="movie-notes">{notes}</div>
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="{poster_url}" alt="{title} poster" class="poster-image" onerror="this.style.display='none'">
+                </div>
+                <div class="movie-details">
+                    <div class="movie-header">
+                        <h4>{title} ({year})</h4>
+                        {f'<div class="imdb-link"><a href="https://www.imdb.com/title/{imdb_id}" target="_blank">IMDB</a></div>' if imdb_id else ''}
+                    </div>
+                    <div class="movie-notes">{notes}</div>
         '''
         
         # Streaming sources organized by type
@@ -324,6 +344,9 @@ class HTMLGenerator:
 
                     html += '</div></div>'
 
+                    html += '</div>'
+
+                html += '</div>'
             html += '</div>'
 
         html += '</div>'
@@ -337,12 +360,21 @@ class HTMLGenerator:
         description = episode.get("description", "")
         movies = episode.get("movies", [])
         
+        # Get podcast episode URL
+        podcast_url = self.get_podcast_episode_url(episode_number)
+        
         html = f'''
         <div class="episode" id="episode-{episode_number}">
             <div class="episode-header">
-                <h3>Episode {episode_number}: {title}</h3>
-                <div class="episode-meta">
-                    <span class="air-date">{air_date}</span>
+                <div class="episode-title-section">
+                    <h3>Episode {episode_number}: {title}</h3>
+                    <div class="episode-meta">
+                        <span class="air-date">{air_date}</span>
+                        <a href="{podcast_url}" class="podcast-link" target="_blank" rel="noopener">
+                            <span class="podcast-icon">🎧</span>
+                            Listen to Episode
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="episode-description">{description}</div>
@@ -409,6 +441,9 @@ class HTMLGenerator:
         .container {
             display: flex;
             min-height: 100vh;
+            flex-wrap: wrap;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .sidebar {
@@ -420,6 +455,7 @@ class HTMLGenerator:
             position: fixed;
             left: 0;
             top: 0;
+            box-sizing: border-box;
         }
 
         .sidebar-header {
@@ -612,6 +648,8 @@ class HTMLGenerator:
             margin-left: 350px;
             padding: 30px;
             max-width: calc(100vw - 350px);
+            box-sizing: border-box;
+            flex-wrap: wrap;
         }
 
         .header {
@@ -622,6 +660,7 @@ class HTMLGenerator:
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .header-text {
@@ -681,21 +720,60 @@ class HTMLGenerator:
             padding: 25px;
             margin-bottom: 30px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
         }
 
         .episode-header {
             margin-bottom: 15px;
         }
 
+        .episode-title-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
         .episode-header h3 {
             color: #2c3e50;
             font-size: 1.4rem;
             margin-bottom: 5px;
+            flex: 1;
         }
 
         .episode-meta {
             color: #6c757d;
             font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .podcast-link {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 12px;
+            background: #e8f4fd;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .podcast-link:hover {
+            background: #d1ecf1;
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .podcast-icon {
+            font-size: 1rem;
         }
 
         .episode-description {
@@ -714,6 +792,32 @@ class HTMLGenerator:
             border-radius: 6px;
             padding: 20px;
             background: #fafbfc;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .movie-content {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .movie-poster {
+            flex-shrink: 0;
+        }
+
+        .poster-image {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .movie-details {
+            flex: 1;
         }
 
         .movie-header {
@@ -746,6 +850,8 @@ class HTMLGenerator:
 
         .streaming-section {
             margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
         }
 
         .section-label {
@@ -761,6 +867,8 @@ class HTMLGenerator:
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .source {
@@ -817,40 +925,72 @@ class HTMLGenerator:
             font-size: 0.9rem;
         }
 
-        @media (max-width: 768px) {
+        /* Responsive styles for tablets */
+        @media screen and (max-width: 1024px) {
+            .main-content {
+                padding: 20px;
+            }
+
+            .episode-header h3 {
+                font-size: 1.2rem;
+            }
+
+            .movie-header h4 {
+                font-size: 1rem;
+            }
+        }
+
+        /* Responsive styles for mobile */
+        @media screen and (max-width: 768px) {
             .container {
                 flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 100%;
             }
-            
+
             .sidebar {
                 width: 100%;
                 height: auto;
+                max-height: 500px;
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
                 position: relative;
-                max-height: 300px;
             }
-            
+
             .main-content {
                 margin-left: 0;
                 max-width: 100%;
                 padding: 20px;
             }
-            
+
             .header-content {
                 flex-direction: column;
-                gap: 20px;
-                text-align: center;
+                align-items: flex-start;
             }
-            
-            .header-text {
-                text-align: center;
+
+            .header-controls {
+                margin-top: 15px;
             }
-            
-            .header-text h1 {
-                font-size: 2rem;
+
+            .episode {
+                padding: 15px;
             }
-            
-            .sort-button {
-                align-self: center;
+
+            .movie-content {
+                flex-direction: column;
+            }
+
+            .poster-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .streaming-section {
+                flex-direction: column;
+            }
+
+            .section-sources {
+                flex-direction: column;
             }
         }
         </style>
