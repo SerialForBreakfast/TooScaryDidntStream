@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Too Scary; Didn't Watch - Movie Streaming Tracker</title>
+    <meta name="description" content="Find where to stream movies mentioned in the Too Scary; Didn't Watch podcast.">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .episode {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        
+        .episode:hover {
+            transform: translateY(-2px);
+        }
+        
+        .episode-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .episode-number {
+            color: #6c757d;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .episode-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 5px 0;
+        }
+        
+        .episode-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .episode-description {
+            color: #495057;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        
+        .movies {
+            padding: 0;
+        }
+        
+        .movie {
+            padding: 20px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+        
+        .movie:last-child {
+            border-bottom: none;
+        }
+        
+        .movie-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .movie-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .movie-year {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-left: 10px;
+        }
+        
+        .movie-notes {
+            color: #6c757d;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        
+        .streaming-sources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .source {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #495057;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .source:hover {
+            background: #e9ecef;
+            transform: translateY(-1px);
+            text-decoration: none;
+            color: #495057;
+        }
+        
+        .source.subscription {
+            background: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        
+        .source.rent {
+            background: #fff3cd;
+            border-color: #ffeaa7;
+            color: #856404;
+        }
+        
+        .source.buy {
+            background: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        
+        .source.free {
+            background: #cce5ff;
+            border-color: #b3d9ff;
+            color: #004085;
+        }
+        
+        .source-logo {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        
+        .no-streaming {
+            color: #6c757d;
+            font-style: italic;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .data-sources {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px 0;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .last-updated {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .github-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                gap: 20px;
+            }
+            
+            .movie-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .streaming-sources {
+                justify-content: flex-start;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Too Scary; Didn't Watch</h1>
+            <p class="subtitle">Movie Streaming Tracker</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Episodes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Movies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">246</span>
+                    <span class="stat-label">Streaming Options</span>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+        
+        <div class="episode">
+            <div class="episode-header">
+                <div class="episode-number">Episode 234</div>
+                <h2 class="episode-title">The Strangers: Prey at Night</h2>
+                <div class="episode-date">2024-01-15</div>
+                <div class="episode-description">The gang discusses this 2018 horror sequel and its streaming availability</div>
+            </div>
+            <div class="movies">
+        
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">The Strangers: Prey at Night </span>
+                    <span class="movie-year">(2018)</span>
+                    
+                </div>
+            </div>
+        <div class="streaming-sources"><a href="https://play.max.com/show/6f7d63ce-f3ac-41bd-bf8f-da060eeb3277?utm_source=universal_search" class="source subscription" target="_blank" rel="noopener">MAX</a><a href="https://www.hulu.com/watch/47d653cd-a8ff-4163-a705-89ff8387498f" class="source subscription" target="_blank" rel="noopener">HBO (Via Hulu)</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Prey-at-Night/911882" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Prey-at-Night/911882" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.a2b9614f-f43d-5330-36f6-0ccf7d0fe9e4" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.a2b9614f-f43d-5330-36f6-0ccf7d0fe9e4" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://tv.apple.com/us/movie/the-strangers-prey-at-night/umc.cmc.5kyjobuzyuyszkq10tfdoadkq?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1763721437" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/the-strangers-prey-at-night/umc.cmc.5kyjobuzyuyszkq10tfdoadkq?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1763721437" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Prey-at-Night/911882" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Prey-at-Night/911882" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.a2b9614f-f43d-5330-36f6-0ccf7d0fe9e4" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.a2b9614f-f43d-5330-36f6-0ccf7d0fe9e4" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://tv.apple.com/us/movie/the-strangers-prey-at-night/umc.cmc.5kyjobuzyuyszkq10tfdoadkq?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1763721437" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/the-strangers-prey-at-night/umc.cmc.5kyjobuzyuyszkq10tfdoadkq?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1763721437" class="source buy" target="_blank" rel="noopener">AppleTV</a><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg" alt="HBO Max" class="source-logo" onerror="this.style.display='none'">HBO Max</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg" alt="HBO Max Amazon Channel" class="source-logo" onerror="this.style.display='none'">HBO Max Amazon Channel</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span></div><div class="data-sources">Data from: watchmode, tmdb</div></div>
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">The Strangers</span>
+                    <span class="movie-year">(2008)</span>
+                    
+                </div>
+            </div>
+        <div class="streaming-sources"><a href="https://tubitv.com/movies/629198" class="source free" target="_blank" rel="noopener">Tubi TV</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.98a9f68c-08bb-8456-5458-0d74a8fdd67e" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.98a9f68c-08bb-8456-5458-0d74a8fdd67e" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Unrated-/140470" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Unrated-/140470" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=The+Strangers+Theatrical%2Bmovie" class="source rent" target="_blank" rel="noopener">YouTube</a><a href="https://tv.apple.com/us/movie/the-strangers/umc.cmc.6p21a88s4fpb0x3j03v8njszy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A290834759" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/the-strangers/umc.cmc.6p21a88s4fpb0x3j03v8njszy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A290834759" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://www.microsoft.com/en-us/p/The%20Strangers%20Unrated/8D6KGWZL5XPW" class="source rent" target="_blank" rel="noopener">Windows Store</a><a href="https://www.microsoft.com/en-us/p/The%20Strangers%20Unrated/8D6KGWZL5XPW" class="source rent" target="_blank" rel="noopener">Windows Store</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.98a9f68c-08bb-8456-5458-0d74a8fdd67e" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.98a9f68c-08bb-8456-5458-0d74a8fdd67e" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Unrated-/140470" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/The-Strangers-Unrated-/140470" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=The+Strangers+Theatrical%2Bmovie" class="source buy" target="_blank" rel="noopener">YouTube</a><a href="https://tv.apple.com/us/movie/the-strangers/umc.cmc.6p21a88s4fpb0x3j03v8njszy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A290834759" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/the-strangers/umc.cmc.6p21a88s4fpb0x3j03v8njszy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A290834759" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://www.microsoft.com/en-us/p/The%20Strangers%20Unrated/8D6KGWZL5XPW" class="source buy" target="_blank" rel="noopener">Windows Store</a><a href="https://www.microsoft.com/en-us/p/The%20Strangers%20Unrated/8D6KGWZL5XPW" class="source buy" target="_blank" rel="noopener">Windows Store</a><span class="source rent"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span></div><div class="data-sources">Data from: watchmode, tmdb</div></div>
+            </div>
+        </div>
+        
+        <div class="episode">
+            <div class="episode-header">
+                <div class="episode-number">Episode 233</div>
+                <h2 class="episode-title">M3GAN</h2>
+                <div class="episode-date">2024-01-08</div>
+                <div class="episode-description">Horror AI doll movie discussion</div>
+            </div>
+            <div class="movies">
+        
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">M3GAN</span>
+                    <span class="movie-year">(2022)</span>
+                    
+                </div>
+            </div>
+        <div class="streaming-sources"><a href="https://www.starz.com/us/en/play/71719" class="source subscription" target="_blank" rel="noopener">STARZ</a><a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.ddce709f-0d9d-4e1c-bb6c-e6b5c2c4f281?tag=&autoplay=1" class="source subscription" target="_blank" rel="noopener">STARZ (Via Amazon Prime)</a><a href="https://www.hulu.com/watch/634cf18d-de6b-43f2-97d2-c1bda14c9bc1" class="source subscription" target="_blank" rel="noopener">STARZ (Via Hulu)</a><a href="https://tv.apple.com/us/movie/m3gan/umc.cmc.5rwomfz98u19czniaz4pdm5pc?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1664525851" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/m3gan/umc.cmc.5rwomfz98u19czniaz4pdm5pc?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1664525851" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/m3gan/umc.cmc.5rwomfz98u19czniaz4pdm5pc?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1664525851" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.b64cd816-81bd-49f0-a0a8-d2b8b95852d8" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.b64cd816-81bd-49f0-a0a8-d2b8b95852d8" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.b64cd816-81bd-49f0-a0a8-d2b8b95852d8" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://athome.fandango.com/content/browse/details/M3GAN/2193251" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/M3GAN/2193251" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/M3GAN/2193251" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=M3GAN%2Bmovie" class="source rent" target="_blank" rel="noopener">YouTube</a><a href="https://tv.apple.com/us/movie/m3gan/umc.cmc.5rwomfz98u19czniaz4pdm5pc?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1664525851" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/m3gan/umc.cmc.5rwomfz98u19czniaz4pdm5pc?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1664525851" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/m3gan/umc.cmc.5rwomfz98u19czniaz4pdm5pc?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1664525851" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.b64cd816-81bd-49f0-a0a8-d2b8b95852d8" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.b64cd816-81bd-49f0-a0a8-d2b8b95852d8" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.b64cd816-81bd-49f0-a0a8-d2b8b95852d8" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://athome.fandango.com/content/browse/details/M3GAN/2193251" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/M3GAN/2193251" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/M3GAN/2193251" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=M3GAN%2Bmovie" class="source buy" target="_blank" rel="noopener">YouTube</a><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg" alt="Starz Apple TV Channel" class="source-logo" onerror="this.style.display='none'">Starz Apple TV Channel</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/9laPF1MAiUxlqM8T98F3Gj0bhzd.jpg" alt="Starz Roku Premium Channel" class="source-logo" onerror="this.style.display='none'">Starz Roku Premium Channel</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/yIKwylTLP1u8gl84Is7FItpYLGL.jpg" alt="Starz" class="source-logo" onerror="this.style.display='none'">Starz</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg" alt="Philo" class="source-logo" onerror="this.style.display='none'">Philo</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/esiLBRzDUwodjfN8gA4qj7l3ZF7.jpg" alt="Starz Amazon Channel" class="source-logo" onerror="this.style.display='none'">Starz Amazon Channel</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span></div><div class="data-sources">Data from: watchmode, tmdb</div></div>
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">Child's Play</span>
+                    <span class="movie-year">(1988)</span>
+                    
+                </div>
+            </div>
+        <div class="streaming-sources"><a href="https://play.max.com/show/93131fdf-51a7-4a68-9db2-3450c21a9bf2?utm_source=universal_search" class="source subscription" target="_blank" rel="noopener">MAX</a><a href="https://www.hulu.com/watch/a9c89caa-93a4-47b8-b179-1be8f4a4e13a" class="source subscription" target="_blank" rel="noopener">HBO (Via Hulu)</a><a href="https://tv.apple.com/us/movie/childs-play/umc.cmc.6o6quxd0gces845utixw68qh8?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A220251867" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/childs-play/umc.cmc.6o6quxd0gces845utixw68qh8?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A220251867" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://athome.fandango.com/content/browse/details/Child-s-Play/140581" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Child-s-Play/140581" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.80b30c33-0285-43f7-81fd-e821ab0e64d0" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.80b30c33-0285-43f7-81fd-e821ab0e64d0" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://www.youtube.com/results?search_query=Child%27s+Play+%281988%29%2Bmovie" class="source rent" target="_blank" rel="noopener">YouTube</a><a href="https://watch.plex.tv/movie/childs-play?utm_content=5d776835e6d55c002040d2c2&utm_medium=deeplink&utm_source=" class="source rent" target="_blank" rel="noopener">Plex</a><a href="https://watch.plex.tv/movie/childs-play?utm_content=5d776835e6d55c002040d2c2&utm_medium=deeplink&utm_source=" class="source rent" target="_blank" rel="noopener">Plex</a><a href="https://www.microsoft.com/en-us/p/Childs%20Play%201988/8D6KGWZL5FRG" class="source rent" target="_blank" rel="noopener">Windows Store</a><a href="https://www.microsoft.com/en-us/p/Childs%20Play%201988/8D6KGWZL5FRG" class="source rent" target="_blank" rel="noopener">Windows Store</a><a href="https://tv.apple.com/us/movie/childs-play/umc.cmc.6o6quxd0gces845utixw68qh8?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A220251867" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/childs-play/umc.cmc.6o6quxd0gces845utixw68qh8?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A220251867" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://athome.fandango.com/content/browse/details/Child-s-Play/140581" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Child-s-Play/140581" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.80b30c33-0285-43f7-81fd-e821ab0e64d0" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.80b30c33-0285-43f7-81fd-e821ab0e64d0" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://www.youtube.com/results?search_query=Child%27s+Play+%281988%29%2Bmovie" class="source buy" target="_blank" rel="noopener">YouTube</a><a href="https://www.microsoft.com/en-us/p/Childs%20Play%201988/8D6KGWZL5FRG" class="source buy" target="_blank" rel="noopener">Windows Store</a><a href="https://www.microsoft.com/en-us/p/Childs%20Play%201988/8D6KGWZL5FRG" class="source buy" target="_blank" rel="noopener">Windows Store</a><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg" alt="HBO Max" class="source-logo" onerror="this.style.display='none'">HBO Max</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg" alt="HBO Max Amazon Channel" class="source-logo" onerror="this.style.display='none'">HBO Max Amazon Channel</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg" alt="Plex" class="source-logo" onerror="this.style.display='none'">Plex</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span></div><div class="data-sources">Data from: watchmode, tmdb</div></div>
+            </div>
+        </div>
+        
+        <div class="episode">
+            <div class="episode-header">
+                <div class="episode-number">Episode 232</div>
+                <h2 class="episode-title">Scream VI</h2>
+                <div class="episode-date">2024-01-01</div>
+                <div class="episode-description">Latest Scream franchise entry discussion</div>
+            </div>
+            <div class="movies">
+        
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">Scream VI</span>
+                    <span class="movie-year">(2023)</span>
+                    
+                </div>
+            </div>
+        <div class="streaming-sources"><a href="https://www.paramountplus.com/movies/scream-vi/P1DZtBQ4PfwSJVpEzYDlcu83ulIk_ARL?searchReferral=publisher&source=search-feeds" class="source subscription" target="_blank" rel="noopener">Paramount Plus</a><a href="https://athome.fandango.com/content/browse/details/Scream-VI/2274143" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-VI/2274143" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-VI/2274143" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=Scream+VI%2Bmovie" class="source rent" target="_blank" rel="noopener">YouTube</a><a href="https://ondemand.spectrum.net/movies/22179066/scream-vi/" class="source rent" target="_blank" rel="noopener">Spectrum On Demand</a><a href="https://ondemand.spectrum.net/movies/22179066/scream-vi/" class="source rent" target="_blank" rel="noopener">Spectrum On Demand</a><a href="https://tv.apple.com/us/movie/scream-vi/umc.cmc.5fnh2i9j7hj024r3v5hokob6g?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1671150022" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-vi/umc.cmc.5fnh2i9j7hj024r3v5hokob6g?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1671150022" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-vi/umc.cmc.5fnh2i9j7hj024r3v5hokob6g?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1671150022" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://watch.plex.tv/movie/scream-vi?utm_content=61fd36229847c85e0511ff5f&utm_medium=deeplink&utm_source=" class="source rent" target="_blank" rel="noopener">Plex</a><a href="https://watch.plex.tv/movie/scream-vi?utm_content=61fd36229847c85e0511ff5f&utm_medium=deeplink&utm_source=" class="source rent" target="_blank" rel="noopener">Plex</a><a href="https://athome.fandango.com/content/browse/details/Scream-VI/2274143" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-VI/2274143" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-VI/2274143" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=Scream+VI%2Bmovie" class="source buy" target="_blank" rel="noopener">YouTube</a><a href="https://tv.apple.com/us/movie/scream-vi/umc.cmc.5fnh2i9j7hj024r3v5hokob6g?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1671150022" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-vi/umc.cmc.5fnh2i9j7hj024r3v5hokob6g?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1671150022" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-vi/umc.cmc.5fnh2i9j7hj024r3v5hokob6g?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1671150022" class="source buy" target="_blank" rel="noopener">AppleTV</a><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg" alt="Paramount Plus" class="source-logo" onerror="this.style.display='none'">Paramount Plus</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg" alt="Paramount Plus Apple TV Channel " class="source-logo" onerror="this.style.display='none'">Paramount Plus Apple TV Channel </span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg" alt="Paramount+ Roku Premium Channel" class="source-logo" onerror="this.style.display='none'">Paramount+ Roku Premium Channel</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg" alt="Spectrum On Demand" class="source-logo" onerror="this.style.display='none'">Spectrum On Demand</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg" alt="Plex" class="source-logo" onerror="this.style.display='none'">Plex</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span></div><div class="data-sources">Data from: watchmode, tmdb</div></div>
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">Scream</span>
+                    <span class="movie-year">(1996)</span>
+                    
+                </div>
+            </div>
+        <div class="streaming-sources"><a href="https://play.hbomax.com/show/8c8ce860-6336-4818-aae1-6e89f49197e0?utm_source=universal_search" class="source subscription" target="_blank" rel="noopener">MAX</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.509e3637-a963-401d-a741-551943e240f9" class="source subscription" target="_blank" rel="noopener">Cinemax (Via Amazon Prime)</a><a href="https://www.hulu.com/watch/a9695dc4-d867-48d7-8529-8ccf33b3aa15" class="source subscription" target="_blank" rel="noopener">HBO (Via Hulu)</a><a href="https://tv.apple.com/us/movie/scream/umc.cmc.3lqkarljab5l2z8ifgezgqjvg?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494596" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream/umc.cmc.3lqkarljab5l2z8ifgezgqjvg?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494596" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream/umc.cmc.3lqkarljab5l2z8ifgezgqjvg?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494596" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://athome.fandango.com/content/browse/details/Scream/397784" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream/397784" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream/397784" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=Scream%2Bmovie" class="source rent" target="_blank" rel="noopener">YouTube</a><a href="https://ondemand.spectrum.net/movies/18852/scream/" class="source rent" target="_blank" rel="noopener">Spectrum On Demand</a><a href="https://ondemand.spectrum.net/movies/18852/scream/" class="source rent" target="_blank" rel="noopener">Spectrum On Demand</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.524e8553-ffd8-413e-aa9c-8b00c60a133c" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.524e8553-ffd8-413e-aa9c-8b00c60a133c" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.plex.tv/movie/scream?utm_content=5d77682d54f42c001f8c3575&utm_medium=deeplink&utm_source=" class="source rent" target="_blank" rel="noopener">Plex</a><a href="https://watch.plex.tv/movie/scream?utm_content=5d77682d54f42c001f8c3575&utm_medium=deeplink&utm_source=" class="source rent" target="_blank" rel="noopener">Plex</a><a href="https://tv.apple.com/us/movie/scream/umc.cmc.3lqkarljab5l2z8ifgezgqjvg?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494596" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream/umc.cmc.3lqkarljab5l2z8ifgezgqjvg?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494596" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream/umc.cmc.3lqkarljab5l2z8ifgezgqjvg?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494596" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://athome.fandango.com/content/browse/details/Scream/397784" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream/397784" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream/397784" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://www.youtube.com/results?search_query=Scream%2Bmovie" class="source buy" target="_blank" rel="noopener">YouTube</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.524e8553-ffd8-413e-aa9c-8b00c60a133c" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.524e8553-ffd8-413e-aa9c-8b00c60a133c" class="source buy" target="_blank" rel="noopener">Amazon</a><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg" alt="HBO Max" class="source-logo" onerror="this.style.display='none'">HBO Max</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg" alt="HBO Max Amazon Channel" class="source-logo" onerror="this.style.display='none'">HBO Max Amazon Channel</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/ohcwolMl8E743CkS8MnhmJKOlRj.jpg" alt="Cinemax Amazon Channel" class="source-logo" onerror="this.style.display='none'">Cinemax Amazon Channel</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/zXCdY4pczONheFCU9GkrMbGI1o5.jpg" alt="Cinemax Apple TV Channel" class="source-logo" onerror="this.style.display='none'">Cinemax Apple TV Channel</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg" alt="Spectrum On Demand" class="source-logo" onerror="this.style.display='none'">Spectrum On Demand</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg" alt="Plex" class="source-logo" onerror="this.style.display='none'">Plex</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span></div><div class="data-sources">Data from: watchmode, tmdb</div></div>
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">Scream 2</span>
+                    <span class="movie-year">(1997)</span>
+                    
+                </div>
+            </div>
+        <div class="streaming-sources"><a href="https://play.hbomax.com/show/a2b94dfc-5fcc-4ea8-85c1-7ebb2db29ee5?utm_source=universal_search" class="source subscription" target="_blank" rel="noopener">MAX</a><a href="https://www.hulu.com/watch/6c437ce3-665c-4169-b073-3fc379ae7d5f" class="source subscription" target="_blank" rel="noopener">HBO (Via Hulu)</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.6ca9f767-38e6-a6a5-81a6-b2db24ada027" class="source subscription" target="_blank" rel="noopener">Cinemax (Via Amazon Prime)</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.6ca9f767-38e6-a6a5-81a6-b2db24ada027" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.6ca9f767-38e6-a6a5-81a6-b2db24ada027" class="source rent" target="_blank" rel="noopener">Amazon</a><a href="https://athome.fandango.com/content/browse/details/Scream-2/12985" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-2/12985" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-2/12985" class="source rent" target="_blank" rel="noopener">VUDU</a><a href="https://tv.apple.com/us/movie/scream-2/umc.cmc.5v3zr4lk7ntx6b2gjgu54tymn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494378" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-2/umc.cmc.5v3zr4lk7ntx6b2gjgu54tymn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494378" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-2/umc.cmc.5v3zr4lk7ntx6b2gjgu54tymn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494378" class="source rent" target="_blank" rel="noopener">AppleTV</a><a href="https://www.youtube.com/results?search_query=Scream+2%2Bmovie" class="source rent" target="_blank" rel="noopener">YouTube</a><a href="https://ondemand.spectrum.net/movies/20341/scream-2/" class="source rent" target="_blank" rel="noopener">Spectrum On Demand</a><a href="https://ondemand.spectrum.net/movies/20341/scream-2/" class="source rent" target="_blank" rel="noopener">Spectrum On Demand</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.6ca9f767-38e6-a6a5-81a6-b2db24ada027" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://watch.amazon.com/detail?gti=amzn1.dv.gti.6ca9f767-38e6-a6a5-81a6-b2db24ada027" class="source buy" target="_blank" rel="noopener">Amazon</a><a href="https://athome.fandango.com/content/browse/details/Scream-2/12985" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-2/12985" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://athome.fandango.com/content/browse/details/Scream-2/12985" class="source buy" target="_blank" rel="noopener">VUDU</a><a href="https://tv.apple.com/us/movie/scream-2/umc.cmc.5v3zr4lk7ntx6b2gjgu54tymn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494378" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-2/umc.cmc.5v3zr4lk7ntx6b2gjgu54tymn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494378" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://tv.apple.com/us/movie/scream-2/umc.cmc.5v3zr4lk7ntx6b2gjgu54tymn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1520494378" class="source buy" target="_blank" rel="noopener">AppleTV</a><a href="https://www.youtube.com/results?search_query=Scream+2%2Bmovie" class="source buy" target="_blank" rel="noopener">YouTube</a><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg" alt="HBO Max" class="source-logo" onerror="this.style.display='none'">HBO Max</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg" alt="HBO Max Amazon Channel" class="source-logo" onerror="this.style.display='none'">HBO Max Amazon Channel</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/ohcwolMl8E743CkS8MnhmJKOlRj.jpg" alt="Cinemax Amazon Channel" class="source-logo" onerror="this.style.display='none'">Cinemax Amazon Channel</span><span class="source subscription"><img src="https://image.tmdb.org/t/p/original/zXCdY4pczONheFCU9GkrMbGI1o5.jpg" alt="Cinemax Apple TV Channel" class="source-logo" onerror="this.style.display='none'">Cinemax Apple TV Channel</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span><span class="source rent"><img src="https://image.tmdb.org/t/p/original/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg" alt="Spectrum On Demand" class="source-logo" onerror="this.style.display='none'">Spectrum On Demand</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg" alt="Amazon Video" class="source-logo" onerror="this.style.display='none'">Amazon Video</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg" alt="Apple TV" class="source-logo" onerror="this.style.display='none'">Apple TV</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" alt="Google Play Movies" class="source-logo" onerror="this.style.display='none'">Google Play Movies</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg" alt="YouTube" class="source-logo" onerror="this.style.display='none'">YouTube</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg" alt="Fandango At Home" class="source-logo" onerror="this.style.display='none'">Fandango At Home</span><span class="source buy"><img src="https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg" alt="Microsoft Store" class="source-logo" onerror="this.style.display='none'">Microsoft Store</span></div><div class="data-sources">Data from: watchmode, tmdb</div></div>
+            </div>
+        </div>
+        
+        </main>
+        
+        <footer class="footer">
+        <div class="last-updated">Last updated: 2025-07-30 00:07:17</div><div class="data-attribution">Streaming data powered by: Watchmode, Tmdb</div>
+            <div>
+                <a href="https://github.com/SerialForBreakfast/TooScaryDidntStream" class="github-link">
+                    View on GitHub
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
