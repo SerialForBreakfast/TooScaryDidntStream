@@ -1,76 +1,112 @@
 {
   "episodes": [
     {
-      "episode_number": 234,
-      "title": "The Strangers: Prey at Night",
-      "air_date": "2024-01-15",
-      "description": "The gang discusses this 2018 horror sequel and its streaming availability",
+      "episode_number": 240,
+      "title": "FINAL DESTINATION: BLOODLINES (LIVE!) with Lisa Gilroy",
+      "air_date": "2024-07-23",
+      "description": "Live episode discussing the latest Final Destination installment with guest Lisa Gilroy",
       "movies": [
         {
-          "title": "The Strangers: Prey at Night ",
-          "year": 2018,
-          "imdb_id": "tt1285009",
+          "title": "Final Destination: Bloodlines",
+          "year": 2024,
+          "imdb_id": "tt21842310",
           "notes": "Main movie discussed in episode"
         },
         {
-          "title": "The Strangers", 
-          "year": 2008,
-          "imdb_id": "tt0482606",
-          "notes": "Referenced as comparison to original"
+          "title": "Final Destination",
+          "year": 2000,
+          "imdb_id": "tt0195714",
+          "notes": "Original movie referenced"
         }
       ]
     },
     {
-      "episode_number": 233,
-      "title": "M3GAN",
-      "air_date": "2024-01-08", 
-      "description": "Horror AI doll movie discussion",
+      "episode_number": 239,
+      "title": "THE RITUAL with Paul F. Tompkins",
+      "air_date": "2024-07-16",
+      "description": "Paul F. Tompkins joins to discuss this horror film about friends in the woods",
       "movies": [
+        {
+          "title": "The Ritual",
+          "year": 2017,
+          "imdb_id": "tt5638642",
+          "notes": "Main movie discussed in episode"
+        }
+      ]
+    },
+    {
+      "episode_number": 238,
+      "title": "M3GAN 2.0",
+      "air_date": "2024-07-09",
+      "description": "The gang discusses the sequel to the killer AI doll movie",
+      "movies": [
+        {
+          "title": "M3GAN 2.0",
+          "year": 2025,
+          "imdb_id": "tt21842310",
+          "notes": "Main movie discussed in episode"
+        },
         {
           "title": "M3GAN",
           "year": 2022,
           "imdb_id": "tt8760708",
-          "notes": "Main movie discussed in episode"
-        },
-        {
-          "title": "Child's Play",
-          "year": 1988,
-          "imdb_id": "tt0094862", 
-          "notes": "Referenced killer doll comparison"
+          "notes": "Original movie referenced"
         }
       ]
     },
     {
-      "episode_number": 232,
-      "title": "Scream VI", 
-      "air_date": "2024-01-01",
-      "description": "Latest Scream franchise entry discussion",
+      "episode_number": 237,
+      "title": "THE EVIL DEAD with Stephen Unckles",
+      "air_date": "2024-07-02",
+      "description": "Stephen Unckles joins to discuss Sam Raimi's 1981 classic horror film",
       "movies": [
         {
-          "title": "Scream VI",
-          "year": 2023,
-          "imdb_id": "tt17663992",
+          "title": "The Evil Dead",
+          "year": 1981,
+          "imdb_id": "tt0083907",
           "notes": "Main movie discussed in episode"
         },
         {
-          "title": "Scream",
-          "year": 1996,
-          "imdb_id": "tt0117571",
-          "notes": "Original movie referenced"
-        },
+          "title": "Evil Dead II",
+          "year": 1987,
+          "imdb_id": "tt0092991",
+          "notes": "Sequel referenced"
+        }
+      ]
+    },
+    {
+      "episode_number": 236,
+      "title": "THE WITCH with Joel Jensen and Caroline Lindy",
+      "air_date": "2024-06-25",
+      "description": "Joel Jensen and Caroline Lindy discuss this atmospheric horror film",
+      "movies": [
         {
-          "title": "Scream 2",
-          "year": 1997, 
-          "imdb_id": "tt0120082",
-          "notes": "Sequel comparison"
+          "title": "The Witch",
+          "year": 2015,
+          "imdb_id": "tt4263482",
+          "notes": "Main movie discussed in episode"
+        }
+      ]
+    },
+    {
+      "episode_number": 235,
+      "title": "MIDSOMMAR",
+      "air_date": "2024-06-18",
+      "description": "The very first episode discussing Ari Aster's folk horror masterpiece",
+      "movies": [
+        {
+          "title": "Midsommar",
+          "year": 2019,
+          "imdb_id": "tt8772262",
+          "notes": "Main movie discussed in episode"
         }
       ]
     }
   ],
   "metadata": {
     "podcast_name": "Too Scary; Didn't Watch",
-    "last_updated": "2024-01-29",
-    "total_episodes": 3,
+    "last_updated": "2024-07-29",
+    "total_episodes": 6,
     "data_format_version": "1.0",
     "justwatch_locale": "en_US"
   }
