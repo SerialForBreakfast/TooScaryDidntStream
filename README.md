@@ -3,6 +3,17 @@
 
 A tool to help find where to stream movies mentioned in the *Too Scary; Didn't Watch* podcast.
 
+### Official TSDW Links
+- 🎙️ [Official Website](https://2scarydidntwatch.com)
+- 🍎 [Apple Podcasts](https://podcasts.apple.com/us/podcast/too-scary-didnt-watch/id1476552025)
+- 💚 [Spotify](https://open.spotify.com/show/0m7qJtF2wqJXqEHwkZzNK7)
+- 🎥 [YouTube](https://www.youtube.com/@TooScaryDidntWatch)
+- 🐦 [Twitter/X](https://twitter.com/2scarypodcast)
+- 📸 [Instagram](https://www.instagram.com/tooscarydidntwatch)
+- 💜 [Twitch](https://www.twitch.tv/tooscarydidntwatch)
+- ⭐ [Patreon](https://www.patreon.com/tooscarydidntwatch)
+
+
 ## Live Site
 **[https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html](https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html)** - Live site automatically updated via GitHub Actions
 
@@ -133,6 +144,19 @@ python scripts/fetch_streaming_info.py
 python scripts/generate_html.py
 ```
 
+### 7. Create Pull Requests
+
+```bash
+# Generate PR summary with change analysis
+python scripts/generate_pr_summary.py
+```
+
+This will create a comprehensive PR summary with:
+- Links to production and staging sites
+- Before/after comparison
+- Detailed change analysis
+- Testing instructions
+
 ### 5. View Results
 
 - Streaming data will be saved to `data/streaming_data.json`
@@ -240,4 +264,16 @@ For detailed setup instructions, see: **[Deployment Guide](docs/DEPLOYMENT.md)**
 
 MIT License - see LICENSE file for details.
 
+## Non-Commercial Statu
+- No monetization
+- No ads
+- No tracking
+- Pure fan resource
+
+**Project Creator**: 
+- Email: [j<!-- -->oe<!-- -->@sh<!-- -->owblen<!-- -->der.com](mailto:joe@showblender.com)
+- GitHub: [@SerialForBreakfast](https://github.com/SerialForBreakfast)
+
+## TS;DW Creators
+ - This was just for fun to learn some new code and to share with your other fans.  If you want ownership or changes just let me know and It'll be done.  Love the show.
 ---
