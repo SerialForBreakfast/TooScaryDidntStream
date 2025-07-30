@@ -1,5 +1,5 @@
 name: staging
-url: https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+url: https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-{PR_NUMBER}/
 protection_rules:
   - required_reviewers:
       users: []

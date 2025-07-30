@@ -10,7 +10,7 @@ assignees: ''
 
 ### Current Site
 - **Production:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
-- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-{PR_NUMBER}/
 
 ### Problem Statement
 [Describe the problem you're trying to solve]

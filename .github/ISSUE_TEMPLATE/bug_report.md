@@ -10,7 +10,7 @@ assignees: ''
 
 ### Current Site
 - **Production:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
-- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-{PR_NUMBER}/
 
 ### Bug Description
 [Provide a clear and concise description of the bug]
