@@ -164,6 +164,39 @@ class HTMLGenerator:
                     <div class="search-icon">🔍</div>
                 </div>
             </div>
+            
+            <div class="filter-section">
+                <h4>Streaming Filters</h4>
+                <div class="streaming-filter">
+                    <label>Show movies available on:</label>
+                    <div class="service-checkboxes">
+                        <label class="checkbox-item">
+                            <input type="checkbox" value="netflix" checked> Netflix
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" value="hbo" checked> HBO Max
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" value="tubi" checked> Tubi
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" value="amazon" checked> Amazon
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" value="itunes" checked> iTunes
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" value="google" checked> Google Play
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" value="pluto" checked> Pluto TV
+                        </label>
+                    </div>
+                    <button id="apply-filter" class="filter-button">Apply Filter</button>
+                    <button id="clear-filter" class="filter-button secondary">Clear All</button>
+                </div>
+            </div>
+            
             <div class="episode-list" id="episode-list">
         '''
         
@@ -423,6 +456,74 @@ class HTMLGenerator:
 
         .episode-list {
             padding: 0;
+        }
+
+        .filter-section {
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            background: #f8f9fa;
+        }
+
+        .filter-section h4 {
+            margin-bottom: 15px;
+            color: #495057;
+            font-size: 1rem;
+        }
+
+        .streaming-filter {
+            margin-bottom: 15px;
+        }
+
+        .streaming-filter label {
+            display: block;
+            margin-bottom: 10px;
+            color: #495057;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .service-checkboxes {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #495057;
+            cursor: pointer;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .filter-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .filter-button:hover {
+            background: #0056b3;
+        }
+
+        .filter-button.secondary {
+            background: #6c757d;
+        }
+
+        .filter-button.secondary:hover {
+            background: #545b62;
         }
 
         .letter-section {
@@ -854,6 +955,86 @@ class HTMLGenerator:
                     episode.style.transition = 'all 0.3s ease';
                 });
             };
+
+            // Streaming filter functionality
+            const applyFilterBtn = document.getElementById('apply-filter');
+            const clearFilterBtn = document.getElementById('clear-filter');
+            const serviceCheckboxes = document.querySelectorAll('.service-checkboxes input[type="checkbox"]');
+
+            function filterByStreamingServices() {
+                const selectedServices = Array.from(serviceCheckboxes)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value.toLowerCase());
+
+                const episodes = document.querySelectorAll('.episode');
+                
+                episodes.forEach(episode => {
+                    const movies = episode.querySelectorAll('.movie');
+                    let hasVisibleMovies = false;
+
+                    movies.forEach(movie => {
+                        const streamingSources = movie.querySelectorAll('.source');
+                        let hasSelectedService = false;
+
+                        streamingSources.forEach(source => {
+                            const sourceText = source.textContent.toLowerCase();
+                            const hasService = selectedServices.some(service => {
+                                const serviceMap = {
+                                    'netflix': 'netflix',
+                                    'hbo': 'hbo',
+                                    'tubi': 'tubi',
+                                    'amazon': 'amazon',
+                                    'itunes': 'itunes',
+                                    'google': 'google play',
+                                    'pluto': 'pluto'
+                                };
+                                return sourceText.includes(serviceMap[service] || service);
+                            });
+
+                            if (hasService) {
+                                hasSelectedService = true;
+                            }
+                        });
+
+                        if (hasSelectedService) {
+                            movie.style.display = 'block';
+                            hasVisibleMovies = true;
+                        } else {
+                            movie.style.display = 'none';
+                        }
+                    });
+
+                    // Show/hide episode based on whether it has visible movies
+                    if (hasVisibleMovies) {
+                        episode.style.display = 'block';
+                    } else {
+                        episode.style.display = 'none';
+                    }
+                });
+            }
+
+            function clearStreamingFilter() {
+                // Reset all checkboxes to checked
+                serviceCheckboxes.forEach(checkbox => {
+                    checkbox.checked = true;
+                });
+
+                // Show all episodes and movies
+                const episodes = document.querySelectorAll('.episode');
+                const movies = document.querySelectorAll('.movie');
+                
+                episodes.forEach(episode => {
+                    episode.style.display = 'block';
+                });
+                
+                movies.forEach(movie => {
+                    movie.style.display = 'block';
+                });
+            }
+
+            // Event listeners
+            applyFilterBtn.addEventListener('click', filterByStreamingServices);
+            clearFilterBtn.addEventListener('click', clearStreamingFilter);
         });
         </script>
         '''
