@@ -83,13 +83,16 @@ Completed: 2024-01-29 - Created GitHub Pages deployment configuration in workflo
 ## MVP 3: Site Polish and Resilience
 
 ### Task 6: Improve HTML Display
-Status: Open
+Status: Completed
 Description: Enhance the static HTML with basic CSS styles and layout.
 User Story: As a user, I want the movie tracker to be visually clean and easy to navigate.
 Acceptance Criteria:
 - HTML output includes inline or linked CSS
 - Posters, provider logos, and cleaner layout for stream links
+- Streaming sources organized by type (FREE, SUBSCRIPTION, RENT, BUY)
+- Clear section labels and improved visual hierarchy
 Dependencies: Task 3
+Completed: 2025-07-29 - Implemented sectioned streaming display with priority sorting and clear labels
 
 ---
 
@@ -146,19 +149,49 @@ Completed: 2024-01-29 - Full project structure and documentation
 
 ---
 
+### Task 11: Comprehensive Data Population and Cleanup
+Status: Completed
+Description: Populate movies.json with complete podcast episode data and clean up the dataset.
+User Story: As a user, I want access to the complete podcast catalog with accurate movie information.
+Acceptance Criteria:
+- All 343 episodes from podcast history included
+- No duplicate episodes
+- Proper episode references and sequential numbering
+- Sorted from oldest to newest
+- Correct movie titles and release years
+Dependencies: Task 1 completed
+Completed: 2025-07-29 - Extracted 340 episodes from HTML, cleaned duplicates, fixed titles/years, sorted chronologically
+
+---
+
+### Task 12: API Optimization and Rate Limit Management
+Status: Completed
+Description: Implement Phase 1 API optimization strategy to stay within free tier limits.
+User Story: As a maintainer, I want to ensure the project stays within API free tier limits while maintaining fresh data.
+Acceptance Criteria:
+- TMDB-only approach implemented
+- Smart incremental updates with 7-day caching
+- Daily incremental updates and weekly full refresh schedule
+- API usage monitoring and logging
+- Mock testing framework for development
+Dependencies: Task 2 completed
+Completed: 2025-07-29 - Implemented TMDB-only streaming fetcher with incremental updates, updated GitHub Actions schedule, created test framework
+
+---
+
 ## Future Enhancements
 
-### Task 11: Auto-extract Movie Titles
+### Task 13: Auto-extract Movie Titles
 Status: Open
 Description: Auto-extract movie titles from podcast transcripts (via Whisper or LLMs)
 Dependencies: MVP 1-3 completion
 
-### Task 12: Filtering and Search Features
+### Task 14: Filtering and Search Features
 Status: Open
 Description: Allow filtering by genre or provider, add search UI or sort controls to HTML
 Dependencies: Task 3, Task 6
 
-### Task 13: Enhanced Movie Metadata
+### Task 15: Enhanced Movie Metadata
 Status: Open
 Description: Add movie posters, ratings, cast, and additional metadata to enhance user experience
 Dependencies: Task 3, Task 6
@@ -167,24 +200,28 @@ Dependencies: Task 3, Task 6
 
 ## Summary
 
-Overall Progress: 8/8 core tasks completed (100%)
+Overall Progress: 10/10 core tasks completed (100%)
 
-Completed (8):
+Completed (10):
 - Task 1: Define Initial Movie Data
 - Task 2: Fetch Streaming Info (with API pivot)
 - Task 3: Generate HTML Output Page
 - Task 4: GitHub Actions Workflow
 - Task 5: GitHub Pages Hosting
+- Task 6: Improve HTML Display
 - Task 7: Provider Name Mapping
 - Task 8: Handle Missing Results
 - Task 9: Security and API Key Management
 - Task 10: Project Setup and Documentation
+- Task 11: Comprehensive Data Population and Cleanup
+- Task 12: API Optimization and Rate Limit Management
 
 In Progress (0):
 - None
 
 Open (3):
-- Task 6: Improve HTML Display
-- Task 11-13: Future enhancements
+- Task 13: Auto-extract Movie Titles
+- Task 14: Filtering and Search Features
+- Task 15: Enhanced Movie Metadata
 
-Next Priority: MVP functionality is complete! Ready for deployment and testing with API keys.
+Next Priority: All MVP tasks completed! Ready for deployment and testing with API keys.

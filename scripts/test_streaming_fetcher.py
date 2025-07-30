@@ -1,23 +1,13 @@
 #!/usr/bin/env python3
 """
-Fetch streaming information for movies mentioned in podcast episodes.
-
-This script reads from data/movies.json and fetches streaming availability
-using TMDB API with smart incremental updates and caching. Results are saved to
-data/streaming_data.json.
-
-Required environment variables:
-- TMDB_API_KEY: API key from https://www.themoviedb.org/settings/api
-
-Usage:
-    python scripts/fetch_streaming_info.py
+Test version of the streaming fetcher with mock data.
+This script tests the incremental update logic without requiring API keys.
 """
 
 import json
 import os
 import sys
 import time
-import requests
 from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta
 import logging
@@ -30,18 +20,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-class StreamingInfoFetcher:
-    """Fetches streaming availability data for movies with smart caching."""
+class TestStreamingInfoFetcher:
+    """Test version with mock data to validate incremental update logic."""
     
     def __init__(self):
-        self.tmdb_api_key = os.getenv('TMDB_API_KEY')
-        
-        if not self.tmdb_api_key:
-            logger.error("TMDB_API_KEY not found. Please set the environment variable.")
-            sys.exit(1)
-            
-        self.tmdb_base_url = "https://api.themoviedb.org/3"
-        
         # Rate limiting for TMDB (50 requests/second)
         self.last_request_time = 0
         self.min_request_interval = 0.02  # 20ms between requests (50 req/sec)
@@ -62,104 +44,61 @@ class StreamingInfoFetcher:
             
         self.last_request_time = time.time()
     
-    def search_movie_tmdb(self, title: str, year: int) -> Optional[Dict[str, Any]]:
-        """Search for a movie using TMDB API."""
+    def create_mock_streaming_data(self, movie_title: str, year: int) -> Dict[str, Any]:
+        """Create mock streaming data for testing."""
         self._rate_limit()
         
-        try:
-            params = {
-                'api_key': self.tmdb_api_key,
-                'query': title,
-                'year': year
-            }
-            
-            url = f"{self.tmdb_base_url}/search/movie"
-            response = requests.get(url, params=params, timeout=10)
-            response.raise_for_status()
-            
-            data = response.json()
-            results = data.get('results', [])
-            
-            if results:
-                # Return the first (best) match
-                movie = results[0]
-                logger.info(f"Found {title} ({year}) on TMDB: ID {movie['id']}")
-                return movie
-            else:
-                logger.warning(f"No results found for {title} ({year}) on TMDB")
-                return None
-                
-        except requests.RequestException as e:
-            logger.error(f"TMDB search failed for {title}: {e}")
-            return None
-    
-    def get_watch_providers_tmdb(self, tmdb_id: int) -> List[Dict[str, Any]]:
-        """Get watch providers for a movie from TMDB."""
-        self._rate_limit()
+        # Simulate API delay
+        time.sleep(0.1)
         
-        try:
-            params = {
-                'api_key': self.tmdb_api_key,
-                'watch_region': 'US'
-            }
-            
-            url = f"{self.tmdb_base_url}/movie/{tmdb_id}/watch/providers"
-            response = requests.get(url, params=params, timeout=10)
-            response.raise_for_status()
-            
-            data = response.json()
-            results = data.get('results', {})
-            us_providers = results.get('US', {})
-            
-            # Extract streaming sources
-            streaming_sources = []
-            
-            # Free sources
-            for provider in us_providers.get('free', []):
-                streaming_sources.append({
-                    'name': provider.get('provider_name', 'Unknown'),
-                    'type': 'free',
-                    'region': 'US',
-                    'web_url': f"https://www.themoviedb.org/movie/{tmdb_id}/watch",
-                    'logo_url': f"https://image.tmdb.org/t/p/original{provider.get('logo_path', '')}"
-                })
-            
-            # Subscription sources
-            for provider in us_providers.get('flatrate', []):
-                streaming_sources.append({
-                    'name': provider.get('provider_name', 'Unknown'),
+        # Create mock streaming sources
+        streaming_sources = []
+        
+        # Add some mock providers based on movie type
+        if "horror" in movie_title.lower() or year < 2000:
+            streaming_sources.extend([
+                {
+                    'name': 'Shudder',
                     'type': 'subscription',
                     'region': 'US',
-                    'web_url': f"https://www.themoviedb.org/movie/{tmdb_id}/watch",
-                    'logo_url': f"https://image.tmdb.org/t/p/original{provider.get('logo_path', '')}"
-                })
-            
-            # Rent sources
-            for provider in us_providers.get('rent', []):
-                streaming_sources.append({
-                    'name': provider.get('provider_name', 'Unknown'),
-                    'type': 'rent',
+                    'web_url': 'https://www.shudder.com',
+                    'logo_url': 'https://logo.clearbit.com/shudder.com'
+                },
+                {
+                    'name': 'Tubi',
+                    'type': 'free',
                     'region': 'US',
-                    'web_url': f"https://www.themoviedb.org/movie/{tmdb_id}/watch",
-                    'logo_url': f"https://image.tmdb.org/t/p/original{provider.get('logo_path', '')}"
-                })
-            
-            # Buy sources
-            for provider in us_providers.get('buy', []):
-                streaming_sources.append({
-                    'name': provider.get('provider_name', 'Unknown'),
-                    'type': 'buy',
+                    'web_url': 'https://www.tubi.tv',
+                    'logo_url': 'https://logo.clearbit.com/tubi.tv'
+                }
+            ])
+        else:
+            streaming_sources.extend([
+                {
+                    'name': 'Netflix',
+                    'type': 'subscription',
                     'region': 'US',
-                    'web_url': f"https://www.themoviedb.org/movie/{tmdb_id}/watch",
-                    'logo_url': f"https://image.tmdb.org/t/p/original{provider.get('logo_path', '')}"
-                })
-            
-            logger.info(f"Found {len(streaming_sources)} streaming sources for TMDB ID {tmdb_id}")
-            return streaming_sources
-            
-        except requests.RequestException as e:
-            logger.error(f"Failed to get watch providers for TMDB ID {tmdb_id}: {e}")
-            return []
+                    'web_url': 'https://www.netflix.com',
+                    'logo_url': 'https://logo.clearbit.com/netflix.com'
+                },
+                {
+                    'name': 'Amazon Prime',
+                    'type': 'subscription',
+                    'region': 'US',
+                    'web_url': 'https://www.amazon.com',
+                    'logo_url': 'https://logo.clearbit.com/amazon.com'
+                }
+            ])
+        
+        return {
+            "title": movie_title,
+            "year": year,
+            "imdb_id": "",
+            "streaming_sources": streaming_sources,
+            "data_sources": ["mock"],
+            "last_updated": datetime.now().strftime("%Y-%m-%d"),
+            "tmdb_id": f"mock_{hash(movie_title) % 10000}"
+        }
     
     def is_movie_recently_updated(self, movie_title: str, episode_number: int) -> bool:
         """Check if a movie was recently updated (within cache duration)."""
@@ -202,38 +141,6 @@ class StreamingInfoFetcher:
         
         logger.info(f"Found {len(movies_to_update)} movies to update")
         return movies_to_update
-    
-    def fetch_movie_streaming_info(self, movie: Dict[str, Any], episode_number: int) -> Dict[str, Any]:
-        """Fetch streaming information for a single movie."""
-        title = movie.get("title", "Unknown")
-        year = movie.get("year", "")
-        
-        # Search for movie on TMDB
-        tmdb_movie = self.search_movie_tmdb(title, year)
-        
-        if tmdb_movie:
-            tmdb_id = tmdb_movie["id"]
-            streaming_sources = self.get_watch_providers_tmdb(tmdb_id)
-            
-            return {
-                "title": title,
-                "year": year,
-                "imdb_id": movie.get("imdb_id", ""),
-                "streaming_sources": streaming_sources,
-                "data_sources": ["tmdb"],
-                "last_updated": datetime.now().strftime("%Y-%m-%d"),
-                "tmdb_id": tmdb_id
-            }
-        else:
-            logger.warning(f"Could not find streaming data for {title} ({year})")
-            return {
-                "title": title,
-                "year": year,
-                "imdb_id": movie.get("imdb_id", ""),
-                "streaming_sources": [],
-                "data_sources": [],
-                "last_updated": datetime.now().strftime("%Y-%m-%d")
-            }
     
     def load_movies_data(self) -> Dict[str, Any]:
         """Load movies data from JSON file."""
@@ -286,8 +193,8 @@ class StreamingInfoFetcher:
             episode_number = item["episode_number"]
             movie = item["movie"]
             
-            # Fetch new streaming data
-            updated_movie = self.fetch_movie_streaming_info(movie, episode_number)
+            # Create mock streaming data
+            updated_movie = self.create_mock_streaming_data(movie["title"], movie["year"])
             
             # Update or create episode entry
             if episode_number in existing_episodes:
@@ -319,7 +226,7 @@ class StreamingInfoFetcher:
             "podcast_name": "Too Scary; Didn't Watch",
             "last_updated": datetime.now().strftime("%Y-%m-%d"),
             "total_episodes": len(updated_episodes),
-            "apis_used": ["tmdb"],
+            "apis_used": ["mock"],
             "update_strategy": "incremental_with_caching"
         }
         
@@ -328,7 +235,7 @@ class StreamingInfoFetcher:
     
     def run(self):
         """Main execution function."""
-        logger.info("Starting streaming data fetch with smart updates...")
+        logger.info("Starting streaming data fetch with smart updates (TEST MODE)...")
         
         # Load movies data
         self.load_movies_data()
@@ -347,13 +254,13 @@ class StreamingInfoFetcher:
         
         # Log API usage statistics
         total_api_calls = len(movies_to_update) * 2  # 2 calls per movie (search + providers)
-        logger.info(f"API calls made: {total_api_calls}")
+        logger.info(f"Mock API calls made: {total_api_calls}")
         logger.info(f"Remaining daily TMDB calls: {1000 - total_api_calls}")
 
 
 def main():
     """Main entry point."""
-    fetcher = StreamingInfoFetcher()
+    fetcher = TestStreamingInfoFetcher()
     fetcher.run()
 
 

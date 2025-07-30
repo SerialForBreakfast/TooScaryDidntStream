@@ -1,81 +1,4267 @@
 {
   "episodes": [
     {
-      "episode_number": 240,
-      "title": "FINAL DESTINATION: BLOODLINES (LIVE!) with Lisa Gilroy",
-      "air_date": "2024-07-23",
-      "description": "Live episode discussing the latest Final Destination installment with guest Lisa Gilroy",
+      "episode_number": 1,
+      "title": "MIDSOMMAR",
+      "air_date": "2019-01-29",
+      "description": "Episode discussing MIDSOMMAR",
       "movies": [
         {
-          "title": "Final Destination: Bloodlines",
-          "year": 2024,
-          "imdb_id": "tt21842310",
-          "notes": "Main movie discussed in episode"
-        },
-        {
-          "title": "Final Destination",
-          "year": 2000,
-          "imdb_id": "tt0195714",
-          "notes": "Original movie referenced"
+          "title": "Midsommar",
+          "year": 2019,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 1",
+          "episode_reference": 1
         }
       ]
     },
     {
-      "episode_number": 239,
-      "title": "THE RITUAL with Paul F. Tompkins",
-      "air_date": "2024-07-16",
-      "description": "Paul F. Tompkins joins to discuss this horror film about friends in the woods",
+      "episode_number": 2,
+      "title": "THE WITCH with Joel Jensen and Caroline Lindy",
+      "air_date": "2019-02-05",
+      "description": "Episode discussing THE WITCH",
       "movies": [
         {
-          "title": "The Ritual",
-          "year": 2017,
-          "imdb_id": "tt5638642",
-          "notes": "Main movie discussed in episode"
+          "title": "The Witch",
+          "year": 2015,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 2",
+          "episode_reference": 2
         }
       ]
     },
     {
-      "episode_number": 238,
-      "title": "M3GAN 2.0",
-      "air_date": "2024-07-09",
-      "description": "The gang discusses the sequel to the killer AI doll movie",
-      "movies": [
-        {
-          "title": "M3GAN 2.0",
-          "year": 2025,
-          "imdb_id": "tt21842310",
-          "notes": "Main movie discussed in episode"
-        },
-        {
-          "title": "M3GAN",
-          "year": 2022,
-          "imdb_id": "tt8760708",
-          "notes": "Original movie referenced"
-        }
-      ]
-    },
-    {
-      "episode_number": 237,
+      "episode_number": 3,
       "title": "THE EVIL DEAD with Stephen Unckles",
-      "air_date": "2024-07-02",
-      "description": "Stephen Unckles joins to discuss Sam Raimi's 1981 classic horror film",
+      "air_date": "2019-02-12",
+      "description": "Episode discussing THE EVIL DEAD",
       "movies": [
         {
           "title": "The Evil Dead",
           "year": 1981,
-          "imdb_id": "tt0083907",
-          "notes": "Main movie discussed in episode"
-        },
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 3",
+          "episode_reference": 3
+        }
+      ]
+    },
+    {
+      "episode_number": 4,
+      "title": "IT with William Heus",
+      "air_date": "2019-02-19",
+      "description": "Episode discussing IT",
+      "movies": [
         {
-          "title": "Evil Dead II",
-          "year": 1987,
-          "imdb_id": "tt0092991",
-          "notes": "Sequel referenced"
+          "title": "It",
+          "year": 2017,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 4",
+          "episode_reference": 4
+        }
+      ]
+    },
+    {
+      "episode_number": 5,
+      "title": "IT CHAPTER TWO",
+      "air_date": "2019-02-26",
+      "description": "Episode discussing IT CHAPTER TWO",
+      "movies": [
+        {
+          "title": "It Chapter Two",
+          "year": 2019,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 5",
+          "episode_reference": 5
+        }
+      ]
+    },
+    {
+      "episode_number": 6,
+      "title": "EVENT HORIZON with Evan Sinclair",
+      "air_date": "2019-03-05",
+      "description": "Episode discussing EVENT HORIZON",
+      "movies": [
+        {
+          "title": "EVENT HORIZON",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 6",
+          "episode_reference": 6
+        }
+      ]
+    },
+    {
+      "episode_number": 7,
+      "title": "PARANORMAL ACTIVITY with Jessica Jardine",
+      "air_date": "2019-03-12",
+      "description": "Episode discussing PARANORMAL ACTIVITY",
+      "movies": [
+        {
+          "title": "PARANORMAL ACTIVITY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 7",
+          "episode_reference": 7
+        }
+      ]
+    },
+    {
+      "episode_number": 8,
+      "title": "THE TEXAS CHAINSAW MASSACRE with Andy Knauer",
+      "air_date": "2019-03-19",
+      "description": "Episode discussing THE TEXAS CHAINSAW MASSACRE",
+      "movies": [
+        {
+          "title": "THE TEXAS CHAINSAW MASSACRE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 8",
+          "episode_reference": 8
+        }
+      ]
+    },
+    {
+      "episode_number": 9,
+      "title": "28 DAYS LATER with Dan Lippert",
+      "air_date": "2019-03-26",
+      "description": "Episode discussing 28 DAYS LATER",
+      "movies": [
+        {
+          "title": "28 DAYS LATER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 9",
+          "episode_reference": 9
+        }
+      ]
+    },
+    {
+      "episode_number": 10,
+      "title": "THE LIGHTHOUSE",
+      "air_date": "2019-04-02",
+      "description": "Episode discussing THE LIGHTHOUSE",
+      "movies": [
+        {
+          "title": "THE LIGHTHOUSE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 10",
+          "episode_reference": 10
+        }
+      ]
+    },
+    {
+      "episode_number": 11,
+      "title": "THE CONJURING with Betsy Sodaro",
+      "air_date": "2019-04-09",
+      "description": "Episode discussing THE CONJURING",
+      "movies": [
+        {
+          "title": "THE CONJURING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 11",
+          "episode_reference": 11
+        }
+      ]
+    },
+    {
+      "episode_number": 12,
+      "title": "HEREDITARY with George Basil",
+      "air_date": "2019-04-16",
+      "description": "Episode discussing HEREDITARY",
+      "movies": [
+        {
+          "title": "HEREDITARY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 12",
+          "episode_reference": 12
+        }
+      ]
+    },
+    {
+      "episode_number": 13,
+      "title": "THE SHINING with Ginger Gonzaga",
+      "air_date": "2019-04-23",
+      "description": "Episode discussing THE SHINING",
+      "movies": [
+        {
+          "title": "THE SHINING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 13",
+          "episode_reference": 13
+        }
+      ]
+    },
+    {
+      "episode_number": 14,
+      "title": "DOCTOR SLEEP with Dominic Ciccodicola",
+      "air_date": "2019-04-30",
+      "description": "Episode discussing DOCTOR SLEEP",
+      "movies": [
+        {
+          "title": "DOCTOR SLEEP",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 14",
+          "episode_reference": 14
+        }
+      ]
+    },
+    {
+      "episode_number": 15,
+      "title": "SE7EN with Monica Padman",
+      "air_date": "2019-05-07",
+      "description": "Episode discussing SE7EN",
+      "movies": [
+        {
+          "title": "SE7EN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 15",
+          "episode_reference": 15
+        }
+      ]
+    },
+    {
+      "episode_number": 16,
+      "title": "ALIEN with Rex Ogle",
+      "air_date": "2019-05-14",
+      "description": "Episode discussing ALIEN",
+      "movies": [
+        {
+          "title": "ALIEN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 16",
+          "episode_reference": 16
+        }
+      ]
+    },
+    {
+      "episode_number": 17,
+      "title": "THE SILENCE OF THE LAMBS with Marcy Jarreau",
+      "air_date": "2019-05-21",
+      "description": "Episode discussing THE SILENCE OF THE LAMBS",
+      "movies": [
+        {
+          "title": "THE SILENCE OF THE LAMBS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 17",
+          "episode_reference": 17
+        }
+      ]
+    },
+    {
+      "episode_number": 18,
+      "title": "DRAG ME TO HELL with Joel Jensen",
+      "air_date": "2019-05-28",
+      "description": "Episode discussing DRAG ME TO HELL",
+      "movies": [
+        {
+          "title": "DRAG ME TO HELL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 18",
+          "episode_reference": 18
+        }
+      ]
+    },
+    {
+      "episode_number": 19,
+      "title": "KRAMPUS",
+      "air_date": "2019-06-04",
+      "description": "Episode discussing KRAMPUS",
+      "movies": [
+        {
+          "title": "KRAMPUS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 19",
+          "episode_reference": 19
+        }
+      ]
+    },
+    {
+      "episode_number": 20,
+      "title": "JENNIFER'S BODY with William Heus",
+      "air_date": "2019-06-11",
+      "description": "Episode discussing JENNIFER'S BODY",
+      "movies": [
+        {
+          "title": "JENNIFER'S BODY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 20",
+          "episode_reference": 20
+        }
+      ]
+    },
+    {
+      "episode_number": 21,
+      "title": "THE BABADOOK with Stephanie Albala",
+      "air_date": "2019-06-18",
+      "description": "Episode discussing THE BABADOOK",
+      "movies": [
+        {
+          "title": "THE BABADOOK",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 21",
+          "episode_reference": 21
+        }
+      ]
+    },
+    {
+      "episode_number": 22,
+      "title": "THE EXORCIST with Chase McCown",
+      "air_date": "2019-06-25",
+      "description": "Episode discussing THE EXORCIST",
+      "movies": [
+        {
+          "title": "THE EXORCIST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 22",
+          "episode_reference": 22
+        }
+      ]
+    },
+    {
+      "episode_number": 23,
+      "title": "PET SEMATARY with Jonathan Sadowski",
+      "air_date": "2019-07-02",
+      "description": "Episode discussing PET SEMATARY",
+      "movies": [
+        {
+          "title": "PET SEMATARY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 23",
+          "episode_reference": 23
+        }
+      ]
+    },
+    {
+      "episode_number": 24,
+      "title": "THE RING with Aaron Burdette",
+      "air_date": "2019-07-09",
+      "description": "Episode discussing THE RING",
+      "movies": [
+        {
+          "title": "THE RING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 24",
+          "episode_reference": 24
+        }
+      ]
+    },
+    {
+      "episode_number": 25,
+      "title": "THE TURNING",
+      "air_date": "2019-07-16",
+      "description": "Episode discussing THE TURNING",
+      "movies": [
+        {
+          "title": "THE TURNING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 25",
+          "episode_reference": 25
+        }
+      ]
+    },
+    {
+      "episode_number": 26,
+      "title": "CAPE FEAR with Kathleen Jordan",
+      "air_date": "2019-07-23",
+      "description": "Episode discussing CAPE FEAR",
+      "movies": [
+        {
+          "title": "CAPE FEAR",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 26",
+          "episode_reference": 26
+        }
+      ]
+    },
+    {
+      "episode_number": 27,
+      "title": "THE LODGE",
+      "air_date": "2019-07-30",
+      "description": "Episode discussing THE LODGE",
+      "movies": [
+        {
+          "title": "THE LODGE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 27",
+          "episode_reference": 27
+        }
+      ]
+    },
+    {
+      "episode_number": 28,
+      "title": "US with Greg Gallant and Broti Gupta",
+      "air_date": "2019-08-06",
+      "description": "Episode discussing US",
+      "movies": [
+        {
+          "title": "US",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 28",
+          "episode_reference": 28
+        }
+      ]
+    },
+    {
+      "episode_number": 29,
+      "title": "IT FOLLOWS with Rebecca Lee Robertson",
+      "air_date": "2019-08-13",
+      "description": "Episode discussing IT FOLLOWS",
+      "movies": [
+        {
+          "title": "IT FOLLOWS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 29",
+          "episode_reference": 29
+        }
+      ]
+    },
+    {
+      "episode_number": 30,
+      "title": "30 DAYS OF NIGHT with Eugene Cordero",
+      "air_date": "2019-08-20",
+      "description": "Episode discussing 30 DAYS OF NIGHT",
+      "movies": [
+        {
+          "title": "30 DAYS OF NIGHT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 30",
+          "episode_reference": 30
+        }
+      ]
+    },
+    {
+      "episode_number": 31,
+      "title": "A QUIET PLACE",
+      "air_date": "2019-08-27",
+      "description": "Episode discussing A QUIET PLACE",
+      "movies": [
+        {
+          "title": "A QUIET PLACE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 31",
+          "episode_reference": 31
+        }
+      ]
+    },
+    {
+      "episode_number": 32,
+      "title": "10 CLOVERFIELD LANE",
+      "air_date": "2019-09-03",
+      "description": "Episode discussing 10 CLOVERFIELD LANE",
+      "movies": [
+        {
+          "title": "10 CLOVERFIELD LANE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 32",
+          "episode_reference": 32
+        }
+      ]
+    },
+    {
+      "episode_number": 33,
+      "title": "THE STRANGERS",
+      "air_date": "2019-09-10",
+      "description": "Episode discussing THE STRANGERS",
+      "movies": [
+        {
+          "title": "THE STRANGERS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 33",
+          "episode_reference": 33
+        }
+      ]
+    },
+    {
+      "episode_number": 34,
+      "title": "THE THING",
+      "air_date": "2019-09-17",
+      "description": "Episode discussing THE THING",
+      "movies": [
+        {
+          "title": "THE THING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 34",
+          "episode_reference": 34
+        }
+      ]
+    },
+    {
+      "episode_number": 35,
+      "title": "THE BLAIR WITCH PROJECT",
+      "air_date": "2019-09-24",
+      "description": "Episode discussing THE BLAIR WITCH PROJECT",
+      "movies": [
+        {
+          "title": "THE BLAIR WITCH PROJECT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 35",
+          "episode_reference": 35
+        }
+      ]
+    },
+    {
+      "episode_number": 36,
+      "title": "MANDY",
+      "air_date": "2019-10-01",
+      "description": "Episode discussing MANDY",
+      "movies": [
+        {
+          "title": "MANDY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 36",
+          "episode_reference": 36
+        }
+      ]
+    },
+    {
+      "episode_number": 37,
+      "title": "INSIDIOUS",
+      "air_date": "2019-10-08",
+      "description": "Episode discussing INSIDIOUS",
+      "movies": [
+        {
+          "title": "INSIDIOUS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 37",
+          "episode_reference": 37
+        }
+      ]
+    },
+    {
+      "episode_number": 38,
+      "title": "THE CABIN IN THE WOODS",
+      "air_date": "2019-10-15",
+      "description": "Episode discussing THE CABIN IN THE WOODS",
+      "movies": [
+        {
+          "title": "THE CABIN IN THE WOODS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 38",
+          "episode_reference": 38
+        }
+      ]
+    },
+    {
+      "episode_number": 39,
+      "title": "HALLOWEEN",
+      "air_date": "2019-10-22",
+      "description": "Episode discussing HALLOWEEN",
+      "movies": [
+        {
+          "title": "HALLOWEEN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 39",
+          "episode_reference": 39
+        }
+      ]
+    },
+    {
+      "episode_number": 40,
+      "title": "TRAIN TO BUSAN with Joel Jensen",
+      "air_date": "2019-10-29",
+      "description": "Episode discussing TRAIN TO BUSAN",
+      "movies": [
+        {
+          "title": "TRAIN TO BUSAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 40",
+          "episode_reference": 40
+        }
+      ]
+    },
+    {
+      "episode_number": 41,
+      "title": "ROSEMARY'S BABY",
+      "air_date": "2019-11-05",
+      "description": "Episode discussing ROSEMARY'S BABY",
+      "movies": [
+        {
+          "title": "ROSEMARY'S BABY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 41",
+          "episode_reference": 41
+        }
+      ]
+    },
+    {
+      "episode_number": 42,
+      "title": "READY OR NOT",
+      "air_date": "2019-11-12",
+      "description": "Episode discussing READY OR NOT",
+      "movies": [
+        {
+          "title": "READY OR NOT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 42",
+          "episode_reference": 42
+        }
+      ]
+    },
+    {
+      "episode_number": 43,
+      "title": "THE DESCENT",
+      "air_date": "2019-11-19",
+      "description": "Episode discussing THE DESCENT",
+      "movies": [
+        {
+          "title": "THE DESCENT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 43",
+          "episode_reference": 43
+        }
+      ]
+    },
+    {
+      "episode_number": 44,
+      "title": "SCREAM",
+      "air_date": "2019-11-26",
+      "description": "Episode discussing SCREAM",
+      "movies": [
+        {
+          "title": "SCREAM",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 44",
+          "episode_reference": 44
+        }
+      ]
+    },
+    {
+      "episode_number": 45,
+      "title": "THE ORPHANAGE with Mano Agapion",
+      "air_date": "2019-12-03",
+      "description": "Episode discussing THE ORPHANAGE",
+      "movies": [
+        {
+          "title": "THE ORPHANAGE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 45",
+          "episode_reference": 45
+        }
+      ]
+    },
+    {
+      "episode_number": 46,
+      "title": "EVE'S BAYOU",
+      "air_date": "2019-12-10",
+      "description": "Episode discussing EVE'S BAYOU",
+      "movies": [
+        {
+          "title": "EVE'S BAYOU",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 46",
+          "episode_reference": 46
+        }
+      ]
+    },
+    {
+      "episode_number": 47,
+      "title": "THE CONJURING 2 with Betsy Sodaro",
+      "air_date": "2019-12-17",
+      "description": "Episode discussing THE CONJURING 2",
+      "movies": [
+        {
+          "title": "THE CONJURING 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 47",
+          "episode_reference": 47
+        }
+      ]
+    },
+    {
+      "episode_number": 48,
+      "title": "THE CRAFT",
+      "air_date": "2019-12-24",
+      "description": "Episode discussing THE CRAFT",
+      "movies": [
+        {
+          "title": "THE CRAFT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 48",
+          "episode_reference": 48
+        }
+      ]
+    },
+    {
+      "episode_number": 49,
+      "title": "TALES FROM THE HOOD with Carl Tart",
+      "air_date": "2019-12-31",
+      "description": "Episode discussing TALES FROM THE HOOD",
+      "movies": [
+        {
+          "title": "TALES FROM THE HOOD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 49",
+          "episode_reference": 49
+        }
+      ]
+    },
+    {
+      "episode_number": 50,
+      "title": "SINISTER",
+      "air_date": "2020-01-07",
+      "description": "Episode discussing SINISTER",
+      "movies": [
+        {
+          "title": "SINISTER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 50",
+          "episode_reference": 50
+        }
+      ]
+    },
+    {
+      "episode_number": 51,
+      "title": "THE RENTAL",
+      "air_date": "2020-01-14",
+      "description": "Episode discussing THE RENTAL",
+      "movies": [
+        {
+          "title": "THE RENTAL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 51",
+          "episode_reference": 51
+        }
+      ]
+    },
+    {
+      "episode_number": 52,
+      "title": "RELIC with Peach &amp; Shag of Spooko",
+      "air_date": "2020-01-21",
+      "description": "Episode discussing RELIC",
+      "movies": [
+        {
+          "title": "RELIC",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 52",
+          "episode_reference": 52
+        }
+      ]
+    },
+    {
+      "episode_number": 53,
+      "title": "HELLRAISER",
+      "air_date": "2020-01-28",
+      "description": "Episode discussing HELLRAISER",
+      "movies": [
+        {
+          "title": "HELLRAISER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 53",
+          "episode_reference": 53
+        }
+      ]
+    },
+    {
+      "episode_number": 54,
+      "title": "A NIGHTMARE ON ELM STREET with Peter Lozano and Scott Youngbauer",
+      "air_date": "2020-02-04",
+      "description": "Episode discussing A NIGHTMARE ON ELM STREET",
+      "movies": [
+        {
+          "title": "A NIGHTMARE ON ELM STREET",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 54",
+          "episode_reference": 54
+        }
+      ]
+    },
+    {
+      "episode_number": 55,
+      "title": "HOST (2020)",
+      "air_date": "2020-02-11",
+      "description": "Episode discussing HOST",
+      "movies": [
+        {
+          "title": "HOST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 55",
+          "episode_reference": 55
+        }
+      ]
+    },
+    {
+      "episode_number": 56,
+      "title": "APOSTLE",
+      "air_date": "2020-02-18",
+      "description": "Episode discussing APOSTLE",
+      "movies": [
+        {
+          "title": "APOSTLE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 56",
+          "episode_reference": 56
+        }
+      ]
+    },
+    {
+      "episode_number": 57,
+      "title": "TENEBRAE with Peter Banifaz",
+      "air_date": "2020-02-25",
+      "description": "Episode discussing TENEBRAE",
+      "movies": [
+        {
+          "title": "TENEBRAE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 57",
+          "episode_reference": 57
+        }
+      ]
+    },
+    {
+      "episode_number": 58,
+      "title": "THE INVISIBLE MAN",
+      "air_date": "2020-03-03",
+      "description": "Episode discussing THE INVISIBLE MAN",
+      "movies": [
+        {
+          "title": "THE INVISIBLE MAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 58",
+          "episode_reference": 58
+        }
+      ]
+    },
+    {
+      "episode_number": 59,
+      "title": "POLTERGEIST",
+      "air_date": "2020-03-10",
+      "description": "Episode discussing POLTERGEIST",
+      "movies": [
+        {
+          "title": "POLTERGEIST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 59",
+          "episode_reference": 59
+        }
+      ]
+    },
+    {
+      "episode_number": 60,
+      "title": "THE ABYSS",
+      "air_date": "2020-03-17",
+      "description": "Episode discussing THE ABYSS",
+      "movies": [
+        {
+          "title": "THE ABYSS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 60",
+          "episode_reference": 60
+        }
+      ]
+    },
+    {
+      "episode_number": 61,
+      "title": "PARANORMAL ACTIVITY 2",
+      "air_date": "2020-03-24",
+      "description": "Episode discussing PARANORMAL ACTIVITY 2",
+      "movies": [
+        {
+          "title": "PARANORMAL ACTIVITY 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 61",
+          "episode_reference": 61
+        }
+      ]
+    },
+    {
+      "episode_number": 62,
+      "title": "SAW with Joel Jensen",
+      "air_date": "2020-03-31",
+      "description": "Episode discussing SAW",
+      "movies": [
+        {
+          "title": "SAW",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 62",
+          "episode_reference": 62
+        }
+      ]
+    },
+    {
+      "episode_number": 63,
+      "title": "Bonus Episode: THE SIXTH SENSE",
+      "air_date": "2020-04-07",
+      "description": "Episode discussing Bonus Episode: THE SIXTH SENSE",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE SIXTH SENSE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 63",
+          "episode_reference": 63
+        }
+      ]
+    },
+    {
+      "episode_number": 64,
+      "title": "THE PURGE",
+      "air_date": "2020-04-14",
+      "description": "Episode discussing THE PURGE",
+      "movies": [
+        {
+          "title": "THE PURGE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 64",
+          "episode_reference": 64
+        }
+      ]
+    },
+    {
+      "episode_number": 65,
+      "title": "ATTACK THE BLOCK",
+      "air_date": "2020-04-21",
+      "description": "Episode discussing ATTACK THE BLOCK",
+      "movies": [
+        {
+          "title": "ATTACK THE BLOCK",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 65",
+          "episode_reference": 65
+        }
+      ]
+    },
+    {
+      "episode_number": 66,
+      "title": "MAMA with Jessica Jean Jardine",
+      "air_date": "2020-04-28",
+      "description": "Episode discussing MAMA",
+      "movies": [
+        {
+          "title": "MAMA",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 66",
+          "episode_reference": 66
+        }
+      ]
+    },
+    {
+      "episode_number": 67,
+      "title": "Bonus Episode: Q&amp;A",
+      "air_date": "2020-05-05",
+      "description": "Episode discussing Bonus Episode: Q&amp;A",
+      "movies": [
+        {
+          "title": "Bonus Episode: Q&amp;A",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 67",
+          "episode_reference": 67
+        }
+      ]
+    },
+    {
+      "episode_number": 68,
+      "title": "POSSESSOR",
+      "air_date": "2020-05-12",
+      "description": "Episode discussing POSSESSOR",
+      "movies": [
+        {
+          "title": "POSSESSOR",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 68",
+          "episode_reference": 68
+        }
+      ]
+    },
+    {
+      "episode_number": 69,
+      "title": "[REC]",
+      "air_date": "2020-05-19",
+      "description": "Episode discussing [REC]",
+      "movies": [
+        {
+          "title": "[REC]",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 69",
+          "episode_reference": 69
+        }
+      ]
+    },
+    {
+      "episode_number": 70,
+      "title": "COLOR OUT OF SPACE",
+      "air_date": "2020-05-26",
+      "description": "Episode discussing COLOR OUT OF SPACE",
+      "movies": [
+        {
+          "title": "COLOR OUT OF SPACE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 70",
+          "episode_reference": 70
+        }
+      ]
+    },
+    {
+      "episode_number": 71,
+      "title": "BLACK CHRISTMAS",
+      "air_date": "2020-06-02",
+      "description": "Episode discussing BLACK CHRISTMAS",
+      "movies": [
+        {
+          "title": "BLACK CHRISTMAS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 71",
+          "episode_reference": 71
+        }
+      ]
+    },
+    {
+      "episode_number": 72,
+      "title": "THE INVITATION",
+      "air_date": "2020-06-09",
+      "description": "Episode discussing THE INVITATION",
+      "movies": [
+        {
+          "title": "THE INVITATION",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 72",
+          "episode_reference": 72
+        }
+      ]
+    },
+    {
+      "episode_number": 73,
+      "title": "Bonus Episode: ANNIHILATION",
+      "air_date": "2020-06-16",
+      "description": "Episode discussing Bonus Episode: ANNIHILATION",
+      "movies": [
+        {
+          "title": "Bonus Episode: ANNIHILATION",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 73",
+          "episode_reference": 73
+        }
+      ]
+    },
+    {
+      "episode_number": 74,
+      "title": "HIS HOUSE",
+      "air_date": "2020-06-23",
+      "description": "Episode discussing HIS HOUSE",
+      "movies": [
+        {
+          "title": "HIS HOUSE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 74",
+          "episode_reference": 74
+        }
+      ]
+    },
+    {
+      "episode_number": 75,
+      "title": "FUNNY GAMES",
+      "air_date": "2020-06-30",
+      "description": "Episode discussing FUNNY GAMES",
+      "movies": [
+        {
+          "title": "FUNNY GAMES",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 75",
+          "episode_reference": 75
+        }
+      ]
+    },
+    {
+      "episode_number": 76,
+      "title": "BONUS: History of Horror - Slashers",
+      "air_date": "2020-07-07",
+      "description": "Episode discussing BONUS: History of Horror - Slashers",
+      "movies": [
+        {
+          "title": "BONUS: History of Horror - Slashers",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 76",
+          "episode_reference": 76
+        }
+      ]
+    },
+    {
+      "episode_number": 77,
+      "title": "THE RITUAL",
+      "air_date": "2020-07-14",
+      "description": "Episode discussing The Ritual",
+      "movies": [
+        {
+          "title": "The Ritual",
+          "year": 2017,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 77",
+          "episode_reference": 77
+        }
+      ]
+    },
+    {
+      "episode_number": 78,
+      "title": "LET THE RIGHT ONE IN",
+      "air_date": "2020-07-21",
+      "description": "Episode discussing LET THE RIGHT ONE IN",
+      "movies": [
+        {
+          "title": "LET THE RIGHT ONE IN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 78",
+          "episode_reference": 78
+        }
+      ]
+    },
+    {
+      "episode_number": 79,
+      "title": "Bonus Episode: PSYCHO",
+      "air_date": "2020-07-28",
+      "description": "Episode discussing Bonus Episode: PSYCHO",
+      "movies": [
+        {
+          "title": "Bonus Episode: PSYCHO",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 79",
+          "episode_reference": 79
+        }
+      ]
+    },
+    {
+      "episode_number": 80,
+      "title": "HUSH (2016)",
+      "air_date": "2020-08-04",
+      "description": "Episode discussing HUSH",
+      "movies": [
+        {
+          "title": "HUSH",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 80",
+          "episode_reference": 80
+        }
+      ]
+    },
+    {
+      "episode_number": 81,
+      "title": "GET OUT",
+      "air_date": "2020-08-11",
+      "description": "Episode discussing GET OUT",
+      "movies": [
+        {
+          "title": "GET OUT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 81",
+          "episode_reference": 81
+        }
+      ]
+    },
+    {
+      "episode_number": 82,
+      "title": "Bonus Episode: History of Horror - DEMONS",
+      "air_date": "2020-08-18",
+      "description": "Episode discussing Bonus Episode: History of Horror - DEMONS",
+      "movies": [
+        {
+          "title": "Bonus Episode: History of Horror - DEMONS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 82",
+          "episode_reference": 82
+        }
+      ]
+    },
+    {
+      "episode_number": 83,
+      "title": "SAINT MAUD",
+      "air_date": "2020-08-25",
+      "description": "Episode discussing SAINT MAUD",
+      "movies": [
+        {
+          "title": "SAINT MAUD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 83",
+          "episode_reference": 83
+        }
+      ]
+    },
+    {
+      "episode_number": 84,
+      "title": "NIGHT OF THE LIVING DEAD",
+      "air_date": "2020-09-01",
+      "description": "Episode discussing NIGHT OF THE LIVING DEAD",
+      "movies": [
+        {
+          "title": "NIGHT OF THE LIVING DEAD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 84",
+          "episode_reference": 84
+        }
+      ]
+    },
+    {
+      "episode_number": 85,
+      "title": "Bonus Episode: THE OMEN",
+      "air_date": "2020-09-08",
+      "description": "Episode discussing Bonus Episode: THE OMEN",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE OMEN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 85",
+          "episode_reference": 85
+        }
+      ]
+    },
+    {
+      "episode_number": 86,
+      "title": "GREEN ROOM",
+      "air_date": "2020-09-15",
+      "description": "Episode discussing GREEN ROOM",
+      "movies": [
+        {
+          "title": "GREEN ROOM",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 86",
+          "episode_reference": 86
+        }
+      ]
+    },
+    {
+      "episode_number": 87,
+      "title": "LUCKY with Dhruv Uday Singh",
+      "air_date": "2020-09-22",
+      "description": "Episode discussing LUCKY",
+      "movies": [
+        {
+          "title": "LUCKY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 87",
+          "episode_reference": 87
+        }
+      ]
+    },
+    {
+      "episode_number": 88,
+      "title": "Bonus Episode: Cursed Films",
+      "air_date": "2020-09-29",
+      "description": "Episode discussing Bonus Episode: Cursed Films",
+      "movies": [
+        {
+          "title": "Bonus Episode: Cursed Films",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 88",
+          "episode_reference": 88
+        }
+      ]
+    },
+    {
+      "episode_number": 89,
+      "title": "MISERY",
+      "air_date": "2020-10-06",
+      "description": "Episode discussing MISERY",
+      "movies": [
+        {
+          "title": "MISERY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 89",
+          "episode_reference": 89
+        }
+      ]
+    },
+    {
+      "episode_number": 90,
+      "title": "GOODNIGHT MOMMY",
+      "air_date": "2020-10-13",
+      "description": "Episode discussing GOODNIGHT MOMMY",
+      "movies": [
+        {
+          "title": "GOODNIGHT MOMMY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 90",
+          "episode_reference": 90
+        }
+      ]
+    },
+    {
+      "episode_number": 91,
+      "title": "Bonus Episode: THE GREEN INFERNO",
+      "air_date": "2020-10-20",
+      "description": "Episode discussing Bonus Episode: THE GREEN INFERNO",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE GREEN INFERNO",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 91",
+          "episode_reference": 91
+        }
+      ]
+    },
+    {
+      "episode_number": 92,
+      "title": "AS ABOVE, SO BELOW",
+      "air_date": "2020-10-27",
+      "description": "Episode discussing AS ABOVE, SO BELOW",
+      "movies": [
+        {
+          "title": "AS ABOVE, SO BELOW",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 92",
+          "episode_reference": 92
+        }
+      ]
+    },
+    {
+      "episode_number": 93,
+      "title": "CLIMAX",
+      "air_date": "2020-11-03",
+      "description": "Episode discussing CLIMAX",
+      "movies": [
+        {
+          "title": "CLIMAX",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 93",
+          "episode_reference": 93
+        }
+      ]
+    },
+    {
+      "episode_number": 94,
+      "title": "THE CHILDREN with Liz Kleinrock",
+      "air_date": "2020-11-10",
+      "description": "Episode discussing THE CHILDREN",
+      "movies": [
+        {
+          "title": "THE CHILDREN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 94",
+          "episode_reference": 94
+        }
+      ]
+    },
+    {
+      "episode_number": 95,
+      "title": "Bonus Episode: PADDINGTON 2",
+      "air_date": "2020-11-17",
+      "description": "Episode discussing Bonus Episode: PADDINGTON 2",
+      "movies": [
+        {
+          "title": "Bonus Episode: PADDINGTON 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 95",
+          "episode_reference": 95
+        }
+      ]
+    },
+    {
+      "episode_number": 96,
+      "title": "FINAL DESTINATION with Silent Jenna",
+      "air_date": "2020-11-24",
+      "description": "Episode discussing FINAL DESTINATION",
+      "movies": [
+        {
+          "title": "FINAL DESTINATION",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 96",
+          "episode_reference": 96
+        }
+      ]
+    },
+    {
+      "episode_number": 97,
+      "title": "DEEP BLUE SEA with Brea Grant",
+      "air_date": "2020-12-01",
+      "description": "Episode discussing DEEP BLUE SEA",
+      "movies": [
+        {
+          "title": "DEEP BLUE SEA",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 97",
+          "episode_reference": 97
+        }
+      ]
+    },
+    {
+      "episode_number": 98,
+      "title": "OVERLORD",
+      "air_date": "2020-12-08",
+      "description": "Episode discussing OVERLORD",
+      "movies": [
+        {
+          "title": "OVERLORD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 98",
+          "episode_reference": 98
+        }
+      ]
+    },
+    {
+      "episode_number": 99,
+      "title": "I KNOW WHAT YOU DID LAST SUMMER",
+      "air_date": "2020-12-15",
+      "description": "Episode discussing I KNOW WHAT YOU DID LAST SUMMER",
+      "movies": [
+        {
+          "title": "I KNOW WHAT YOU DID LAST SUMMER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 99",
+          "episode_reference": 99
+        }
+      ]
+    },
+    {
+      "episode_number": 100,
+      "title": "TEETH",
+      "air_date": "2020-12-22",
+      "description": "Episode discussing TEETH",
+      "movies": [
+        {
+          "title": "TEETH",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 100",
+          "episode_reference": 100
+        }
+      ]
+    },
+    {
+      "episode_number": 101,
+      "title": "THE GUEST",
+      "air_date": "2020-12-29",
+      "description": "Episode discussing THE GUEST",
+      "movies": [
+        {
+          "title": "THE GUEST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 101",
+          "episode_reference": 101
+        }
+      ]
+    },
+    {
+      "episode_number": 102,
+      "title": "Bonus Episode: SUSPIRIA",
+      "air_date": "2021-01-05",
+      "description": "Episode discussing Bonus Episode: SUSPIRIA",
+      "movies": [
+        {
+          "title": "Bonus Episode: SUSPIRIA",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 102",
+          "episode_reference": 102
+        }
+      ]
+    },
+    {
+      "episode_number": 103,
+      "title": "A QUIET PLACE PART II",
+      "air_date": "2021-01-12",
+      "description": "Episode discussing A QUIET PLACE PART II",
+      "movies": [
+        {
+          "title": "A QUIET PLACE PART II",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 103",
+          "episode_reference": 103
+        }
+      ]
+    },
+    {
+      "episode_number": 104,
+      "title": "THE CONJURING 3 with Betsy Sodaro",
+      "air_date": "2021-01-19",
+      "description": "Episode discussing THE CONJURING 3",
+      "movies": [
+        {
+          "title": "THE CONJURING 3",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 104",
+          "episode_reference": 104
+        }
+      ]
+    },
+    {
+      "episode_number": 105,
+      "title": "THE FURIES with Spooko",
+      "air_date": "2021-01-26",
+      "description": "Episode discussing THE FURIES",
+      "movies": [
+        {
+          "title": "THE FURIES",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 105",
+          "episode_reference": 105
+        }
+      ]
+    },
+    {
+      "episode_number": 106,
+      "title": "SWEETHEART",
+      "air_date": "2021-02-02",
+      "description": "Episode discussing SWEETHEART",
+      "movies": [
+        {
+          "title": "SWEETHEART",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 106",
+          "episode_reference": 106
+        }
+      ]
+    },
+    {
+      "episode_number": 107,
+      "title": "Bonus Episode: THE MATRIX",
+      "air_date": "2021-02-09",
+      "description": "Episode discussing Bonus Episode: THE MATRIX",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE MATRIX",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 107",
+          "episode_reference": 107
+        }
+      ]
+    },
+    {
+      "episode_number": 108,
+      "title": "HUNTER HUNTER",
+      "air_date": "2021-02-16",
+      "description": "Episode discussing HUNTER HUNTER",
+      "movies": [
+        {
+          "title": "HUNTER HUNTER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 108",
+          "episode_reference": 108
+        }
+      ]
+    },
+    {
+      "episode_number": 109,
+      "title": "FRIGHT NIGHT (2011)",
+      "air_date": "2021-02-23",
+      "description": "Episode discussing FRIGHT NIGHT",
+      "movies": [
+        {
+          "title": "FRIGHT NIGHT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 109",
+          "episode_reference": 109
+        }
+      ]
+    },
+    {
+      "episode_number": 110,
+      "title": "PARANORMAL ACTIVITY 3",
+      "air_date": "2021-03-02",
+      "description": "Episode discussing PARANORMAL ACTIVITY 3",
+      "movies": [
+        {
+          "title": "PARANORMAL ACTIVITY 3",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 110",
+          "episode_reference": 110
+        }
+      ]
+    },
+    {
+      "episode_number": 111,
+      "title": "OLD (2021)",
+      "air_date": "2021-03-09",
+      "description": "Episode discussing OLD",
+      "movies": [
+        {
+          "title": "OLD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 111",
+          "episode_reference": 111
+        }
+      ]
+    },
+    {
+      "episode_number": 112,
+      "title": "Bonus Episode: THE MIST",
+      "air_date": "2021-03-16",
+      "description": "Episode discussing Bonus Episode: THE MIST",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE MIST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 112",
+          "episode_reference": 112
+        }
+      ]
+    },
+    {
+      "episode_number": 113,
+      "title": "100TH EPISODE: Audition and The Amityville Horror (1979)",
+      "air_date": "2021-03-23",
+      "description": "Episode discussing 100TH EPISODE: Audition and The Amityville Horror",
+      "movies": [
+        {
+          "title": "100TH EPISODE: Audition and The Amityville Horror",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 113",
+          "episode_reference": 113
+        }
+      ]
+    },
+    {
+      "episode_number": 114,
+      "title": "EYES WITHOUT A FACE",
+      "air_date": "2021-03-30",
+      "description": "Episode discussing EYES WITHOUT A FACE",
+      "movies": [
+        {
+          "title": "EYES WITHOUT A FACE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 114",
+          "episode_reference": 114
+        }
+      ]
+    },
+    {
+      "episode_number": 115,
+      "title": "YOU'RE NEXT",
+      "air_date": "2021-04-06",
+      "description": "Episode discussing YOU'RE NEXT",
+      "movies": [
+        {
+          "title": "YOU'RE NEXT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 115",
+          "episode_reference": 115
+        }
+      ]
+    },
+    {
+      "episode_number": 116,
+      "title": "THE FLY (1986)",
+      "air_date": "2021-04-13",
+      "description": "Episode discussing THE FLY",
+      "movies": [
+        {
+          "title": "THE FLY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 116",
+          "episode_reference": 116
+        }
+      ]
+    },
+    {
+      "episode_number": 117,
+      "title": "Bonus Episode: TWILIGHT with Joel Jensen",
+      "air_date": "2021-04-20",
+      "description": "Episode discussing Bonus Episode: TWILIGHT",
+      "movies": [
+        {
+          "title": "Bonus Episode: TWILIGHT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 117",
+          "episode_reference": 117
+        }
+      ]
+    },
+    {
+      "episode_number": 118,
+      "title": "THE FACULTY",
+      "air_date": "2021-04-27",
+      "description": "Episode discussing THE FACULTY",
+      "movies": [
+        {
+          "title": "THE FACULTY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 118",
+          "episode_reference": 118
+        }
+      ]
+    },
+    {
+      "episode_number": 119,
+      "title": "CANDYMAN (2021)",
+      "air_date": "2021-05-04",
+      "description": "Episode discussing CANDYMAN",
+      "movies": [
+        {
+          "title": "CANDYMAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 119",
+          "episode_reference": 119
+        }
+      ]
+    },
+    {
+      "episode_number": 120,
+      "title": "MALIGNANT",
+      "air_date": "2021-05-11",
+      "description": "Episode discussing MALIGNANT",
+      "movies": [
+        {
+          "title": "MALIGNANT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 120",
+          "episode_reference": 120
+        }
+      ]
+    },
+    {
+      "episode_number": 121,
+      "title": "Bonus Episode: GHOST STORIES - PART ONE",
+      "air_date": "2021-05-18",
+      "description": "Episode discussing Bonus Episode: GHOST STORIES - PART ONE",
+      "movies": [
+        {
+          "title": "Bonus Episode: GHOST STORIES - PART ONE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 121",
+          "episode_reference": 121
+        }
+      ]
+    },
+    {
+      "episode_number": 122,
+      "title": "JACOB‘S LADDER (1990)",
+      "air_date": "2021-05-25",
+      "description": "Episode discussing JACOB‘S LADDER",
+      "movies": [
+        {
+          "title": "JACOB‘S LADDER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 122",
+          "episode_reference": 122
+        }
+      ]
+    },
+    {
+      "episode_number": 123,
+      "title": "TITANE",
+      "air_date": "2021-06-01",
+      "description": "Episode discussing TITANE",
+      "movies": [
+        {
+          "title": "TITANE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 123",
+          "episode_reference": 123
+        }
+      ]
+    },
+    {
+      "episode_number": 124,
+      "title": "TRICK ‘R TREAT + LAMB MINI EPISODE",
+      "air_date": "2021-06-08",
+      "description": "Episode discussing TRICK ‘R TREAT + LAMB MINI EPISODE",
+      "movies": [
+        {
+          "title": "TRICK ‘R TREAT + LAMB MINI EPISODE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 124",
+          "episode_reference": 124
+        }
+      ]
+    },
+    {
+      "episode_number": 125,
+      "title": "THE POUGHKEEPSIE TAPES with Jason Horton",
+      "air_date": "2021-06-15",
+      "description": "Episode discussing THE POUGHKEEPSIE TAPES",
+      "movies": [
+        {
+          "title": "THE POUGHKEEPSIE TAPES",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 125",
+          "episode_reference": 125
+        }
+      ]
+    },
+    {
+      "episode_number": 126,
+      "title": "HELL HOUSE LLC with Betsy Sodaro",
+      "air_date": "2021-06-22",
+      "description": "Episode discussing HELL HOUSE LLC",
+      "movies": [
+        {
+          "title": "HELL HOUSE LLC",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 126",
+          "episode_reference": 126
+        }
+      ]
+    },
+    {
+      "episode_number": 127,
+      "title": "Bonus Episode: SQUID GAME - PART ONE",
+      "air_date": "2021-06-29",
+      "description": "Episode discussing Bonus Episode: SQUID GAME - PART ONE",
+      "movies": [
+        {
+          "title": "Bonus Episode: SQUID GAME - PART ONE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 127",
+          "episode_reference": 127
+        }
+      ]
+    },
+    {
+      "episode_number": 128,
+      "title": "PARANORMAL ACTIVITY: NEXT OF KIN with Dan Lippert",
+      "air_date": "2021-07-06",
+      "description": "Episode discussing PARANORMAL ACTIVITY: NEXT OF KIN",
+      "movies": [
+        {
+          "title": "PARANORMAL ACTIVITY: NEXT OF KIN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 128",
+          "episode_reference": 128
+        }
+      ]
+    },
+    {
+      "episode_number": 129,
+      "title": "LAST NIGHT IN SOHO with Stephanie Albala",
+      "air_date": "2021-07-13",
+      "description": "Episode discussing LAST NIGHT IN SOHO",
+      "movies": [
+        {
+          "title": "LAST NIGHT IN SOHO",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 129",
+          "episode_reference": 129
+        }
+      ]
+    },
+    {
+      "episode_number": 130,
+      "title": "ALIENS with Haley Joel Osment",
+      "air_date": "2021-07-20",
+      "description": "Episode discussing ALIENS",
+      "movies": [
+        {
+          "title": "ALIENS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 130",
+          "episode_reference": 130
+        }
+      ]
+    },
+    {
+      "episode_number": 131,
+      "title": "ANNIHILATION",
+      "air_date": "2021-07-27",
+      "description": "Episode discussing ANNIHILATION",
+      "movies": [
+        {
+          "title": "ANNIHILATION",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 131",
+          "episode_reference": 131
+        }
+      ]
+    },
+    {
+      "episode_number": 132,
+      "title": "THE AUTOPSY OF JANE DOE",
+      "air_date": "2021-08-03",
+      "description": "Episode discussing THE AUTOPSY OF JANE DOE",
+      "movies": [
+        {
+          "title": "THE AUTOPSY OF JANE DOE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 132",
+          "episode_reference": 132
+        }
+      ]
+    },
+    {
+      "episode_number": 133,
+      "title": "SHUTTER ISLAND with Sit for a Spell",
+      "air_date": "2021-08-10",
+      "description": "Episode discussing SHUTTER ISLAND",
+      "movies": [
+        {
+          "title": "SHUTTER ISLAND",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 133",
+          "episode_reference": 133
+        }
+      ]
+    },
+    {
+      "episode_number": 134,
+      "title": "HIGH TENSION",
+      "air_date": "2021-08-17",
+      "description": "Episode discussing HIGH TENSION",
+      "movies": [
+        {
+          "title": "HIGH TENSION",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 134",
+          "episode_reference": 134
+        }
+      ]
+    },
+    {
+      "episode_number": 135,
+      "title": "WILLY‘S WONDERLAND with Spooko",
+      "air_date": "2021-08-24",
+      "description": "Episode discussing WILLY‘S WONDERLAND",
+      "movies": [
+        {
+          "title": "WILLY‘S WONDERLAND",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 135",
+          "episode_reference": 135
+        }
+      ]
+    },
+    {
+      "episode_number": 136,
+      "title": "THE GRUDGE",
+      "air_date": "2021-08-31",
+      "description": "Episode discussing THE GRUDGE",
+      "movies": [
+        {
+          "title": "THE GRUDGE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 136",
+          "episode_reference": 136
+        }
+      ]
+    },
+    {
+      "episode_number": 137,
+      "title": "THE TAKING OF DEBORAH LOGAN",
+      "air_date": "2021-09-07",
+      "description": "Episode discussing THE TAKING OF DEBORAH LOGAN",
+      "movies": [
+        {
+          "title": "THE TAKING OF DEBORAH LOGAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 137",
+          "episode_reference": 137
+        }
+      ]
+    },
+    {
+      "episode_number": 138,
+      "title": "SHAUN OF THE DEAD with Jack Quaid",
+      "air_date": "2021-09-14",
+      "description": "Episode discussing SHAUN OF THE DEAD",
+      "movies": [
+        {
+          "title": "SHAUN OF THE DEAD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 138",
+          "episode_reference": 138
+        }
+      ]
+    },
+    {
+      "episode_number": 139,
+      "title": "SCREAM (2022)",
+      "air_date": "2021-09-21",
+      "description": "Episode discussing SCREAM",
+      "movies": [
+        {
+          "title": "SCREAM",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 139",
+          "episode_reference": 139
+        }
+      ]
+    },
+    {
+      "episode_number": 140,
+      "title": "JAWS with Paul F. Tompkins",
+      "air_date": "2021-09-28",
+      "description": "Episode discussing JAWS",
+      "movies": [
+        {
+          "title": "JAWS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 140",
+          "episode_reference": 140
+        }
+      ]
+    },
+    {
+      "episode_number": 141,
+      "title": "KILLER KLOWNS FROM OUTER SPACE with Oscar Montoya",
+      "air_date": "2021-10-05",
+      "description": "Episode discussing KILLER KLOWNS FROM OUTER SPACE",
+      "movies": [
+        {
+          "title": "KILLER KLOWNS FROM OUTER SPACE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 141",
+          "episode_reference": 141
+        }
+      ]
+    },
+    {
+      "episode_number": 142,
+      "title": "THIRTEEN GHOSTS",
+      "air_date": "2021-10-12",
+      "description": "Episode discussing THIRTEEN GHOSTS",
+      "movies": [
+        {
+          "title": "THIRTEEN GHOSTS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 142",
+          "episode_reference": 142
+        }
+      ]
+    },
+    {
+      "episode_number": 143,
+      "title": "RAW with Cecily Breaux",
+      "air_date": "2021-10-19",
+      "description": "Episode discussing RAW",
+      "movies": [
+        {
+          "title": "RAW",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 143",
+          "episode_reference": 143
+        }
+      ]
+    },
+    {
+      "episode_number": 144,
+      "title": "WHAT LIES BENEATH",
+      "air_date": "2021-10-26",
+      "description": "Episode discussing WHAT LIES BENEATH",
+      "movies": [
+        {
+          "title": "WHAT LIES BENEATH",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 144",
+          "episode_reference": 144
+        }
+      ]
+    },
+    {
+      "episode_number": 145,
+      "title": "Bonus Episode: SUSPIRIA (2018)",
+      "air_date": "2021-11-02",
+      "description": "Episode discussing Bonus Episode: SUSPIRIA",
+      "movies": [
+        {
+          "title": "Bonus Episode: SUSPIRIA",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 145",
+          "episode_reference": 145
+        }
+      ]
+    },
+    {
+      "episode_number": 146,
+      "title": "THE NIGHT HOUSE",
+      "air_date": "2021-11-09",
+      "description": "Episode discussing THE NIGHT HOUSE",
+      "movies": [
+        {
+          "title": "THE NIGHT HOUSE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 146",
+          "episode_reference": 146
+        }
+      ]
+    },
+    {
+      "episode_number": 147,
+      "title": "THE KILLING OF A SACRED DEER",
+      "air_date": "2021-11-16",
+      "description": "Episode discussing THE KILLING OF A SACRED DEER",
+      "movies": [
+        {
+          "title": "THE KILLING OF A SACRED DEER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 147",
+          "episode_reference": 147
+        }
+      ]
+    },
+    {
+      "episode_number": 148,
+      "title": "Bonus Episode: THE HAUNTING OF HILL HOUSE - PART 1",
+      "air_date": "2021-11-23",
+      "description": "Episode discussing Bonus Episode: THE HAUNTING OF HILL HOUSE - PART 1",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE HAUNTING OF HILL HOUSE - PART 1",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 148",
+          "episode_reference": 148
+        }
+      ]
+    },
+    {
+      "episode_number": 149,
+      "title": "NIGHT OF THE CREEPS with Todd Schlosser",
+      "air_date": "2021-11-30",
+      "description": "Episode discussing NIGHT OF THE CREEPS",
+      "movies": [
+        {
+          "title": "NIGHT OF THE CREEPS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 149",
+          "episode_reference": 149
+        }
+      ]
+    },
+    {
+      "episode_number": 150,
+      "title": "CARRIE with Mary Holland",
+      "air_date": "2021-12-07",
+      "description": "Episode discussing CARRIE",
+      "movies": [
+        {
+          "title": "CARRIE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 150",
+          "episode_reference": 150
+        }
+      ]
+    },
+    {
+      "episode_number": 151,
+      "title": "X",
+      "air_date": "2021-12-14",
+      "description": "Episode discussing X",
+      "movies": [
+        {
+          "title": "X",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 151",
+          "episode_reference": 151
+        }
+      ]
+    },
+    {
+      "episode_number": 152,
+      "title": "FRESH",
+      "air_date": "2021-12-21",
+      "description": "Episode discussing FRESH",
+      "movies": [
+        {
+          "title": "FRESH",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 152",
+          "episode_reference": 152
+        }
+      ]
+    },
+    {
+      "episode_number": 153,
+      "title": "WHAT WE DO IN THE SHADOWS with Reza Farazmand",
+      "air_date": "2021-12-28",
+      "description": "Episode discussing WHAT WE DO IN THE SHADOWS",
+      "movies": [
+        {
+          "title": "WHAT WE DO IN THE SHADOWS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 153",
+          "episode_reference": 153
+        }
+      ]
+    },
+    {
+      "episode_number": 154,
+      "title": "HOUSE OF WAX",
+      "air_date": "2022-01-04",
+      "description": "Episode discussing HOUSE OF WAX",
+      "movies": [
+        {
+          "title": "HOUSE OF WAX",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 154",
+          "episode_reference": 154
+        }
+      ]
+    },
+    {
+      "episode_number": 155,
+      "title": "THE HILLS HAVE EYES (2006) with Ronnie Adrian",
+      "air_date": "2022-01-11",
+      "description": "Episode discussing THE HILLS HAVE EYES",
+      "movies": [
+        {
+          "title": "THE HILLS HAVE EYES",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 155",
+          "episode_reference": 155
+        }
+      ]
+    },
+    {
+      "episode_number": 156,
+      "title": "THE HOUSE OF THE DEVIL",
+      "air_date": "2022-01-18",
+      "description": "Episode discussing THE HOUSE OF THE DEVIL",
+      "movies": [
+        {
+          "title": "THE HOUSE OF THE DEVIL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 156",
+          "episode_reference": 156
+        }
+      ]
+    },
+    {
+      "episode_number": 157,
+      "title": "AN AMERICAN WEREWOLF IN LONDON with Joel Jensen",
+      "air_date": "2022-01-25",
+      "description": "Episode discussing AN AMERICAN WEREWOLF IN LONDON",
+      "movies": [
+        {
+          "title": "AN AMERICAN WEREWOLF IN LONDON",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 157",
+          "episode_reference": 157
+        }
+      ]
+    },
+    {
+      "episode_number": 158,
+      "title": "THE WAILING with Neil Campbell",
+      "air_date": "2022-02-01",
+      "description": "Episode discussing THE WAILING",
+      "movies": [
+        {
+          "title": "THE WAILING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 158",
+          "episode_reference": 158
+        }
+      ]
+    },
+    {
+      "episode_number": 159,
+      "title": "MEN",
+      "air_date": "2022-02-08",
+      "description": "Episode discussing MEN",
+      "movies": [
+        {
+          "title": "MEN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 159",
+          "episode_reference": 159
+        }
+      ]
+    },
+    {
+      "episode_number": 160,
+      "title": "FRIDAY THE 13TH",
+      "air_date": "2022-02-15",
+      "description": "Episode discussing FRIDAY THE 13TH",
+      "movies": [
+        {
+          "title": "FRIDAY THE 13TH",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 160",
+          "episode_reference": 160
+        }
+      ]
+    },
+    {
+      "episode_number": 161,
+      "title": "URBAN LEGEND with Ego Nwodim",
+      "air_date": "2022-02-22",
+      "description": "Episode discussing URBAN LEGEND",
+      "movies": [
+        {
+          "title": "URBAN LEGEND",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 161",
+          "episode_reference": 161
+        }
+      ]
+    },
+    {
+      "episode_number": 162,
+      "title": "CRIMES OF THE FUTURE",
+      "air_date": "2022-03-01",
+      "description": "Episode discussing CRIMES OF THE FUTURE",
+      "movies": [
+        {
+          "title": "CRIMES OF THE FUTURE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 162",
+          "episode_reference": 162
+        }
+      ]
+    },
+    {
+      "episode_number": 163,
+      "title": "DON'T BREATHE with Chuck Bryant",
+      "air_date": "2022-03-08",
+      "description": "Episode discussing DON'T BREATHE",
+      "movies": [
+        {
+          "title": "DON'T BREATHE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 163",
+          "episode_reference": 163
+        }
+      ]
+    },
+    {
+      "episode_number": 164,
+      "title": "Bonus Episode: EVIL DEAD 2",
+      "air_date": "2022-03-15",
+      "description": "Episode discussing Bonus Episode: EVIL DEAD 2",
+      "movies": [
+        {
+          "title": "Bonus Episode: EVIL DEAD 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 164",
+          "episode_reference": 164
+        }
+      ]
+    },
+    {
+      "episode_number": 165,
+      "title": "PREDATOR",
+      "air_date": "2022-03-22",
+      "description": "Episode discussing PREDATOR",
+      "movies": [
+        {
+          "title": "PREDATOR",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 165",
+          "episode_reference": 165
+        }
+      ]
+    },
+    {
+      "episode_number": 166,
+      "title": "THE BLACK PHONE",
+      "air_date": "2022-03-29",
+      "description": "Episode discussing THE BLACK PHONE",
+      "movies": [
+        {
+          "title": "THE BLACK PHONE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 166",
+          "episode_reference": 166
+        }
+      ]
+    },
+    {
+      "episode_number": 167,
+      "title": "DOG SOLDIERS with Jon Gabrus",
+      "air_date": "2022-04-05",
+      "description": "Episode discussing DOG SOLDIERS",
+      "movies": [
+        {
+          "title": "DOG SOLDIERS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 167",
+          "episode_reference": 167
+        }
+      ]
+    },
+    {
+      "episode_number": 168,
+      "title": "MY BEST FRIEND IS A VAMPIRE with Lamar Woods",
+      "air_date": "2022-04-12",
+      "description": "Episode discussing MY BEST FRIEND IS A VAMPIRE",
+      "movies": [
+        {
+          "title": "MY BEST FRIEND IS A VAMPIRE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 168",
+          "episode_reference": 168
+        }
+      ]
+    },
+    {
+      "episode_number": 169,
+      "title": "Bonus Episode: THE EXORCISM OF EMILY ROSE",
+      "air_date": "2022-04-19",
+      "description": "Episode discussing Bonus Episode: THE EXORCISM OF EMILY ROSE",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE EXORCISM OF EMILY ROSE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 169",
+          "episode_reference": 169
+        }
+      ]
+    },
+    {
+      "episode_number": 170,
+      "title": "THE DEAD ZONE with Adal Rifai &amp; John Patrick Coan from Hey Riddle Riddle",
+      "air_date": "2022-04-26",
+      "description": "Episode discussing THE DEAD ZONE",
+      "movies": [
+        {
+          "title": "THE DEAD ZONE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 170",
+          "episode_reference": 170
+        }
+      ]
+    },
+    {
+      "episode_number": 171,
+      "title": "NOPE with Ronald Young Jr.",
+      "air_date": "2022-05-03",
+      "description": "Episode discussing NOPE",
+      "movies": [
+        {
+          "title": "NOPE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 171",
+          "episode_reference": 171
+        }
+      ]
+    },
+    {
+      "episode_number": 172,
+      "title": "BODIES BODIES BODIES",
+      "air_date": "2022-05-10",
+      "description": "Episode discussing BODIES BODIES BODIES",
+      "movies": [
+        {
+          "title": "BODIES BODIES BODIES",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 172",
+          "episode_reference": 172
+        }
+      ]
+    },
+    {
+      "episode_number": 173,
+      "title": "PREY with Dan Trachtenberg",
+      "air_date": "2022-05-17",
+      "description": "Episode discussing PREY",
+      "movies": [
+        {
+          "title": "PREY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 173",
+          "episode_reference": 173
+        }
+      ]
+    },
+    {
+      "episode_number": 174,
+      "title": "ORPHAN with Greta Titelman",
+      "air_date": "2022-05-24",
+      "description": "Episode discussing ORPHAN",
+      "movies": [
+        {
+          "title": "ORPHAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 174",
+          "episode_reference": 174
+        }
+      ]
+    },
+    {
+      "episode_number": 175,
+      "title": "Bonus Episode: HELLBOUND: HELLRAISER 2",
+      "air_date": "2022-05-31",
+      "description": "Episode discussing Bonus Episode: HELLBOUND: HELLRAISER 2",
+      "movies": [
+        {
+          "title": "Bonus Episode: HELLBOUND: HELLRAISER 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 175",
+          "episode_reference": 175
+        }
+      ]
+    },
+    {
+      "episode_number": 176,
+      "title": "KNOCK KNOCK",
+      "air_date": "2022-06-07",
+      "description": "Episode discussing KNOCK KNOCK",
+      "movies": [
+        {
+          "title": "KNOCK KNOCK",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 176",
+          "episode_reference": 176
+        }
+      ]
+    },
+    {
+      "episode_number": 177,
+      "title": "THE MIST (Vault Episode)",
+      "air_date": "2022-06-14",
+      "description": "Episode discussing THE MIST",
+      "movies": [
+        {
+          "title": "THE MIST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 177",
+          "episode_reference": 177
+        }
+      ]
+    },
+    {
+      "episode_number": 178,
+      "title": "BARBARIAN with Zach Cregger",
+      "air_date": "2022-06-21",
+      "description": "Episode discussing BARBARIAN",
+      "movies": [
+        {
+          "title": "BARBARIAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 178",
+          "episode_reference": 178
+        }
+      ]
+    },
+    {
+      "episode_number": 179,
+      "title": "ANACONDA with Wes Larson",
+      "air_date": "2022-06-28",
+      "description": "Episode discussing ANACONDA",
+      "movies": [
+        {
+          "title": "ANACONDA",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 179",
+          "episode_reference": 179
+        }
+      ]
+    },
+    {
+      "episode_number": 180,
+      "title": "FINAL DESTINATION 2with Lisa Gilroy",
+      "air_date": "2022-07-05",
+      "description": "Episode discussing FINAL DESTINATION 2",
+      "movies": [
+        {
+          "title": "FINAL DESTINATION 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 180",
+          "episode_reference": 180
+        }
+      ]
+    },
+    {
+      "episode_number": 181,
+      "title": "THE HUMAN CENTIPEDE with Evan Gregory",
+      "air_date": "2022-07-12",
+      "description": "Episode discussing THE HUMAN CENTIPEDE",
+      "movies": [
+        {
+          "title": "THE HUMAN CENTIPEDE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 181",
+          "episode_reference": 181
+        }
+      ]
+    },
+    {
+      "episode_number": 182,
+      "title": "HELLRAISER (2022)",
+      "air_date": "2022-07-19",
+      "description": "Episode discussing HELLRAISER",
+      "movies": [
+        {
+          "title": "HELLRAISER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 182",
+          "episode_reference": 182
+        }
+      ]
+    },
+    {
+      "episode_number": 183,
+      "title": "PEARL with Betsy Sodaro",
+      "air_date": "2022-07-26",
+      "description": "Episode discussing PEARL",
+      "movies": [
+        {
+          "title": "PEARL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 183",
+          "episode_reference": 183
+        }
+      ]
+    },
+    {
+      "episode_number": 184,
+      "title": "ORPHAN: FIRST KILLwith Paul F. Tompkins",
+      "air_date": "2022-08-02",
+      "description": "Episode discussing ORPHAN: FIRST KILL",
+      "movies": [
+        {
+          "title": "ORPHAN: FIRST KILL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 184",
+          "episode_reference": 184
+        }
+      ]
+    },
+    {
+      "episode_number": 185,
+      "title": "Bonus Episode: SMILE",
+      "air_date": "2022-08-09",
+      "description": "Episode discussing Bonus Episode: SMILE",
+      "movies": [
+        {
+          "title": "Bonus Episode: SMILE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 185",
+          "episode_reference": 185
+        }
+      ]
+    },
+    {
+      "episode_number": 186,
+      "title": "THE BLACKCOAT'S DAUGHTER",
+      "air_date": "2022-08-16",
+      "description": "Episode discussing THE BLACKCOAT'S DAUGHTER",
+      "movies": [
+        {
+          "title": "THE BLACKCOAT'S DAUGHTER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 186",
+          "episode_reference": 186
+        }
+      ]
+    },
+    {
+      "episode_number": 187,
+      "title": "THE SADNESS",
+      "air_date": "2022-08-23",
+      "description": "Episode discussing THE SADNESS",
+      "movies": [
+        {
+          "title": "THE SADNESS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 187",
+          "episode_reference": 187
+        }
+      ]
+    },
+    {
+      "episode_number": 188,
+      "title": "WINCHESTER with Christine Schiefer &amp; Em Schulz",
+      "air_date": "2022-08-30",
+      "description": "Episode discussing WINCHESTER",
+      "movies": [
+        {
+          "title": "WINCHESTER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 188",
+          "episode_reference": 188
+        }
+      ]
+    },
+    {
+      "episode_number": 189,
+      "title": "DON'T WORRY DARLING",
+      "air_date": "2022-09-06",
+      "description": "Episode discussing DON'T WORRY DARLING",
+      "movies": [
+        {
+          "title": "DON'T WORRY DARLING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 189",
+          "episode_reference": 189
+        }
+      ]
+    },
+    {
+      "episode_number": 190,
+      "title": "Bonus Episode: I SAW THE DEVIL",
+      "air_date": "2022-09-13",
+      "description": "Episode discussing Bonus Episode: I SAW THE DEVIL",
+      "movies": [
+        {
+          "title": "Bonus Episode: I SAW THE DEVIL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 190",
+          "episode_reference": 190
+        }
+      ]
+    },
+    {
+      "episode_number": 191,
+      "title": "ARMY OF DARKNESS with Evan &amp; Andrew Gregory",
+      "air_date": "2022-09-20",
+      "description": "Episode discussing ARMY OF DARKNESS",
+      "movies": [
+        {
+          "title": "ARMY OF DARKNESS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 191",
+          "episode_reference": 191
+        }
+      ]
+    },
+    {
+      "episode_number": 192,
+      "title": "THE MENU",
+      "air_date": "2022-09-27",
+      "description": "Episode discussing THE MENU",
+      "movies": [
+        {
+          "title": "THE MENU",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 192",
+          "episode_reference": 192
+        }
+      ]
+    },
+    {
+      "episode_number": 193,
+      "title": "BONES AND ALL",
+      "air_date": "2022-10-04",
+      "description": "Episode discussing BONES AND ALL",
+      "movies": [
+        {
+          "title": "BONES AND ALL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 193",
+          "episode_reference": 193
+        }
+      ]
+    },
+    {
+      "episode_number": 194,
+      "title": "VIOLENT NIGHT",
+      "air_date": "2022-10-11",
+      "description": "Episode discussing VIOLENT NIGHT",
+      "movies": [
+        {
+          "title": "VIOLENT NIGHT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 194",
+          "episode_reference": 194
+        }
+      ]
+    },
+    {
+      "episode_number": 195,
+      "title": "HELLBOUND: HELLRAISER 2 (Vault Episode)",
+      "air_date": "2022-10-18",
+      "description": "Episode discussing HELLBOUND: HELLRAISER 2",
+      "movies": [
+        {
+          "title": "HELLBOUND: HELLRAISER 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 195",
+          "episode_reference": 195
+        }
+      ]
+    },
+    {
+      "episode_number": 196,
+      "title": "THE HAUNTING OF HILL HOUSE: Part 1",
+      "air_date": "2022-10-25",
+      "description": "Episode discussing THE HAUNTING OF HILL HOUSE: Part 1",
+      "movies": [
+        {
+          "title": "THE HAUNTING OF HILL HOUSE: Part 1",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 196",
+          "episode_reference": 196
+        }
+      ]
+    },
+    {
+      "episode_number": 197,
+      "title": "M3GAN with Stephanie Albala",
+      "air_date": "2022-11-01",
+      "description": "Episode discussing M3GAN",
+      "movies": [
+        {
+          "title": "M3GAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 197",
+          "episode_reference": 197
+        }
+      ]
+    },
+    {
+      "episode_number": 198,
+      "title": "TERRIFIER &amp; TERRIFIER 2",
+      "air_date": "2022-11-08",
+      "description": "Episode discussing TERRIFIER &amp; TERRIFIER 2",
+      "movies": [
+        {
+          "title": "TERRIFIER &amp; TERRIFIER 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 198",
+          "episode_reference": 198
+        }
+      ]
+    },
+    {
+      "episode_number": 199,
+      "title": "SESSION 9 with Jeremy Cobb",
+      "air_date": "2022-11-15",
+      "description": "Episode discussing SESSION 9",
+      "movies": [
+        {
+          "title": "SESSION 9",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 199",
+          "episode_reference": 199
+        }
+      ]
+    },
+    {
+      "episode_number": 200,
+      "title": "INFINITY POOL",
+      "air_date": "2022-11-22",
+      "description": "Episode discussing INFINITY POOL",
+      "movies": [
+        {
+          "title": "INFINITY POOL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 200",
+          "episode_reference": 200
+        }
+      ]
+    },
+    {
+      "episode_number": 201,
+      "title": "ERASERHEAD with Amy Nicholson",
+      "air_date": "2022-11-29",
+      "description": "Episode discussing ERASERHEAD",
+      "movies": [
+        {
+          "title": "ERASERHEAD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 201",
+          "episode_reference": 201
+        }
+      ]
+    },
+    {
+      "episode_number": 202,
+      "title": "KNOCK AT THE CABIN",
+      "air_date": "2022-12-06",
+      "description": "Episode discussing KNOCK AT THE CABIN",
+      "movies": [
+        {
+          "title": "KNOCK AT THE CABIN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 202",
+          "episode_reference": 202
+        }
+      ]
+    },
+    {
+      "episode_number": 203,
+      "title": "THE NUN with Reilly Anspaugh and Alfred Bardwell-Evans",
+      "air_date": "2022-12-13",
+      "description": "Episode discussing THE NUN",
+      "movies": [
+        {
+          "title": "THE NUN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 203",
+          "episode_reference": 203
+        }
+      ]
+    },
+    {
+      "episode_number": 204,
+      "title": "Bonus Episode: TITANIC",
+      "air_date": "2022-12-20",
+      "description": "Episode discussing Titanic",
+      "movies": [
+        {
+          "title": "Titanic",
+          "year": 1997,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 204",
+          "episode_reference": 204
+        }
+      ]
+    },
+    {
+      "episode_number": 205,
+      "title": "COCAINE BEAR with Wes Larson",
+      "air_date": "2022-12-27",
+      "description": "Episode discussing COCAINE BEAR",
+      "movies": [
+        {
+          "title": "COCAINE BEAR",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 205",
+          "episode_reference": 205
+        }
+      ]
+    },
+    {
+      "episode_number": 206,
+      "title": "CUBE",
+      "air_date": "2023-01-03",
+      "description": "Episode discussing CUBE",
+      "movies": [
+        {
+          "title": "CUBE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 206",
+          "episode_reference": 206
+        }
+      ]
+    },
+    {
+      "episode_number": 207,
+      "title": "SCREAM VI",
+      "air_date": "2023-01-10",
+      "description": "Episode discussing SCREAM VI",
+      "movies": [
+        {
+          "title": "SCREAM VI",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 207",
+          "episode_reference": 207
+        }
+      ]
+    },
+    {
+      "episode_number": 208,
+      "title": "PAN'S LABYRINTH with George Civeris and Sam Taggart",
+      "air_date": "2023-01-17",
+      "description": "Episode discussing PAN'S LABYRINTH",
+      "movies": [
+        {
+          "title": "PAN'S LABYRINTH",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 208",
+          "episode_reference": 208
+        }
+      ]
+    },
+    {
+      "episode_number": 209,
+      "title": "EVIL DEAD (2013)",
+      "air_date": "2023-01-24",
+      "description": "Episode discussing EVIL DEAD",
+      "movies": [
+        {
+          "title": "EVIL DEAD",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 209",
+          "episode_reference": 209
+        }
+      ]
+    },
+    {
+      "episode_number": 210,
+      "title": "SMILE (Vault Episode)",
+      "air_date": "2023-01-31",
+      "description": "Episode discussing SMILE",
+      "movies": [
+        {
+          "title": "SMILE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 210",
+          "episode_reference": 210
+        }
+      ]
+    },
+    {
+      "episode_number": 211,
+      "title": "GONJIAM: HAUNTED ASYLUM",
+      "air_date": "2023-02-07",
+      "description": "Episode discussing GONJIAM: HAUNTED ASYLUM",
+      "movies": [
+        {
+          "title": "GONJIAM: HAUNTED ASYLUM",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 211",
+          "episode_reference": 211
+        }
+      ]
+    },
+    {
+      "episode_number": 212,
+      "title": "POSSESSION",
+      "air_date": "2023-02-14",
+      "description": "Episode discussing POSSESSION",
+      "movies": [
+        {
+          "title": "POSSESSION",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 212",
+          "episode_reference": 212
+        }
+      ]
+    },
+    {
+      "episode_number": 213,
+      "title": "BEAU IS AFRAID with Chad Kultgen",
+      "air_date": "2023-02-21",
+      "description": "Episode discussing BEAU IS AFRAID",
+      "movies": [
+        {
+          "title": "BEAU IS AFRAID",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 213",
+          "episode_reference": 213
+        }
+      ]
+    },
+    {
+      "episode_number": 214,
+      "title": "EVIL DEAD RISE",
+      "air_date": "2023-02-28",
+      "description": "Episode discussing EVIL DEAD RISE",
+      "movies": [
+        {
+          "title": "EVIL DEAD RISE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 214",
+          "episode_reference": 214
+        }
+      ]
+    },
+    {
+      "episode_number": 215,
+      "title": "FINAL DESTINATION 3 with Lauren Lapkus",
+      "air_date": "2023-03-07",
+      "description": "Episode discussing FINAL DESTINATION 3",
+      "movies": [
+        {
+          "title": "FINAL DESTINATION 3",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 215",
+          "episode_reference": 215
+        }
+      ]
+    },
+    {
+      "episode_number": 216,
+      "title": "MARTYRS (2008)",
+      "air_date": "2023-03-14",
+      "description": "Episode discussing MARTYRS",
+      "movies": [
+        {
+          "title": "MARTYRS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 216",
+          "episode_reference": 216
+        }
+      ]
+    },
+    {
+      "episode_number": 217,
+      "title": "GHOST SHIP",
+      "air_date": "2023-03-21",
+      "description": "Episode discussing GHOST SHIP",
+      "movies": [
+        {
+          "title": "GHOST SHIP",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 217",
+          "episode_reference": 217
+        }
+      ]
+    },
+    {
+      "episode_number": 218,
+      "title": "DON'T LOOK NOW with Will Arbery",
+      "air_date": "2023-03-28",
+      "description": "Episode discussing DON'T LOOK NOW",
+      "movies": [
+        {
+          "title": "DON'T LOOK NOW",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 218",
+          "episode_reference": 218
+        }
+      ]
+    },
+    {
+      "episode_number": 219,
+      "title": "SPEAK NO EVIL (2022)",
+      "air_date": "2023-04-04",
+      "description": "Episode discussing SPEAK NO EVIL",
+      "movies": [
+        {
+          "title": "SPEAK NO EVIL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 219",
+          "episode_reference": 219
+        }
+      ]
+    },
+    {
+      "episode_number": 220,
+      "title": "THE POSSESSION (2012) with Lauren \"Kittens\" Abedini",
+      "air_date": "2023-04-11",
+      "description": "Episode discussing THE POSSESSION",
+      "movies": [
+        {
+          "title": "THE POSSESSION",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 220",
+          "episode_reference": 220
+        }
+      ]
+    },
+    {
+      "episode_number": 221,
+      "title": "VIDEODROME",
+      "air_date": "2023-04-18",
+      "description": "Episode discussing VIDEODROME",
+      "movies": [
+        {
+          "title": "VIDEODROME",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 221",
+          "episode_reference": 221
+        }
+      ]
+    },
+    {
+      "episode_number": 222,
+      "title": "HAPPY DEATH DAY",
+      "air_date": "2023-04-25",
+      "description": "Episode discussing HAPPY DEATH DAY",
+      "movies": [
+        {
+          "title": "HAPPY DEATH DAY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 222",
+          "episode_reference": 222
+        }
+      ]
+    },
+    {
+      "episode_number": 223,
+      "title": "THE PURGE: ANARCHY",
+      "air_date": "2023-05-02",
+      "description": "Episode discussing THE PURGE: ANARCHY",
+      "movies": [
+        {
+          "title": "THE PURGE: ANARCHY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 223",
+          "episode_reference": 223
+        }
+      ]
+    },
+    {
+      "episode_number": 224,
+      "title": "200TH EPISODE: Midsommar Revisited!",
+      "air_date": "2023-05-09",
+      "description": "Episode discussing 200TH EPISODE: Midsommar Revisited!",
+      "movies": [
+        {
+          "title": "200TH EPISODE: Midsommar Revisited!",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 224",
+          "episode_reference": 224
+        }
+      ]
+    },
+    {
+      "episode_number": 225,
+      "title": "CREEP (Vault Episode)",
+      "air_date": "2023-05-16",
+      "description": "Episode discussing CREEP",
+      "movies": [
+        {
+          "title": "CREEP",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 225",
+          "episode_reference": 225
+        }
+      ]
+    },
+    {
+      "episode_number": 226,
+      "title": "CHILD'S PLAY",
+      "air_date": "2023-05-23",
+      "description": "Episode discussing CHILD'S PLAY",
+      "movies": [
+        {
+          "title": "CHILD'S PLAY",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 226",
+          "episode_reference": 226
+        }
+      ]
+    },
+    {
+      "episode_number": 227,
+      "title": "Bonus Episode: TUSK",
+      "air_date": "2023-05-30",
+      "description": "Episode discussing Bonus Episode: TUSK",
+      "movies": [
+        {
+          "title": "Bonus Episode: TUSK",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 227",
+          "episode_reference": 227
+        }
+      ]
+    },
+    {
+      "episode_number": 228,
+      "title": "SILENT HILL",
+      "air_date": "2023-06-06",
+      "description": "Episode discussing SILENT HILL",
+      "movies": [
+        {
+          "title": "SILENT HILL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 228",
+          "episode_reference": 228
+        }
+      ]
+    },
+    {
+      "episode_number": 229,
+      "title": "TALK TO ME with Spooko",
+      "air_date": "2023-06-13",
+      "description": "Episode discussing TALK TO ME",
+      "movies": [
+        {
+          "title": "TALK TO ME",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 229",
+          "episode_reference": 229
+        }
+      ]
+    },
+    {
+      "episode_number": 230,
+      "title": "SWEENEY TODD + Q&amp;A with John Rapson!",
+      "air_date": "2023-06-20",
+      "description": "Episode discussing SWEENEY TODD + Q&amp;A",
+      "movies": [
+        {
+          "title": "SWEENEY TODD + Q&amp;A",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 230",
+          "episode_reference": 230
+        }
+      ]
+    },
+    {
+      "episode_number": 231,
+      "title": "THE BLACKWELL GHOST with Roz Hernandez",
+      "air_date": "2023-06-27",
+      "description": "Episode discussing THE BLACKWELL GHOST",
+      "movies": [
+        {
+          "title": "THE BLACKWELL GHOST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 231",
+          "episode_reference": 231
+        }
+      ]
+    },
+    {
+      "episode_number": 232,
+      "title": "Bonus Episode: THE HOUSE THAT JACK BUILT",
+      "air_date": "2023-07-04",
+      "description": "Episode discussing Bonus Episode: THE HOUSE THAT JACK BUILT",
+      "movies": [
+        {
+          "title": "Bonus Episode: THE HOUSE THAT JACK BUILT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 232",
+          "episode_reference": 232
+        }
+      ]
+    },
+    {
+      "episode_number": 233,
+      "title": "EVIL DEAD 2 (Vault Episode)",
+      "air_date": "2023-07-11",
+      "description": "Episode discussing EVIL DEAD 2",
+      "movies": [
+        {
+          "title": "EVIL DEAD 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 233",
+          "episode_reference": 233
+        }
+      ]
+    },
+    {
+      "episode_number": 234,
+      "title": "DEAD CALM with Joel Jensen",
+      "air_date": "2023-07-18",
+      "description": "Episode discussing DEAD CALM",
+      "movies": [
+        {
+          "title": "DEAD CALM",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 234",
+          "episode_reference": 234
+        }
+      ]
+    },
+    {
+      "episode_number": 235,
+      "title": "THE WICKER MAN (2006) with Elizabeth Andrews and Waleed Mansour",
+      "air_date": "2023-07-25",
+      "description": "Episode discussing THE WICKER MAN",
+      "movies": [
+        {
+          "title": "THE WICKER MAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 235",
+          "episode_reference": 235
         }
       ]
     },
     {
       "episode_number": 236,
+      "title": "SAW 2 with Joel Jensen",
+      "air_date": "2023-08-01",
+      "description": "Episode discussing SAW 2",
+      "movies": [
+        {
+          "title": "SAW 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 236",
+          "episode_reference": 236
+        }
+      ]
+    },
+    {
+      "episode_number": 237,
+      "title": "GERALD'S GAME",
+      "air_date": "2023-08-08",
+      "description": "Episode discussing GERALD'S GAME",
+      "movies": [
+        {
+          "title": "GERALD'S GAME",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 237",
+          "episode_reference": 237
+        }
+      ]
+    },
+    {
+      "episode_number": 238,
+      "title": "DEEP RED",
+      "air_date": "2023-08-15",
+      "description": "Episode discussing DEEP RED",
+      "movies": [
+        {
+          "title": "DEEP RED",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 238",
+          "episode_reference": 238
+        }
+      ]
+    },
+    {
+      "episode_number": 239,
+      "title": "RE-ANIMATOR",
+      "air_date": "2023-08-22",
+      "description": "Episode discussing RE-ANIMATOR",
+      "movies": [
+        {
+          "title": "RE-ANIMATOR",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 239",
+          "episode_reference": 239
+        }
+      ]
+    },
+    {
+      "episode_number": 240,
+      "title": "DISTURBING BEHAVIOR",
+      "air_date": "2023-08-29",
+      "description": "Episode discussing DISTURBING BEHAVIOR",
+      "movies": [
+        {
+          "title": "DISTURBING BEHAVIOR",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 240",
+          "episode_reference": 240
+        }
+      ]
+    },
+    {
+      "episode_number": 241,
+      "title": "THE OTHERS",
+      "air_date": "2023-09-05",
+      "description": "Episode discussing THE OTHERS",
+      "movies": [
+        {
+          "title": "THE OTHERS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 241",
+          "episode_reference": 241
+        }
+      ]
+    },
+    {
+      "episode_number": 242,
+      "title": "Bonus Episode: SKINAMARINK",
+      "air_date": "2023-09-12",
+      "description": "Episode discussing Bonus Episode: SKINAMARINK",
+      "movies": [
+        {
+          "title": "Bonus Episode: SKINAMARINK",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 242",
+          "episode_reference": 242
+        }
+      ]
+    },
+    {
+      "episode_number": 243,
+      "title": "THE POPE'S EXORCISTwith Paul F. Tompkins",
+      "air_date": "2023-09-19",
+      "description": "Episode discussing THE POPE'S EXORCIST",
+      "movies": [
+        {
+          "title": "THE POPE'S EXORCIST",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 243",
+          "episode_reference": 243
+        }
+      ]
+    },
+    {
+      "episode_number": 244,
+      "title": "NO ONE WILL SAVE YOU with Casey McQuiston",
+      "air_date": "2023-09-26",
+      "description": "Episode discussing NO ONE WILL SAVE YOU",
+      "movies": [
+        {
+          "title": "NO ONE WILL SAVE YOU",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 244",
+          "episode_reference": 244
+        }
+      ]
+    },
+    {
+      "episode_number": 245,
+      "title": "SLITHER with Misha Brown",
+      "air_date": "2023-10-03",
+      "description": "Episode discussing SLITHER",
+      "movies": [
+        {
+          "title": "SLITHER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 245",
+          "episode_reference": 245
+        }
+      ]
+    },
+    {
+      "episode_number": 246,
+      "title": "TWILIGHT with Joel Jensen",
+      "air_date": "2023-10-10",
+      "description": "Episode discussing TWILIGHT",
+      "movies": [
+        {
+          "title": "TWILIGHT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 246",
+          "episode_reference": 246
+        }
+      ]
+    },
+    {
+      "episode_number": 247,
+      "title": "Bonus Episode: THANKSGIVING",
+      "air_date": "2023-10-17",
+      "description": "Episode discussing Bonus Episode: THANKSGIVING",
+      "movies": [
+        {
+          "title": "Bonus Episode: THANKSGIVING",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 247",
+          "episode_reference": 247
+        }
+      ]
+    },
+    {
+      "episode_number": 248,
+      "title": "TERRIFIED with Chelsea Rebecca and James A. Janisse",
+      "air_date": "2023-10-24",
+      "description": "Episode discussing TERRIFIED",
+      "movies": [
+        {
+          "title": "TERRIFIED",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 248",
+          "episode_reference": 248
+        }
+      ]
+    },
+    {
+      "episode_number": 249,
+      "title": "CREEP 2",
+      "air_date": "2023-10-31",
+      "description": "Episode discussing CREEP 2",
+      "movies": [
+        {
+          "title": "CREEP 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 249",
+          "episode_reference": 249
+        }
+      ]
+    },
+    {
+      "episode_number": 250,
+      "title": "THE TWILIGHT SAGA: ECLIPSE",
+      "air_date": "2023-11-07",
+      "description": "Episode discussing THE TWILIGHT SAGA: ECLIPSE",
+      "movies": [
+        {
+          "title": "THE TWILIGHT SAGA: ECLIPSE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 250",
+          "episode_reference": 250
+        }
+      ]
+    },
+    {
+      "episode_number": 251,
+      "title": "GREMLINS",
+      "air_date": "2023-11-14",
+      "description": "Episode discussing GREMLINS",
+      "movies": [
+        {
+          "title": "GREMLINS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 251",
+          "episode_reference": 251
+        }
+      ]
+    },
+    {
+      "episode_number": 252,
+      "title": "Bonus Episode: A BAD MOMS CHRISTMAS",
+      "air_date": "2023-11-21",
+      "description": "Episode discussing Bonus Episode: A BAD MOMS CHRISTMAS",
+      "movies": [
+        {
+          "title": "Bonus Episode: A BAD MOMS CHRISTMAS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 252",
+          "episode_reference": 252
+        }
+      ]
+    },
+    {
+      "episode_number": 253,
+      "title": "Vault Release: THE VISIT",
+      "air_date": "2023-11-28",
+      "description": "Episode discussing : THE VISIT",
+      "movies": [
+        {
+          "title": ": THE VISIT",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 253",
+          "episode_reference": 253
+        }
+      ]
+    },
+    {
+      "episode_number": 254,
+      "title": "Minisode: BIRTH/REBIRTH",
+      "air_date": "2023-12-05",
+      "description": "Episode discussing Minisode: BIRTH/REBIRTH",
+      "movies": [
+        {
+          "title": "Minisode: BIRTH/REBIRTH",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 254",
+          "episode_reference": 254
+        }
+      ]
+    },
+    {
+      "episode_number": 255,
+      "title": "THE EMPTY MAN",
+      "air_date": "2023-12-12",
+      "description": "Episode discussing THE EMPTY MAN",
+      "movies": [
+        {
+          "title": "THE EMPTY MAN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 255",
+          "episode_reference": 255
+        }
+      ]
+    },
+    {
+      "episode_number": 256,
+      "title": "THE EYES OF MY MOTHER",
+      "air_date": "2023-12-19",
+      "description": "Episode discussing THE EYES OF MY MOTHER",
+      "movies": [
+        {
+          "title": "THE EYES OF MY MOTHER",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 256",
+          "episode_reference": 256
+        }
+      ]
+    },
+    {
+      "episode_number": 257,
+      "title": "SICK",
+      "air_date": "2023-12-26",
+      "description": "Episode discussing SICK",
+      "movies": [
+        {
+          "title": "SICK",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 257",
+          "episode_reference": 257
+        }
+      ]
+    },
+    {
+      "episode_number": 258,
+      "title": "THE PEOPLE UNDER THE STAIRS",
+      "air_date": "2024-01-02",
+      "description": "Episode discussing THE PEOPLE UNDER THE STAIRS",
+      "movies": [
+        {
+          "title": "THE PEOPLE UNDER THE STAIRS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 258",
+          "episode_reference": 258
+        }
+      ]
+    },
+    {
+      "episode_number": 259,
+      "title": "Bonus Episode: TRIANGLE",
+      "air_date": "2024-01-09",
+      "description": "Episode discussing Bonus Episode: TRIANGLE",
+      "movies": [
+        {
+          "title": "Bonus Episode: TRIANGLE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 259",
+          "episode_reference": 259
+        }
+      ]
+    },
+    {
+      "episode_number": 260,
+      "title": "PERFECT BLUE",
+      "air_date": "2024-01-16",
+      "description": "Episode discussing PERFECT BLUE",
+      "movies": [
+        {
+          "title": "PERFECT BLUE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 260",
+          "episode_reference": 260
+        }
+      ]
+    },
+    {
+      "episode_number": 261,
+      "title": "RAVENOUS with Joel Jensen",
+      "air_date": "2024-01-23",
+      "description": "Episode discussing RAVENOUS",
+      "movies": [
+        {
+          "title": "RAVENOUS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 261",
+          "episode_reference": 261
+        }
+      ]
+    },
+    {
+      "episode_number": 262,
+      "title": "TRUTH OR DARE",
+      "air_date": "2024-01-30",
+      "description": "Episode discussing TRUTH OR DARE",
+      "movies": [
+        {
+          "title": "TRUTH OR DARE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 262",
+          "episode_reference": 262
+        }
+      ]
+    },
+    {
+      "episode_number": 263,
+      "title": "PRINCE OF DARKNESS with Jamelle Bouie",
+      "air_date": "2024-02-06",
+      "description": "Episode discussing PRINCE OF DARKNESS",
+      "movies": [
+        {
+          "title": "PRINCE OF DARKNESS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 263",
+          "episode_reference": 263
+        }
+      ]
+    },
+    {
+      "episode_number": 264,
+      "title": "EDEN LAKE",
+      "air_date": "2024-02-13",
+      "description": "Episode discussing EDEN LAKE",
+      "movies": [
+        {
+          "title": "EDEN LAKE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 264",
+          "episode_reference": 264
+        }
+      ]
+    },
+    {
+      "episode_number": 265,
+      "title": "A TALE OF TWO SISTERS",
+      "air_date": "2024-02-20",
+      "description": "Episode discussing A TALE OF TWO SISTERS",
+      "movies": [
+        {
+          "title": "A TALE OF TWO SISTERS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 265",
+          "episode_reference": 265
+        }
+      ]
+    },
+    {
+      "episode_number": 266,
+      "title": "LEPRECHAUN",
+      "air_date": "2024-02-27",
+      "description": "Episode discussing LEPRECHAUN",
+      "movies": [
+        {
+          "title": "LEPRECHAUN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 266",
+          "episode_reference": 266
+        }
+      ]
+    },
+    {
+      "episode_number": 267,
+      "title": "JOY RIDE with Kurt Schmidt",
+      "air_date": "2024-03-05",
+      "description": "Episode discussing Joy Ride",
+      "movies": [
+        {
+          "title": "Joy Ride",
+          "year": 2023,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 267",
+          "episode_reference": 267
+        }
+      ]
+    },
+    {
+      "episode_number": 268,
+      "title": "DONNIE DARKO",
+      "air_date": "2024-03-12",
+      "description": "Episode discussing Donnie Darko",
+      "movies": [
+        {
+          "title": "Donnie Darko",
+          "year": 2001,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 268",
+          "episode_reference": 268
+        }
+      ]
+    },
+    {
+      "episode_number": 269,
+      "title": "REVENGE with Avital Ash",
+      "air_date": "2024-03-19",
+      "description": "Episode discussing Revenge",
+      "movies": [
+        {
+          "title": "Revenge",
+          "year": 2017,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 269",
+          "episode_reference": 269
+        }
+      ]
+    },
+    {
+      "episode_number": 270,
+      "title": "LATE NIGHT WITH THE DEVIL",
+      "air_date": "2024-03-26",
+      "description": "Episode discussing Late Night with the Devil",
+      "movies": [
+        {
+          "title": "Late Night with the Devil",
+          "year": 2023,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 270",
+          "episode_reference": 270
+        }
+      ]
+    },
+    {
+      "episode_number": 271,
+      "title": "BREAKING DAWN PART 1 with Joel Jensen",
+      "air_date": "2024-04-02",
+      "description": "Episode discussing The Twilight Saga: Breaking Dawn - Part 1",
+      "movies": [
+        {
+          "title": "The Twilight Saga: Breaking Dawn - Part 1",
+          "year": 2011,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 271",
+          "episode_reference": 271
+        }
+      ]
+    },
+    {
+      "episode_number": 272,
+      "title": "THE FOG",
+      "air_date": "2024-04-09",
+      "description": "Episode discussing The Fog",
+      "movies": [
+        {
+          "title": "The Fog",
+          "year": 1980,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 272",
+          "episode_reference": 272
+        }
+      ]
+    },
+    {
+      "episode_number": 273,
+      "title": "EX MACHINA with Raina Morris",
+      "air_date": "2024-04-16",
+      "description": "Episode discussing Ex Machina",
+      "movies": [
+        {
+          "title": "Ex Machina",
+          "year": 2014,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 273",
+          "episode_reference": 273
+        }
+      ]
+    },
+    {
+      "episode_number": 274,
+      "title": "ALONE",
+      "air_date": "2024-04-23",
+      "description": "Episode discussing Alone",
+      "movies": [
+        {
+          "title": "Alone",
+          "year": 2020,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 274",
+          "episode_reference": 274
+        }
+      ]
+    },
+    {
+      "episode_number": 275,
+      "title": "SPLICE",
+      "air_date": "2024-04-30",
+      "description": "Episode discussing Splice",
+      "movies": [
+        {
+          "title": "Splice",
+          "year": 2009,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 275",
+          "episode_reference": 275
+        }
+      ]
+    },
+    {
+      "episode_number": 276,
+      "title": "REAR WINDOW",
+      "air_date": "2024-05-07",
+      "description": "Episode discussing Rear Window",
+      "movies": [
+        {
+          "title": "Rear Window",
+          "year": 1954,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 276",
+          "episode_reference": 276
+        }
+      ]
+    },
+    {
+      "episode_number": 277,
+      "title": "THE TWILIGHT SAGA: NEW MOON",
+      "air_date": "2024-05-14",
+      "description": "Episode discussing The Twilight Saga: New Moon",
+      "movies": [
+        {
+          "title": "The Twilight Saga: New Moon",
+          "year": 2009,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 277",
+          "episode_reference": 277
+        }
+      ]
+    },
+    {
+      "episode_number": 278,
+      "title": "BREAKING DAWN PART 2 with Joel Jensen",
+      "air_date": "2024-05-21",
+      "description": "Episode discussing The Twilight Saga: Breaking Dawn - Part 2",
+      "movies": [
+        {
+          "title": "The Twilight Saga: Breaking Dawn - Part 2",
+          "year": 2012,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 278",
+          "episode_reference": 278
+        }
+      ]
+    },
+    {
+      "episode_number": 279,
+      "title": "NIGHT SWIM",
+      "air_date": "2024-05-28",
+      "description": "Episode discussing Night Swim",
+      "movies": [
+        {
+          "title": "Night Swim",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 279",
+          "episode_reference": 279
+        }
+      ]
+    },
+    {
+      "episode_number": 280,
+      "title": "I SAW THE TV GLOW with Hayes Davenport and Sean Clements",
+      "air_date": "2024-06-04",
+      "description": "Episode discussing I Saw the TV Glow",
+      "movies": [
+        {
+          "title": "I Saw the TV Glow",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 280",
+          "episode_reference": 280
+        }
+      ]
+    },
+    {
+      "episode_number": 281,
+      "title": "IN A VIOLENT NATURE with Chris Nash",
+      "air_date": "2024-06-11",
+      "description": "Episode discussing In a Violent Nature",
+      "movies": [
+        {
+          "title": "In a Violent Nature",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 281",
+          "episode_reference": 281
+        }
+      ]
+    },
+    {
+      "episode_number": 282,
+      "title": "ABIGAIL with Paul F. Tompkins",
+      "air_date": "2024-06-18",
+      "description": "Episode discussing Abigail",
+      "movies": [
+        {
+          "title": "Abigail",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 282",
+          "episode_reference": 282
+        }
+      ]
+    },
+    {
+      "episode_number": 283,
+      "title": "MIDSOMMAR",
+      "air_date": "2024-06-18",
+      "description": "Episode discussing Ari Aster's folk horror masterpiece",
+      "movies": [
+        {
+          "title": "Midsommar",
+          "year": 2019,
+          "imdb_id": "tt8772262",
+          "notes": "Main movie discussed in Episode 283",
+          "episode_reference": 283
+        }
+      ]
+    },
+    {
+      "episode_number": 284,
+      "title": "THE FIRST OMEN with Jason Concepcion and Rosie Knight",
+      "air_date": "2024-06-25",
+      "description": "Episode discussing The First Omen",
+      "movies": [
+        {
+          "title": "The First Omen",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 284",
+          "episode_reference": 284
+        }
+      ]
+    },
+    {
+      "episode_number": 285,
       "title": "THE WITCH with Joel Jensen and Caroline Lindy",
       "air_date": "2024-06-25",
       "description": "Joel Jensen and Caroline Lindy discuss this atmospheric horror film",
@@ -84,30 +4270,895 @@
           "title": "The Witch",
           "year": 2015,
           "imdb_id": "tt4263482",
-          "notes": "Main movie discussed in episode"
+          "notes": "Main movie discussed in Episode 285",
+          "episode_reference": 285
         }
       ]
     },
     {
-      "episode_number": 235,
-      "title": "MIDSOMMAR",
-      "air_date": "2024-06-18",
-      "description": "The very first episode discussing Ari Aster's folk horror masterpiece",
+      "episode_number": 286,
+      "title": "THE DEVIL'S BATH",
+      "air_date": "2024-07-02",
+      "description": "Episode discussing The Devil's Bath",
       "movies": [
         {
-          "title": "Midsommar",
-          "year": 2019,
-          "imdb_id": "tt8772262",
-          "notes": "Main movie discussed in episode"
+          "title": "The Devil's Bath",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 286",
+          "episode_reference": 286
+        }
+      ]
+    },
+    {
+      "episode_number": 287,
+      "title": "THE EVIL DEAD with Stephen Unckles",
+      "air_date": "2024-07-02",
+      "description": "Stephen Unckles joins to discuss Sam Raimi's 1981 classic horror film",
+      "movies": [
+        {
+          "title": "The Evil Dead",
+          "year": 1981,
+          "imdb_id": "tt0083907",
+          "notes": "Main movie discussed in Episode 287",
+          "episode_reference": 287
+        },
+        {
+          "title": "Evil Dead II",
+          "year": 1987,
+          "imdb_id": "tt0092991",
+          "notes": "Main movie discussed in Episode 287",
+          "episode_reference": 287
+        }
+      ]
+    },
+    {
+      "episode_number": 288,
+      "title": "MAXXXINE (Live!) with Betsy Sodaro",
+      "air_date": "2024-07-09",
+      "description": "Episode discussing MaXXXine",
+      "movies": [
+        {
+          "title": "MaXXXine",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 288",
+          "episode_reference": 288
+        }
+      ]
+    },
+    {
+      "episode_number": 289,
+      "title": "A QUIET PLACE: DAY ONE with Kathleen Jordan",
+      "air_date": "2024-07-16",
+      "description": "Episode discussing A Quiet Place: Day One",
+      "movies": [
+        {
+          "title": "A Quiet Place: Day One",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 289",
+          "episode_reference": 289
+        }
+      ]
+    },
+    {
+      "episode_number": 290,
+      "title": "LONGLEGS with Alicia Witt",
+      "air_date": "2024-07-23",
+      "description": "Episode discussing Longlegs",
+      "movies": [
+        {
+          "title": "Longlegs",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 290",
+          "episode_reference": 290
+        }
+      ]
+    },
+    {
+      "episode_number": 291,
+      "title": "TRAP",
+      "air_date": "2024-07-30",
+      "description": "Episode discussing Trap",
+      "movies": [
+        {
+          "title": "Trap",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 291",
+          "episode_reference": 291
+        }
+      ]
+    },
+    {
+      "episode_number": 292,
+      "title": "TWISTERS with Joel Jensen",
+      "air_date": "2024-08-06",
+      "description": "Episode discussing Twisters",
+      "movies": [
+        {
+          "title": "Twisters",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 292",
+          "episode_reference": 292
+        }
+      ]
+    },
+    {
+      "episode_number": 293,
+      "title": "CUCKOO",
+      "air_date": "2024-08-13",
+      "description": "Episode discussing Cuckoo",
+      "movies": [
+        {
+          "title": "Cuckoo",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 293",
+          "episode_reference": 293
+        }
+      ]
+    },
+    {
+      "episode_number": 294,
+      "title": "ALIEN: ROMULUSwith Haley Joel Osment",
+      "air_date": "2024-08-20",
+      "description": "Episode discussing Alien: Romulus",
+      "movies": [
+        {
+          "title": "Alien: Romulus",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 294",
+          "episode_reference": 294
+        }
+      ]
+    },
+    {
+      "episode_number": 295,
+      "title": "THE REEF with Wes Larson",
+      "air_date": "2024-08-27",
+      "description": "Episode discussing The Reef",
+      "movies": [
+        {
+          "title": "The Reef",
+          "year": 2010,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 295",
+          "episode_reference": 295
+        }
+      ]
+    },
+    {
+      "episode_number": 296,
+      "title": "CAM",
+      "air_date": "2024-09-03",
+      "description": "Episode discussing Cam",
+      "movies": [
+        {
+          "title": "Cam",
+          "year": 2018,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 296",
+          "episode_reference": 296
+        }
+      ]
+    },
+    {
+      "episode_number": 297,
+      "title": "SLEEPY HOLLOW",
+      "air_date": "2024-09-10",
+      "description": "Episode discussing Sleepy Hollow",
+      "movies": [
+        {
+          "title": "Sleepy Hollow",
+          "year": 1999,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 297",
+          "episode_reference": 297
+        }
+      ]
+    },
+    {
+      "episode_number": 298,
+      "title": "BONE TOMAHAWK",
+      "air_date": "2024-09-17",
+      "description": "Episode discussing Bone Tomahawk",
+      "movies": [
+        {
+          "title": "Bone Tomahawk",
+          "year": 2015,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 298",
+          "episode_reference": 298
+        }
+      ]
+    },
+    {
+      "episode_number": 299,
+      "title": "TITANIC",
+      "air_date": "2024-09-24",
+      "description": "Episode discussing Titanic",
+      "movies": [
+        {
+          "title": "Titanic",
+          "year": 1997,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 299",
+          "episode_reference": 299
+        }
+      ]
+    },
+    {
+      "episode_number": 300,
+      "title": "HALLOWEEN (2018)",
+      "air_date": "2024-10-01",
+      "description": "Episode discussing HALLOWEEN",
+      "movies": [
+        {
+          "title": "HALLOWEEN",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 300",
+          "episode_reference": 300
+        }
+      ]
+    },
+    {
+      "episode_number": 301,
+      "title": "SPEAK NO EVIL (US REMAKE)",
+      "air_date": "2024-10-08",
+      "description": "Episode discussing SPEAK NO EVIL",
+      "movies": [
+        {
+          "title": "SPEAK NO EVIL",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 301",
+          "episode_reference": 301
+        }
+      ]
+    },
+    {
+      "episode_number": 302,
+      "title": "THE SUBSTANCE with Avital Ash",
+      "air_date": "2024-10-15",
+      "description": "Episode discussing The Substance",
+      "movies": [
+        {
+          "title": "The Substance",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 302",
+          "episode_reference": 302
+        }
+      ]
+    },
+    {
+      "episode_number": 303,
+      "title": "TERRIFIER 3",
+      "air_date": "2024-10-22",
+      "description": "Episode discussing Terrifier 3",
+      "movies": [
+        {
+          "title": "Terrifier 3",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 303",
+          "episode_reference": 303
+        }
+      ]
+    },
+    {
+      "episode_number": 304,
+      "title": "YOUR MONSTER with Caroline Lindy",
+      "air_date": "2024-10-29",
+      "description": "Episode discussing Your Monster",
+      "movies": [
+        {
+          "title": "Your Monster",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 304",
+          "episode_reference": 304
+        }
+      ]
+    },
+    {
+      "episode_number": 305,
+      "title": "SMILE 2 with Sam Sanders",
+      "air_date": "2024-11-05",
+      "description": "Episode discussing Smile 2",
+      "movies": [
+        {
+          "title": "Smile 2",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 305",
+          "episode_reference": 305
+        }
+      ]
+    },
+    {
+      "episode_number": 306,
+      "title": "HERETIC",
+      "air_date": "2024-11-12",
+      "description": "Episode discussing Heretic",
+      "movies": [
+        {
+          "title": "Heretic",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 306",
+          "episode_reference": 306
+        }
+      ]
+    },
+    {
+      "episode_number": 307,
+      "title": "RED EYE",
+      "air_date": "2024-11-19",
+      "description": "Episode discussing Red Eye",
+      "movies": [
+        {
+          "title": "Red Eye",
+          "year": 2005,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 307",
+          "episode_reference": 307
+        }
+      ]
+    },
+    {
+      "episode_number": 308,
+      "title": "SINGLE WHITE FEMALE",
+      "air_date": "2024-11-26",
+      "description": "Episode discussing Single White Female",
+      "movies": [
+        {
+          "title": "Single White Female",
+          "year": 1992,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 308",
+          "episode_reference": 308
+        }
+      ]
+    },
+    {
+      "episode_number": 309,
+      "title": "THE NIGHTMARE BEFORE CHRISTMAS",
+      "air_date": "2024-12-03",
+      "description": "Episode discussing The Nightmare Before Christmas",
+      "movies": [
+        {
+          "title": "The Nightmare Before Christmas",
+          "year": 1993,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 309",
+          "episode_reference": 309
+        }
+      ]
+    },
+    {
+      "episode_number": 310,
+      "title": "INSIDE (2007)",
+      "air_date": "2024-12-10",
+      "description": "Episode discussing INSIDE",
+      "movies": [
+        {
+          "title": "INSIDE",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 310",
+          "episode_reference": 310
+        }
+      ]
+    },
+    {
+      "episode_number": 311,
+      "title": "IMMACULATE",
+      "air_date": "2024-12-17",
+      "description": "Episode discussing Immaculate",
+      "movies": [
+        {
+          "title": "Immaculate",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 311",
+          "episode_reference": 311
+        }
+      ]
+    },
+    {
+      "episode_number": 312,
+      "title": "THE NEON DEMON",
+      "air_date": "2024-12-24",
+      "description": "Episode discussing The Neon Demon",
+      "movies": [
+        {
+          "title": "The Neon Demon",
+          "year": 2016,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 312",
+          "episode_reference": 312
+        }
+      ]
+    },
+    {
+      "episode_number": 313,
+      "title": "NOSFERATU",
+      "air_date": "2024-12-31",
+      "description": "Episode discussing Nosferatu",
+      "movies": [
+        {
+          "title": "Nosferatu",
+          "year": 1922,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 313",
+          "episode_reference": 313
+        }
+      ]
+    },
+    {
+      "episode_number": 314,
+      "title": "IT'S WHATS INSIDE",
+      "air_date": "2025-01-07",
+      "description": "Episode discussing It's What's Inside",
+      "movies": [
+        {
+          "title": "It's What's Inside",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 314",
+          "episode_reference": 314
+        }
+      ]
+    },
+    {
+      "episode_number": 315,
+      "title": "THE SLUMBER PARTY MASSACRE",
+      "air_date": "2025-01-14",
+      "description": "Episode discussing The Slumber Party Massacre",
+      "movies": [
+        {
+          "title": "The Slumber Party Massacre",
+          "year": 1982,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 315",
+          "episode_reference": 315
+        }
+      ]
+    },
+    {
+      "episode_number": 316,
+      "title": "THE INNOCENTS",
+      "air_date": "2025-01-21",
+      "description": "Episode discussing The Innocents",
+      "movies": [
+        {
+          "title": "The Innocents",
+          "year": 1961,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 316",
+          "episode_reference": 316
+        }
+      ]
+    },
+    {
+      "episode_number": 317,
+      "title": "THE HAUNTING IN CONNECTICUT",
+      "air_date": "2025-01-28",
+      "description": "Episode discussing The Haunting in Connecticut",
+      "movies": [
+        {
+          "title": "The Haunting in Connecticut",
+          "year": 2009,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 317",
+          "episode_reference": 317
+        }
+      ]
+    },
+    {
+      "episode_number": 318,
+      "title": "GANJA &amp; HESS",
+      "air_date": "2025-02-04",
+      "description": "Episode discussing GANJA &amp; HESS",
+      "movies": [
+        {
+          "title": "GANJA &amp; HESS",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 318",
+          "episode_reference": 318
+        }
+      ]
+    },
+    {
+      "episode_number": 319,
+      "title": "DEATH BECOMES HER",
+      "air_date": "2025-02-11",
+      "description": "Episode discussing Death Becomes Her",
+      "movies": [
+        {
+          "title": "Death Becomes Her",
+          "year": 1992,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 319",
+          "episode_reference": 319
+        }
+      ]
+    },
+    {
+      "episode_number": 320,
+      "title": "EVIL DEAD (2013) WATCH-ALONG",
+      "air_date": "2025-02-18",
+      "description": "Episode discussing EVIL DEAD WATCH-ALONG",
+      "movies": [
+        {
+          "title": "EVIL DEAD WATCH-ALONG",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 320",
+          "episode_reference": 320
+        }
+      ]
+    },
+    {
+      "episode_number": 321,
+      "title": "WHAT EVER HAPPENED TO BABY JANE? with Kara Brown",
+      "air_date": "2025-02-25",
+      "description": "Episode discussing What Ever Happened to Baby Jane?",
+      "movies": [
+        {
+          "title": "What Ever Happened to Baby Jane?",
+          "year": 1962,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 321",
+          "episode_reference": 321
+        }
+      ]
+    },
+    {
+      "episode_number": 322,
+      "title": "SUNSHINE",
+      "air_date": "2025-03-04",
+      "description": "Episode discussing Sunshine",
+      "movies": [
+        {
+          "title": "Sunshine",
+          "year": 2007,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 322",
+          "episode_reference": 322
+        }
+      ]
+    },
+    {
+      "episode_number": 323,
+      "title": "THE MONKEY",
+      "air_date": "2025-03-11",
+      "description": "Episode discussing The Monkey",
+      "movies": [
+        {
+          "title": "The Monkey",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 323",
+          "episode_reference": 323
+        }
+      ]
+    },
+    {
+      "episode_number": 324,
+      "title": "LEPRECHAUN 2",
+      "air_date": "2025-03-18",
+      "description": "Episode discussing Leprechaun 2",
+      "movies": [
+        {
+          "title": "Leprechaun 2",
+          "year": 1994,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 324",
+          "episode_reference": 324
+        }
+      ]
+    },
+    {
+      "episode_number": 325,
+      "title": "THE LOVE WITCH with Casey Donahue and Anya Kanevskaya",
+      "air_date": "2025-03-25",
+      "description": "Episode discussing The Love Witch",
+      "movies": [
+        {
+          "title": "The Love Witch",
+          "year": 2016,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 325",
+          "episode_reference": 325
+        }
+      ]
+    },
+    {
+      "episode_number": 326,
+      "title": "MADS",
+      "air_date": "2025-04-01",
+      "description": "Episode discussing Mads",
+      "movies": [
+        {
+          "title": "Mads",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 326",
+          "episode_reference": 326
+        }
+      ]
+    },
+    {
+      "episode_number": 327,
+      "title": "HELL OF A SUMMER with Finn Wolfhard and Billy Bryk",
+      "air_date": "2025-04-08",
+      "description": "Episode discussing Hell of a Summer",
+      "movies": [
+        {
+          "title": "Hell of a Summer",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 327",
+          "episode_reference": 327
+        }
+      ]
+    },
+    {
+      "episode_number": 328,
+      "title": "THE BLACKENING with Dewayne Perkins",
+      "air_date": "2025-04-15",
+      "description": "Episode discussing The Blackening",
+      "movies": [
+        {
+          "title": "The Blackening",
+          "year": 2022,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 328",
+          "episode_reference": 328
+        }
+      ]
+    },
+    {
+      "episode_number": 329,
+      "title": "BEETLEJUICE with Tony Hale",
+      "air_date": "2025-04-22",
+      "description": "Episode discussing Beetlejuice",
+      "movies": [
+        {
+          "title": "Beetlejuice",
+          "year": 1988,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 329",
+          "episode_reference": 329
+        }
+      ]
+    },
+    {
+      "episode_number": 330,
+      "title": "DROP",
+      "air_date": "2025-04-29",
+      "description": "Episode discussing Drop",
+      "movies": [
+        {
+          "title": "Drop",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 330",
+          "episode_reference": 330
+        }
+      ]
+    },
+    {
+      "episode_number": 331,
+      "title": "DOGTOOTH with Charlie Bardey",
+      "air_date": "2025-05-06",
+      "description": "Episode discussing Dogtooth",
+      "movies": [
+        {
+          "title": "Dogtooth",
+          "year": 2009,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 331",
+          "episode_reference": 331
+        }
+      ]
+    },
+    {
+      "episode_number": 332,
+      "title": "SINNERS with Ronald Young Jr.",
+      "air_date": "2025-05-13",
+      "description": "Episode discussing Sinners",
+      "movies": [
+        {
+          "title": "Sinners",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 332",
+          "episode_reference": 332
+        }
+      ]
+    },
+    {
+      "episode_number": 333,
+      "title": "THE HOLE with Grace Harper",
+      "air_date": "2025-05-20",
+      "description": "Episode discussing The Hole",
+      "movies": [
+        {
+          "title": "The Hole",
+          "year": 2009,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 333",
+          "episode_reference": 333
+        }
+      ]
+    },
+    {
+      "episode_number": 334,
+      "title": "THE LOVED ONES",
+      "air_date": "2025-05-27",
+      "description": "Episode discussing The Loved Ones",
+      "movies": [
+        {
+          "title": "The Loved Ones",
+          "year": 2009,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 334",
+          "episode_reference": 334
+        }
+      ]
+    },
+    {
+      "episode_number": 335,
+      "title": "28 WEEKS LATER",
+      "air_date": "2025-06-03",
+      "description": "Episode discussing 28 Weeks Later",
+      "movies": [
+        {
+          "title": "28 Weeks Later",
+          "year": 2007,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 335",
+          "episode_reference": 335
+        }
+      ]
+    },
+    {
+      "episode_number": 336,
+      "title": "THEY LIVE with Gareth Reynolds",
+      "air_date": "2025-06-10",
+      "description": "Episode discussing They Live",
+      "movies": [
+        {
+          "title": "They Live",
+          "year": 1988,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 336",
+          "episode_reference": 336
+        }
+      ]
+    },
+    {
+      "episode_number": 337,
+      "title": "ODDITY",
+      "air_date": "2025-06-17",
+      "description": "Episode discussing Oddity",
+      "movies": [
+        {
+          "title": "Oddity",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 337",
+          "episode_reference": 337
+        }
+      ]
+    },
+    {
+      "episode_number": 338,
+      "title": "AMERICAN PSYCHO with Andrew Cunningham and Craig Getting",
+      "air_date": "2025-06-24",
+      "description": "Episode discussing American Psycho",
+      "movies": [
+        {
+          "title": "American Psycho",
+          "year": 2000,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 338",
+          "episode_reference": 338
+        }
+      ]
+    },
+    {
+      "episode_number": 339,
+      "title": "TITAN: THE OCEANGATE DISASTER",
+      "air_date": "2025-07-01",
+      "description": "Episode discussing Titan: The OceanGate Disaster",
+      "movies": [
+        {
+          "title": "Titan: The OceanGate Disaster",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 339",
+          "episode_reference": 339
+        }
+      ]
+    },
+    {
+      "episode_number": 340,
+      "title": "28 YEARS LATER with Dan Lippert",
+      "air_date": "2025-07-08",
+      "description": "Episode discussing 28 Years Later",
+      "movies": [
+        {
+          "title": "28 Years Later",
+          "year": 2025,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 340",
+          "episode_reference": 340
+        }
+      ]
+    },
+    {
+      "episode_number": 341,
+      "title": "M3GAN 2.0",
+      "air_date": "2025-07-15",
+      "description": "Episode discussing M3GAN 2.0",
+      "movies": [
+        {
+          "title": "M3GAN 2.0",
+          "year": 2025,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 341",
+          "episode_reference": 341
+        }
+      ]
+    },
+    {
+      "episode_number": 342,
+      "title": "THE RITUAL with Paul F. Tompkins",
+      "air_date": "2025-07-22",
+      "description": "Episode discussing The Ritual",
+      "movies": [
+        {
+          "title": "The Ritual",
+          "year": 2017,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 342",
+          "episode_reference": 342
+        }
+      ]
+    },
+    {
+      "episode_number": 343,
+      "title": "FINAL DESTINATION: BLOODLINESwith Lisa Gilroy",
+      "air_date": "2025-07-29",
+      "description": "Episode discussing Final Destination: Bloodlines",
+      "movies": [
+        {
+          "title": "Final Destination: Bloodlines",
+          "year": 2024,
+          "imdb_id": "",
+          "notes": "Main movie discussed in Episode 343",
+          "episode_reference": 343
         }
       ]
     }
   ],
   "metadata": {
     "podcast_name": "Too Scary; Didn't Watch",
-    "last_updated": "2024-07-29",
-    "total_episodes": 6,
+    "last_updated": "2025-07-29",
+    "total_episodes": 343,
     "data_format_version": "1.0",
-    "justwatch_locale": "en_US"
+    "justwatch_locale": "en_US",
+    "sort_order": "oldest_to_newest"
   }
-} 
+}
