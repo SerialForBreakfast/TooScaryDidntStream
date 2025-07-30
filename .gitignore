@@ -32,8 +32,8 @@ ENV/
 .env.local
 .env.*.local
 
-# API Data (optional - you may want to commit this)
-data/streaming_data.json
+# API Data (committed for deployment)
+# data/streaming_data.json
 
 # IDE
 .vscode/
@@ -49,5 +49,5 @@ data/streaming_data.json
 # Logs
 *.log
 
-# Output files
-output/*.html 
+# Output files (committed for deployment)
+# output/*.html 

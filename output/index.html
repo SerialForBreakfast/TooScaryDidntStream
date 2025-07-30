@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Too Scary; Didn't Watch - Movie Streaming Tracker</title>
+    <meta name="description" content="Find where to stream movies mentioned in the Too Scary; Didn't Watch podcast.">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .episode {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        
+        .episode:hover {
+            transform: translateY(-2px);
+        }
+        
+        .episode-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .episode-number {
+            color: #6c757d;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .episode-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 5px 0;
+        }
+        
+        .episode-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .episode-description {
+            color: #495057;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        
+        .movies {
+            padding: 0;
+        }
+        
+        .movie {
+            padding: 20px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+        
+        .movie:last-child {
+            border-bottom: none;
+        }
+        
+        .movie-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .movie-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .movie-year {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-left: 10px;
+        }
+        
+        .movie-notes {
+            color: #6c757d;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        
+        .streaming-sources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .source {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #495057;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .source:hover {
+            background: #e9ecef;
+            transform: translateY(-1px);
+            text-decoration: none;
+            color: #495057;
+        }
+        
+        .source.subscription {
+            background: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        
+        .source.rent {
+            background: #fff3cd;
+            border-color: #ffeaa7;
+            color: #856404;
+        }
+        
+        .source.buy {
+            background: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        
+        .source.free {
+            background: #cce5ff;
+            border-color: #b3d9ff;
+            color: #004085;
+        }
+        
+        .source-logo {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        
+        .no-streaming {
+            color: #6c757d;
+            font-style: italic;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .data-sources {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px 0;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .last-updated {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .github-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                gap: 20px;
+            }
+            
+            .movie-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .streaming-sources {
+                justify-content: flex-start;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Too Scary; Didn't Watch</h1>
+            <p class="subtitle">Movie Streaming Tracker</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Episodes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Movies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Streaming Options</span>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+        
+        <div class="episode">
+            <div class="episode-header">
+                <div class="episode-number">Episode 234</div>
+                <h2 class="episode-title">The Strangers: Prey at Night</h2>
+                <div class="episode-date">2024-01-15</div>
+                <div class="episode-description">The gang discusses this 2018 horror sequel and its streaming availability</div>
+            </div>
+            <div class="movies">
+        
+        <div class="movie">
+            <div class="movie-header">
+                <div>
+                    <span class="movie-title">The Strangers: Prey at Night</span>
+                    <span class="movie-year">(2018)</span>
+                    
+                </div>
+            </div>
+        <div class="no-streaming">No streaming sources found</div></div>
+            </div>
+        </div>
+        
+        </main>
+        
+        <footer class="footer">
+        <div class="last-updated">Last updated: 2024-01-29</div><div class="data-attribution">Streaming data powered by: Mock</div>
+            <div>
+                <a href="https://github.com/SerialForBreakfast/TooScaryDidntStream" class="github-link">
+                    View on GitHub
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
