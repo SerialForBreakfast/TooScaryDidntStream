@@ -67,7 +67,7 @@ jobs:
     - name: Upload staging artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: staging-build
+        name: staging-build-${{ github.event.pull_request.number }}
         path: |
           output/
           data/streaming_data.json
@@ -82,15 +82,15 @@ jobs:
     - name: Download staging artifacts
       uses: actions/download-artifact@v4
       with:
-        name: staging-build
+        name: staging-build-${{ github.event.pull_request.number }}
 
-    - name: Deploy to staging environment
+    - name: Deploy to PR-specific staging environment
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./output
         publish_branch: staging-pages
-        destination_dir: staging
+        destination_dir: staging/pr-${{ github.event.pull_request.number }}
 
     - name: Create staging deployment
       uses: actions/github-script@v7
@@ -108,8 +108,8 @@ jobs:
               repo: context.repo.repo,
               deployment_id: deployments[0].id,
               state: 'success',
-              environment_url: 'https://serialforbreakfast.github.io/TooScaryDidntStream/staging/',
-              description: 'Staging deployment successful'
+              environment_url: 'https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/',
+              description: 'PR-specific staging deployment successful'
             });
           }
 
@@ -133,7 +133,7 @@ jobs:
             echo "" >> pr_summary.txt
             echo "## 🔗 Site Links" >> pr_summary.txt
             echo "- **Production:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html" >> pr_summary.txt
-            echo "- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/" >> pr_summary.txt
+            echo "- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/" >> pr_summary.txt
             echo "" >> pr_summary.txt
             echo "## 📁 Files Changed" >> pr_summary.txt
             echo "PR summary script not available. Please check the changes manually." >> pr_summary.txt
@@ -145,7 +145,7 @@ jobs:
           echo "" >> pr_summary.txt
           echo "## 🔗 Site Links" >> pr_summary.txt
           echo "- **Production:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html" >> pr_summary.txt
-          echo "- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/" >> pr_summary.txt
+          echo "- **Staging:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/" >> pr_summary.txt
           echo "" >> pr_summary.txt
           echo "## 📁 Files Changed" >> pr_summary.txt
           echo "Scripts directory not available. Please check the changes manually." >> pr_summary.txt
@@ -165,14 +165,14 @@ jobs:
             summary = 'Could not generate summary';
           }
           
-          const comment = `## 🚀 Staging Deployment Complete
+          const comment = `## 🚀 PR-Specific Staging Deployment Complete
           
-          **Preview URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+          **Preview URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/
           **Production URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
           
           **Before & After Comparison:**
           - **Before (Production):** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
-          - **After (Staging):** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+          - **After (Staging):** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/
           
           **Change Summary:**
           ${summary}
@@ -184,7 +184,7 @@ jobs:
           4. Approve and merge to trigger production deployment
           
           ---
-          *This is an automated staging deployment for PR #${{ github.event.pull_request.number }}*`;
+          *This is an automated PR-specific staging deployment for PR #${{ github.event.pull_request.number }}*`;
           
           await github.rest.issues.createComment({
             owner: context.repo.owner,
@@ -199,22 +199,25 @@ jobs:
     needs: deploy-staging
     
     steps:
-    - name: Cleanup staging deployment
+    - name: Cleanup PR-specific staging deployment
       uses: actions/github-script@v7
       with:
         script: |
-          // Delete staging artifacts when PR is closed
+          // Delete PR-specific staging artifacts when PR is closed
           const { data: artifacts } = await github.rest.actions.listArtifactsForRepo({
             owner: context.repo.owner,
             repo: context.repo.repo
           });
           
           for (const artifact of artifacts.artifacts) {
-            if (artifact.name === 'staging-build' && artifact.created_at < new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)) {
+            if (artifact.name === `staging-build-${{ github.event.pull_request.number }}`) {
               await github.rest.actions.deleteArtifact({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 artifact_id: artifact.id
               });
             }
-          } 
+          }
+          
+          // Note: GitHub Pages cleanup would require additional steps
+          // The staging/pr-{number} directory will remain until manual cleanup 

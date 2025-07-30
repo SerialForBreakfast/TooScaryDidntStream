@@ -16,7 +16,9 @@ class PRSummaryGenerator:
         self.repo_owner = "serialforbreakfast"
         self.repo_name = "TooScaryDidntStream"
         self.production_url = f"https://{self.repo_owner}.github.io/{self.repo_name}/output/index.html"
-        self.staging_url = f"https://{self.repo_owner}.github.io/{self.repo_name}/staging/"
+        # Get PR number from environment or default to 'latest'
+        self.pr_number = os.environ.get('GITHUB_EVENT_PULL_REQUEST_NUMBER', 'latest')
+        self.staging_url = f"https://{self.repo_owner}.github.io/{self.repo_name}/staging/pr-{self.pr_number}/"
 
     def get_git_changes(self) -> Dict[str, List[str]]:
         """Get list of changed files from git."""

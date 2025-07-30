@@ -12,8 +12,9 @@
 - **Production Branch:** `gh-pages`
 
 ### Staging Site
-- **Staging Preview:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+- **Staging Preview:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-{PR_NUMBER}/
 - **Staging Branch:** `staging-pages`
+- **Note:** Each PR gets its own staging environment at `/staging/pr-{PR_NUMBER}/`
 
 ## 📊 Before & After Comparison
 
@@ -22,7 +23,7 @@
 - **Key Features:** [List current production features]
 
 ### After (Staging)
-- **URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+- **URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-{PR_NUMBER}/
 - **New Features:** [List new features in this PR]
 
 ## 🎯 Changes Summary
@@ -113,7 +114,7 @@
 
 ### Staging Deployment
 - **Status:** [Pending/In Progress/Complete]
-- **URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/
+- **URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-{PR_NUMBER}/
 - **Branch:** `staging-pages`
 
 ### Production Deployment
