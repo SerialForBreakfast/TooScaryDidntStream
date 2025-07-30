@@ -159,10 +159,6 @@ class HTMLGenerator:
         <div class="sidebar">
             <div class="sidebar-header">
                 <h3>Episodes</h3>
-                <div class="search-container">
-                    <input type="text" id="episode-filter" placeholder="Search episodes..." class="episode-search">
-                    <div class="search-icon">🔍</div>
-                </div>
             </div>
             
             <div class="filter-section">
@@ -192,8 +188,20 @@ class HTMLGenerator:
                             <input type="checkbox" value="pluto" checked> Pluto TV
                         </label>
                     </div>
+                    <div class="free-filter">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="free-only" value="free"> Free only
+                        </label>
+                    </div>
                     <button id="apply-filter" class="filter-button">Apply Filter</button>
                     <button id="clear-filter" class="filter-button secondary">Clear All</button>
+                </div>
+            </div>
+            
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="episode-filter" placeholder="Search episodes..." class="episode-search">
+                    <div class="search-icon">🔍</div>
                 </div>
             </div>
             
@@ -524,6 +532,25 @@ class HTMLGenerator:
 
         .filter-button.secondary:hover {
             background: #545b62;
+        }
+
+        .search-section {
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            background: white;
+        }
+
+        .free-filter {
+            margin: 15px 0;
+            padding: 10px;
+            background: #e8f4fd;
+            border-radius: 4px;
+            border-left: 3px solid #007bff;
+        }
+
+        .free-filter .checkbox-item {
+            font-weight: 500;
+            color: #007bff;
         }
 
         .letter-section {
@@ -965,6 +992,8 @@ class HTMLGenerator:
                 const selectedServices = Array.from(serviceCheckboxes)
                     .filter(checkbox => checkbox.checked)
                     .map(checkbox => checkbox.value.toLowerCase());
+                
+                const freeOnly = document.getElementById('free-only').checked;
 
                 const episodes = document.querySelectorAll('.episode');
                 
@@ -975,9 +1004,17 @@ class HTMLGenerator:
                     movies.forEach(movie => {
                         const streamingSources = movie.querySelectorAll('.source');
                         let hasSelectedService = false;
+                        let hasFreeSource = false;
 
                         streamingSources.forEach(source => {
                             const sourceText = source.textContent.toLowerCase();
+                            const sourceType = source.closest('.streaming-section');
+                            
+                            // Check if this is a free source
+                            if (sourceType && sourceType.querySelector('.section-label').textContent.toLowerCase().includes('free')) {
+                                hasFreeSource = true;
+                            }
+                            
                             const hasService = selectedServices.some(service => {
                                 const serviceMap = {
                                     'netflix': 'netflix',
@@ -996,7 +1033,13 @@ class HTMLGenerator:
                             }
                         });
 
-                        if (hasSelectedService) {
+                        // Apply free-only filter if enabled
+                        let shouldShow = hasSelectedService;
+                        if (freeOnly && !hasFreeSource) {
+                            shouldShow = false;
+                        }
+
+                        if (shouldShow) {
                             movie.style.display = 'block';
                             hasVisibleMovies = true;
                         } else {
@@ -1018,6 +1061,9 @@ class HTMLGenerator:
                 serviceCheckboxes.forEach(checkbox => {
                     checkbox.checked = true;
                 });
+                
+                // Reset free-only checkbox to unchecked
+                document.getElementById('free-only').checked = false;
 
                 // Show all episodes and movies
                 const episodes = document.querySelectorAll('.episode');
