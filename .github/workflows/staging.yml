@@ -116,15 +116,31 @@ jobs:
     - name: Generate PR Summary
       if: github.event_name == 'pull_request'
       run: |
-        echo "Checking for PR summary script..."
-        ls -la scripts/
+        echo "Checking repository structure..."
+        ls -la
         echo ""
-        if [ -f "scripts/generate_pr_summary.py" ]; then
-          echo "Script found, generating summary..."
-          python scripts/generate_pr_summary.py > pr_summary.txt
-          echo "Summary generated successfully"
+        echo "Checking for PR summary script..."
+        if [ -d "scripts" ]; then
+          ls -la scripts/
+          echo ""
+          if [ -f "scripts/generate_pr_summary.py" ]; then
+            echo "Script found, generating summary..."
+            python scripts/generate_pr_summary.py > pr_summary.txt
+            echo "Summary generated successfully"
+          else
+            echo "Script not found, creating fallback summary..."
+            echo "# 📊 Change Summary" > pr_summary.txt
+            echo "" >> pr_summary.txt
+            echo "## 🔗 Site Links" >> pr_summary.txt
+            echo "- **Production:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/output/index.html" >> pr_summary.txt
+            echo "- **Staging:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/" >> pr_summary.txt
+            echo "" >> pr_summary.txt
+            echo "## 📁 Files Changed" >> pr_summary.txt
+            echo "PR summary script not available. Please check the changes manually." >> pr_summary.txt
+            echo "Fallback summary created"
+          fi
         else
-          echo "Script not found, creating fallback summary..."
+          echo "Scripts directory not found, creating fallback summary..."
           echo "# 📊 Change Summary" > pr_summary.txt
           echo "" >> pr_summary.txt
           echo "## 🔗 Site Links" >> pr_summary.txt
@@ -132,7 +148,7 @@ jobs:
           echo "- **Staging:** https://${{ github.repository_owner }}.github.io/${{ github.repository }}/staging/" >> pr_summary.txt
           echo "" >> pr_summary.txt
           echo "## 📁 Files Changed" >> pr_summary.txt
-          echo "PR summary script not available. Please check the changes manually." >> pr_summary.txt
+          echo "Scripts directory not available. Please check the changes manually." >> pr_summary.txt
           echo "Fallback summary created"
         fi
 
