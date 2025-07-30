@@ -48,25 +48,78 @@ class HTMLGenerator:
             }
             
             for movie in episode.get("movies", []):
+                # Create varied mock streaming sources based on movie characteristics
+                streaming_sources = []
+                
+                # Add different types of sources based on movie year/genre
+                movie_year = movie.get("year", 2024)
+                movie_title = movie.get("title", "").lower()
+                
+                # Free sources (more common for older movies)
+                if movie_year < 2010 or "horror" in movie_title:
+                    streaming_sources.append({
+                        "name": "Tubi",
+                        "type": "free",
+                        "region": "US",
+                        "web_url": "https://tubi.tv",
+                        "logo_url": "https://logo.clearbit.com/tubi.tv"
+                    })
+                    streaming_sources.append({
+                        "name": "Pluto TV",
+                        "type": "free",
+                        "region": "US",
+                        "web_url": "https://pluto.tv",
+                        "logo_url": "https://logo.clearbit.com/pluto.tv"
+                    })
+                
+                # Subscription sources
+                streaming_sources.append({
+                    "name": "Netflix",
+                    "type": "subscription",
+                    "region": "US",
+                    "web_url": "https://netflix.com",
+                    "logo_url": "https://logo.clearbit.com/netflix.com"
+                })
+                
+                if movie_year >= 2020:
+                    streaming_sources.append({
+                        "name": "HBO Max",
+                        "type": "subscription",
+                        "region": "US",
+                        "web_url": "https://hbomax.com",
+                        "logo_url": "https://logo.clearbit.com/hbomax.com"
+                    })
+                
+                # Rent sources (for newer movies)
+                if movie_year >= 2022:
+                    streaming_sources.append({
+                        "name": "iTunes",
+                        "type": "rent",
+                        "region": "US",
+                        "web_url": "https://itunes.apple.com",
+                        "logo_url": "https://logo.clearbit.com/itunes.apple.com"
+                    })
+                    streaming_sources.append({
+                        "name": "Google Play",
+                        "type": "rent",
+                        "region": "US",
+                        "web_url": "https://play.google.com",
+                        "logo_url": "https://logo.clearbit.com/play.google.com"
+                    })
+                
+                # Buy sources
+                streaming_sources.append({
+                    "name": "Amazon",
+                    "type": "buy",
+                    "region": "US",
+                    "web_url": "https://amazon.com",
+                    "logo_url": "https://logo.clearbit.com/amazon.com"
+                })
+                
                 movie_data = {
                     "title": movie["title"],
                     "year": movie["year"],
-                    "streaming_sources": [
-                        {
-                            "name": "Netflix",
-                            "type": "subscription",
-                            "region": "US",
-                            "web_url": "https://netflix.com",
-                            "logo_url": "https://logo.clearbit.com/netflix.com"
-                        },
-                        {
-                            "name": "Amazon Prime",
-                            "type": "subscription", 
-                            "region": "US",
-                            "web_url": "https://amazon.com",
-                            "logo_url": "https://logo.clearbit.com/amazon.com"
-                        }
-                    ],
+                    "streaming_sources": streaming_sources,
                     "data_sources": ["mock"]
                 }
                 episode_data["movies"].append(movie_data)
@@ -434,19 +487,64 @@ class HTMLGenerator:
         }
 
         .header {
-            text-align: center;
             margin-bottom: 40px;
         }
 
-        .header h1 {
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        .header-text h1 {
             color: #2c3e50;
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
 
-        .header p {
+        .header-text p {
             color: #6c757d;
             font-size: 1.1rem;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        .sort-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .sort-button:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .sort-button:active {
+            transform: translateY(0);
+        }
+
+        .sort-button #sort-icon {
+            font-size: 16px;
+            transition: transform 0.2s ease;
         }
 
         .episode {
@@ -609,8 +707,22 @@ class HTMLGenerator:
                 padding: 20px;
             }
             
-            .header h1 {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .header-text {
+                text-align: center;
+            }
+            
+            .header-text h1 {
                 font-size: 2rem;
+            }
+            
+            .sort-button {
+                align-self: center;
             }
         }
         </style>
@@ -618,7 +730,7 @@ class HTMLGenerator:
 
     def generate_javascript(self) -> str:
         """Generate JavaScript for filtering functionality."""
-        return '''
+        return r'''
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             const filterInput = document.getElementById('episode-filter');
@@ -681,6 +793,67 @@ class HTMLGenerator:
                     }
                 });
             });
+
+            // Sorting functionality
+            let currentSortOrder = 'asc'; // 'asc' for A-Z, 'desc' for Z-A
+            
+            window.toggleSort = function() {
+                const episodesContainer = document.querySelector('.episodes-container');
+                const episodes = Array.from(episodesContainer.children);
+                const sortButton = document.getElementById('sort-button');
+                const sortIcon = document.getElementById('sort-icon');
+                const sortText = document.getElementById('sort-text');
+                
+                // Toggle sort order
+                currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
+                
+                // Update button appearance
+                if (currentSortOrder === 'asc') {
+                    sortIcon.textContent = '↓';
+                    sortText.textContent = 'A-Z';
+                } else {
+                    sortIcon.textContent = '↑';
+                    sortText.textContent = 'Z-A';
+                }
+                
+                // Sort episodes
+                episodes.sort((a, b) => {
+                    const aTitle = a.querySelector('h3').textContent.toLowerCase();
+                    const bTitle = b.querySelector('h3').textContent.toLowerCase();
+                    
+                    // Extract episode numbers for proper numeric sorting
+                    const aEpisodeMatch = aTitle.match(/episode (\d+)/i);
+                    const bEpisodeMatch = bTitle.match(/episode (\d+)/i);
+                    
+                    if (aEpisodeMatch && bEpisodeMatch) {
+                        const aEpisodeNum = parseInt(aEpisodeMatch[1]);
+                        const bEpisodeNum = parseInt(bEpisodeMatch[1]);
+                        
+                        if (currentSortOrder === 'asc') {
+                            return aEpisodeNum - bEpisodeNum;
+                        } else {
+                            return bEpisodeNum - aEpisodeNum;
+                        }
+                    } else {
+                        // Fallback to alphabetical sorting
+                        if (currentSortOrder === 'asc') {
+                            return aTitle.localeCompare(bTitle);
+                        } else {
+                            return bTitle.localeCompare(aTitle);
+                        }
+                    }
+                });
+                
+                // Re-append episodes in sorted order
+                episodes.forEach(episode => {
+                    episodesContainer.appendChild(episode);
+                });
+                
+                // Add smooth transition effect
+                episodes.forEach(episode => {
+                    episode.style.transition = 'all 0.3s ease';
+                });
+            };
         });
         </script>
         '''
@@ -704,8 +877,18 @@ class HTMLGenerator:
                 
                 <div class="main-content">
                     <div class="header">
-                        <h1>Too Scary; Didn't Watch</h1>
-                        <p>Find where to stream movies mentioned in the podcast</p>
+                        <div class="header-content">
+                            <div class="header-text">
+                                <h1>Too Scary; Didn't Watch</h1>
+                                <p>Find where to stream movies mentioned in the podcast</p>
+                            </div>
+                            <div class="header-controls">
+                                <button id="sort-button" class="sort-button" onclick="toggleSort()">
+                                    <span id="sort-icon">↓</span>
+                                    <span id="sort-text">A-Z</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     
                     {self.generate_stats_dashboard()}
