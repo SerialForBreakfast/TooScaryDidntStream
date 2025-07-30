@@ -837,12 +837,14 @@ class HTMLGenerator:
             max-width: calc(100vw - 350px);
             box-sizing: border-box;
             flex-wrap: wrap;
-            transition: margin-left 0.3s ease;
+            transition: all 0.3s ease;
+            min-height: 100vh;
         }
 
         .main-content.sidebar-hidden {
             margin-left: 0;
             max-width: 100vw;
+            width: 100%;
         }
 
         .header {
@@ -1177,6 +1179,15 @@ class HTMLGenerator:
                 border-right: none;
                 border-bottom: 1px solid #e9ecef;
                 position: relative;
+                transform: none;
+                transition: max-height 0.3s ease, opacity 0.3s ease;
+            }
+
+            .sidebar.hidden {
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+                border-bottom: none;
             }
 
             .sidebar-header {
@@ -1199,7 +1210,15 @@ class HTMLGenerator:
             .main-content {
                 margin-left: 0;
                 max-width: 100%;
+                width: 100%;
                 padding: 20px;
+                transition: all 0.3s ease;
+            }
+
+            .main-content.sidebar-hidden {
+                margin-left: 0;
+                max-width: 100%;
+                width: 100%;
             }
 
             .header-content {
@@ -1243,6 +1262,32 @@ class HTMLGenerator:
             .source {
                 justify-content: center;
                 min-width: 120px;
+            }
+        }
+
+        /* Medium screens (tablets) */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .sidebar {
+                width: 300px;
+            }
+
+            .main-content {
+                margin-left: 300px;
+                max-width: calc(100vw - 300px);
+            }
+
+            .main-content.sidebar-hidden {
+                margin-left: 0;
+                max-width: 100vw;
+                width: 100%;
+            }
+
+            .sidebar-toggle-float {
+                display: block;
+            }
+
+            .sidebar-toggle-float.show {
+                display: block;
             }
         }
 
@@ -1518,14 +1563,43 @@ class HTMLGenerator:
                     sidebarToggleFloat.classList.remove('show');
                     toggleText.textContent = 'Hide Sidebar';
                     floatToggleText.textContent = 'Show Sidebar';
+                    
+                    // Trigger resize event to help with responsive layout
+                    window.dispatchEvent(new Event('resize'));
                 } else {
                     sidebar.classList.add('hidden');
                     mainContent.classList.add('sidebar-hidden');
                     sidebarToggleFloat.classList.add('show');
                     toggleText.textContent = 'Show Sidebar';
                     floatToggleText.textContent = 'Hide Sidebar';
+                    
+                    // Trigger resize event to help with responsive layout
+                    window.dispatchEvent(new Event('resize'));
                 }
             }
+
+            // Handle responsive behavior on window resize
+            function handleResize() {
+                const isMobile = window.innerWidth <= 768;
+                const isTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
+                
+                if (isMobile) {
+                    // On mobile, sidebar is always visible unless hidden
+                    sidebarToggleFloat.style.display = sidebarVisible ? 'none' : 'block';
+                } else if (isTablet) {
+                    // On tablet, show floating button when sidebar is hidden
+                    sidebarToggleFloat.style.display = sidebarVisible ? 'none' : 'block';
+                } else {
+                    // On desktop, show floating button when sidebar is hidden
+                    sidebarToggleFloat.style.display = sidebarVisible ? 'none' : 'block';
+                }
+            }
+
+            // Initial resize handling
+            handleResize();
+            
+            // Listen for window resize
+            window.addEventListener('resize', handleResize);
 
             toggleSidebarBtn.addEventListener('click', toggleSidebar);
             
