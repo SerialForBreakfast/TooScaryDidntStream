@@ -96,7 +96,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 530385
         }
       ]
@@ -183,7 +183,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 310131
         }
       ]
@@ -228,7 +228,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 764
         }
       ]
@@ -336,7 +336,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 346364
         }
       ]
@@ -451,7 +451,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 474350
         }
       ]
@@ -465,7 +465,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -483,6 +483,20 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/23827/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
+            },
+            {
+              "name": "Paramount+ Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/23827/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "Paramount+ Roku Premium Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/23827/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
             },
             {
               "name": "Amazon Video",
@@ -558,7 +572,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 23827
         }
       ]
@@ -694,7 +708,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 30497
         }
       ]
@@ -713,13 +727,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/170/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
-            },
-            {
-              "name": "AMC+ Amazon Channel",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/170/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
             },
             {
               "name": "AMC+ Roku Premium Channel",
@@ -816,7 +823,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 170
         }
       ]
@@ -938,7 +945,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 503919
         }
       ]
@@ -1046,7 +1053,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1359977
         }
       ]
@@ -1062,7 +1069,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1421084
         }
       ]
@@ -1078,7 +1085,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1401427
         }
       ]
@@ -1092,7 +1099,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -1185,7 +1192,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 807
         }
       ]
@@ -1279,7 +1286,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 348
         }
       ]
@@ -1387,7 +1394,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 274
         }
       ]
@@ -1403,7 +1410,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1385377
         }
       ]
@@ -1469,7 +1476,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1140017
         }
       ]
@@ -1483,7 +1490,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -1639,7 +1646,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 242224
         }
       ]
@@ -1726,7 +1733,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 9552
         }
       ]
@@ -1766,13 +1773,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/830764/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/830764/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -1911,7 +1911,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 830764
         }
       ]
@@ -1937,13 +1937,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/565/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/565/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Amazon Video",
@@ -2019,7 +2012,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 565
         }
       ]
@@ -2035,7 +2028,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1294691
         }
       ]
@@ -2049,7 +2042,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -2142,7 +2135,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1013474
         }
       ]
@@ -2158,7 +2151,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1128836
         }
       ]
@@ -2184,13 +2177,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/270303/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/270303/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Cinemax Amazon Channel",
@@ -2280,7 +2266,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 270303
         }
       ]
@@ -2294,7 +2280,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -2326,13 +2312,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/447332/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/447332/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -2436,7 +2415,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 447332
         }
       ]
@@ -2450,7 +2429,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -2465,7 +2444,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1190186
         }
       ]
@@ -2545,7 +2524,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1401259
         }
       ]
@@ -2667,7 +2646,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 2667
         }
       ]
@@ -2683,7 +2662,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1243226
         }
       ]
@@ -2791,7 +2770,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 614479
         }
       ]
@@ -2843,7 +2822,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1384336
         }
       ]
@@ -2859,7 +2838,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1317845
         }
       ]
@@ -2873,7 +2852,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -2886,7 +2865,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -2901,7 +2880,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1326337
         }
       ]
@@ -2946,7 +2925,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1440016
         }
       ]
@@ -2972,13 +2951,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/646385/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/646385/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -3089,7 +3061,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 646385
         }
       ]
@@ -3105,7 +3077,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1324730
         }
       ]
@@ -3119,7 +3091,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3132,7 +3104,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3147,7 +3119,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1329470
         }
       ]
@@ -3161,7 +3133,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3176,7 +3148,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1047397
         }
       ]
@@ -3256,7 +3228,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1455726
         }
       ]
@@ -3272,7 +3244,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1253191
         }
       ]
@@ -3286,7 +3258,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3379,7 +3351,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 377
         }
       ]
@@ -3395,7 +3367,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1397154
         }
       ]
@@ -3411,7 +3383,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1382553
         }
       ]
@@ -3427,7 +3399,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1306887
         }
       ]
@@ -3486,7 +3458,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 28340
         }
       ]
@@ -3502,7 +3474,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1452770
         }
       ]
@@ -3610,7 +3582,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 2756
         }
       ]
@@ -3624,7 +3596,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3717,7 +3689,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 176
         }
       ]
@@ -3731,7 +3703,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3746,7 +3718,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1395437
         }
       ]
@@ -3760,7 +3732,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3775,7 +3747,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1179855
         }
       ]
@@ -3789,7 +3761,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3802,7 +3774,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3817,7 +3789,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1311681
         }
       ]
@@ -3831,7 +3803,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3844,7 +3816,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3859,7 +3831,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1309401
         }
       ]
@@ -3873,7 +3845,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3886,7 +3858,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3899,7 +3871,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3912,7 +3884,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3942,7 +3914,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 433808
         }
       ]
@@ -3956,7 +3928,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -3969,7 +3941,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4125,7 +4097,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 376570
         }
       ]
@@ -4141,7 +4113,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1479491
         }
       ]
@@ -4155,7 +4127,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4168,7 +4140,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4183,7 +4155,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1496199
         }
       ]
@@ -4197,7 +4169,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4210,7 +4182,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4225,7 +4197,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1407694
         }
       ]
@@ -4239,7 +4211,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4304,7 +4276,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1063574
         }
       ]
@@ -4318,7 +4290,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4331,7 +4303,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4346,7 +4318,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1306554
         }
       ]
@@ -4362,7 +4334,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1407011
         }
       ]
@@ -4407,7 +4379,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1199974
         }
       ]
@@ -4421,7 +4393,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4434,7 +4406,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4447,11 +4419,25 @@
           "imdb_id": "",
           "streaming_sources": [
             {
+              "name": "AMC+ Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/8914/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+            },
+            {
               "name": "AMC+ Roku Premium Channel",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/8914/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/gAGrSQCTAisxy2CsWbijVvJEnRo.jpg"
+            },
+            {
+              "name": "AMC",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/8914/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/92Kx25Od0habmgRBTqT6XWgwgKt.jpg"
             },
             {
               "name": "Amazon Video",
@@ -4534,7 +4520,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 8914
         }
       ]
@@ -4558,7 +4544,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1014505
         }
       ]
@@ -4572,7 +4558,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4587,7 +4573,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1360817
         }
       ]
@@ -4660,7 +4646,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 411088
         }
       ]
@@ -4674,7 +4660,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4699,13 +4685,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/520763/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/520763/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -4809,7 +4788,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 520763
         }
       ]
@@ -4823,7 +4802,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4838,7 +4817,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1369863
         }
       ]
@@ -4854,7 +4833,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1340847
         }
       ]
@@ -4868,7 +4847,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -4961,7 +4940,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 539972
         }
       ]
@@ -5195,7 +5174,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 28503
         }
       ]
@@ -5209,7 +5188,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5224,7 +5203,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 505292
         }
       ]
@@ -5238,7 +5217,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5251,7 +5230,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5264,7 +5243,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5385,7 +5364,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1159311
         }
       ]
@@ -5401,7 +5380,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1356894
         }
       ]
@@ -5415,7 +5394,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5428,7 +5407,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5441,7 +5420,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5456,7 +5435,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1217947
         }
       ]
@@ -5470,7 +5449,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5483,7 +5462,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5498,7 +5477,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1333100
         }
       ]
@@ -5512,7 +5491,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5525,7 +5504,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5730,7 +5709,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 359246
         }
       ]
@@ -5744,7 +5723,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5757,7 +5736,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5770,7 +5749,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -5870,7 +5849,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 679
         }
       ]
@@ -5985,7 +5964,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 9823
         }
       ]
@@ -5999,7 +5978,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6012,7 +5991,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6025,7 +6004,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6038,7 +6017,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6053,7 +6032,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1259112
         }
       ]
@@ -6067,7 +6046,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6181,7 +6160,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 747
         }
       ]
@@ -6207,13 +6186,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/646385/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/646385/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -6324,7 +6296,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 646385
         }
       ]
@@ -6345,25 +6317,11 @@
               "logo_url": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
             },
             {
-              "name": "Peacock Premium",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/578/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-            },
-            {
               "name": "Netflix Standard with Ads",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/578/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-            },
-            {
-              "name": "Peacock Premium Plus",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/578/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
             },
             {
               "name": "Amazon Video",
@@ -6446,7 +6404,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 578
         }
       ]
@@ -6460,7 +6418,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6473,7 +6431,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6488,7 +6446,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1382911
         }
       ]
@@ -6504,7 +6462,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1396252
         }
       ]
@@ -6518,7 +6476,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6531,7 +6489,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6544,7 +6502,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6557,7 +6515,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6570,7 +6528,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6663,7 +6621,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 7340
         }
       ]
@@ -6778,7 +6736,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 760104
         }
       ]
@@ -6797,19 +6755,12 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/787752/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/787752/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             }
           ],
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 787752
         }
       ]
@@ -6823,7 +6774,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6836,7 +6787,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6849,7 +6800,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6862,7 +6813,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6875,7 +6826,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -6890,7 +6841,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1299372
         }
       ]
@@ -6906,7 +6857,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1240224
         }
       ]
@@ -7000,7 +6951,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 13207
         }
       ]
@@ -7016,7 +6967,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1444020
         }
       ]
@@ -7124,7 +7075,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 819876
         }
       ]
@@ -7246,7 +7197,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 482373
         }
       ]
@@ -7260,7 +7211,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -7367,7 +7318,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1137242
         }
       ]
@@ -7503,7 +7454,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 756999
         }
       ]
@@ -7517,7 +7468,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -7530,7 +7481,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -7543,7 +7494,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -7615,7 +7566,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 28609
         }
       ]
@@ -7628,13 +7579,6 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
-            {
-              "name": "fuboTV",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/762504/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-            },
             {
               "name": "Peacock Premium",
               "type": "subscription",
@@ -7758,7 +7702,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 762504
         }
       ]
@@ -7859,7 +7803,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 520023
         }
       ]
@@ -7960,7 +7904,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1129598
         }
       ]
@@ -7979,13 +7923,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/760161/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/760161/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -8089,7 +8026,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 760161
         }
       ]
@@ -8103,7 +8040,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8118,8 +8055,8 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
-          "tmdb_id": 723294
+          "last_updated": "2025-08-03",
+          "tmdb_id": 1325038
         }
       ]
     },
@@ -8134,7 +8071,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1341663
         }
       ]
@@ -8249,7 +8186,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 913290
         }
       ]
@@ -8280,7 +8217,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1252428
         }
       ]
@@ -8294,7 +8231,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8307,7 +8244,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8320,7 +8257,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8345,13 +8282,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/949423/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/949423/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Amazon Video",
@@ -8434,7 +8364,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 949423
         }
       ]
@@ -8453,13 +8383,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/760161/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/760161/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -8563,7 +8486,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 760161
         }
       ]
@@ -8577,7 +8500,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8590,7 +8513,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8605,7 +8528,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1203307
         }
       ]
@@ -8621,7 +8544,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1447868
         }
       ]
@@ -8715,7 +8638,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 619730
         }
       ]
@@ -8729,7 +8652,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8742,7 +8665,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -8849,7 +8772,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 593643
         }
       ]
@@ -8863,6 +8786,13 @@
           "imdb_id": "",
           "streaming_sources": [
             {
+              "name": "MGM+ Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/791177/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/efu1Cqc63XrPBoreYnf2mn0Nizj.jpg"
+            },
+            {
               "name": "MGM Plus Roku Premium Channel",
               "type": "subscription",
               "region": "US",
@@ -8875,6 +8805,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/791177/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ctiRpS16dlaTXQBSsiFncMrgWmh.jpg"
+            },
+            {
+              "name": "Philo",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/791177/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
             },
             {
               "name": "Amazon Video",
@@ -8957,7 +8894,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 791177
         }
       ]
@@ -9065,7 +9002,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 899112
         }
       ]
@@ -9079,7 +9016,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9092,7 +9029,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9105,7 +9042,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9118,7 +9055,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9131,7 +9068,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9144,7 +9081,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9157,7 +9094,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9170,7 +9107,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9270,7 +9207,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 968051
         }
       ]
@@ -9298,25 +9235,11 @@
               "logo_url": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
             },
             {
-              "name": "Peacock Premium",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/597/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-            },
-            {
               "name": "Paramount Plus",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/597/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/597/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -9331,13 +9254,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/597/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
-            },
-            {
-              "name": "Peacock Premium Plus",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/597/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
             },
             {
               "name": "Amazon Video",
@@ -9427,7 +9343,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 597
         }
       ]
@@ -9441,7 +9357,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9459,12 +9375,54 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1502439/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg"
+            },
+            {
+              "name": "Google Play Movies",
+              "type": "rent",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1502439/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+            },
+            {
+              "name": "YouTube",
+              "type": "rent",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1502439/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+            },
+            {
+              "name": "Amazon Video",
+              "type": "buy",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1502439/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg"
+            },
+            {
+              "name": "Apple TV",
+              "type": "buy",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1502439/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg"
+            },
+            {
+              "name": "Google Play Movies",
+              "type": "buy",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1502439/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+            },
+            {
+              "name": "YouTube",
+              "type": "buy",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1502439/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
             }
           ],
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1502439
         }
       ]
@@ -9593,7 +9551,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 4232
         }
       ]
@@ -9607,7 +9565,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -9847,7 +9805,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 40037
         }
       ]
@@ -9873,13 +9831,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/882598/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/882598/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -9990,7 +9941,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 882598
         }
       ]
@@ -10004,7 +9955,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -10153,7 +10104,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 21484
         }
       ]
@@ -10193,13 +10144,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/798286/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/kkUHFtdjasnnOknZN69TbZ2fCTh.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/798286/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -10303,7 +10247,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 798286
         }
       ]
@@ -10411,7 +10355,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 713704
         }
       ]
@@ -10425,7 +10369,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -10440,7 +10384,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1219884
         }
       ]
@@ -10454,7 +10398,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -10467,7 +10411,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -10567,7 +10511,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1114513
         }
       ]
@@ -10583,7 +10527,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1321952
         }
       ]
@@ -10670,7 +10614,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 837
         }
       ]
@@ -10683,6 +10627,20 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "Peacock Premium",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/440021/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
+            },
+            {
+              "name": "Peacock Premium Plus",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/440021/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
+            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -10757,7 +10715,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 440021
         }
       ]
@@ -10771,7 +10729,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -10784,7 +10742,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -10799,7 +10757,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1424034
         }
       ]
@@ -10886,7 +10844,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 11932
         }
       ]
@@ -10900,7 +10858,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -10915,7 +10873,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1296966
         }
       ]
@@ -10948,13 +10906,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1008042/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/kkUHFtdjasnnOknZN69TbZ2fCTh.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/1008042/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -11058,7 +11009,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1008042
         }
       ]
@@ -11072,7 +11023,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11102,7 +11053,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1244657
         }
       ]
@@ -11116,7 +11067,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11129,7 +11080,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11144,7 +11095,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1306141
         }
       ]
@@ -11266,7 +11217,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 16307
         }
       ]
@@ -11280,7 +11231,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11293,7 +11244,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11306,7 +11257,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11319,7 +11270,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11332,7 +11283,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11418,7 +11369,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1086548
         }
       ]
@@ -11432,7 +11383,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11445,7 +11396,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11468,7 +11419,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 820609
         }
       ]
@@ -11482,7 +11433,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11589,7 +11540,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 8966
         }
       ]
@@ -11603,7 +11554,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11682,7 +11633,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1297970
         }
       ]
@@ -11696,7 +11647,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11709,7 +11660,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11722,7 +11673,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11735,7 +11686,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11750,7 +11701,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1163379
         }
       ]
@@ -11764,7 +11715,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11777,7 +11728,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11790,7 +11741,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11897,7 +11848,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 829410
         }
       ]
@@ -11911,7 +11862,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -11924,7 +11875,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -12010,7 +11961,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 10494
         }
       ]
@@ -12026,7 +11977,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1336305
         }
       ]
@@ -12042,7 +11993,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1303095
         }
       ]
@@ -12058,7 +12009,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 946932
         }
       ]
@@ -12072,7 +12023,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -12102,7 +12053,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 4552
         }
       ]
@@ -12116,7 +12067,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -12129,11 +12080,25 @@
           "imdb_id": "",
           "streaming_sources": [
             {
+              "name": "Peacock Premium",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/864168/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
+            },
+            {
               "name": "Starz Apple TV Channel",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/864168/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
+            },
+            {
+              "name": "Peacock Premium Plus",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/864168/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
             },
             {
               "name": "Amazon Video",
@@ -12216,7 +12181,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 864168
         }
       ]
@@ -12387,7 +12352,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 141
         }
       ]
@@ -12406,13 +12371,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/467938/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
-            },
-            {
-              "name": "Shudder",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/467938/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/vEtdiYRPRbDCp1Tcn3BEPF1Ni76.jpg"
             },
             {
               "name": "MUBI",
@@ -12481,7 +12439,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 467938
         }
       ]
@@ -12631,7 +12589,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 938614
         }
       ]
@@ -12746,7 +12704,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 50619
         }
       ]
@@ -12840,7 +12798,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 790
         }
       ]
@@ -12948,7 +12906,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 264660
         }
       ]
@@ -13063,7 +13021,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 661950
         }
       ]
@@ -13108,7 +13066,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 37707
         }
       ]
@@ -13121,20 +13079,6 @@
           "year": 1954,
           "imdb_id": "",
           "streaming_sources": [
-            {
-              "name": "Netflix",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/567/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-            },
-            {
-              "name": "Netflix Standard with Ads",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/567/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -13209,7 +13153,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 567
         }
       ]
@@ -13324,7 +13268,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 18239
         }
       ]
@@ -13432,7 +13376,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 50620
         }
       ]
@@ -13547,7 +13491,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1072342
         }
       ]
@@ -13669,7 +13613,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 858017
         }
       ]
@@ -13826,7 +13770,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1214509
         }
       ]
@@ -13941,7 +13885,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1111873
         }
       ]
@@ -14042,7 +13986,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 530385
         }
       ]
@@ -14136,7 +14080,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 437342
         }
       ]
@@ -14223,7 +14167,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 310131
         }
       ]
@@ -14352,7 +14296,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 931944
         }
       ]
@@ -14397,7 +14341,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 764
         },
         {
@@ -14448,13 +14392,6 @@
               "logo_url": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
             },
             {
-              "name": "IndieFlix Shorts Amazon Channel",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/765/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/lerlw1kMpDQhfJqC0Z5T0ajCcpQ.jpg"
-            },
-            {
               "name": "Amazon Video",
               "type": "rent",
               "region": "US",
@@ -14528,7 +14465,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 765
         }
       ]
@@ -14636,7 +14573,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1023922
         }
       ]
@@ -14676,13 +14613,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/762441/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/762441/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -14800,7 +14730,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 762441
         }
       ]
@@ -14908,7 +14838,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1226578
         }
       ]
@@ -14943,11 +14873,25 @@
               "logo_url": "https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg"
             },
             {
+              "name": "Cinemax Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1032823/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/ohcwolMl8E743CkS8MnhmJKOlRj.jpg"
+            },
+            {
               "name": "Netflix Standard with Ads",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1032823/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+            },
+            {
+              "name": "Cinemax Apple TV Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1032823/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/zXCdY4pczONheFCU9GkrMbGI1o5.jpg"
             },
             {
               "name": "Amazon Video",
@@ -15030,7 +14974,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1032823
         }
       ]
@@ -15138,7 +15082,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 718821
         }
       ]
@@ -15253,7 +15197,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 869291
         }
       ]
@@ -15347,7 +15291,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 945961
         }
       ]
@@ -15504,7 +15448,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 49787
         }
       ]
@@ -15535,7 +15479,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 521935
         }
       ]
@@ -15554,13 +15498,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/2668/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/2668/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Amazon Video",
@@ -15650,7 +15587,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 2668
         }
       ]
@@ -15786,7 +15723,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 294963
         }
       ]
@@ -15814,25 +15751,11 @@
               "logo_url": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
             },
             {
-              "name": "Peacock Premium",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/597/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-            },
-            {
               "name": "Paramount Plus",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/597/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
-            },
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/597/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
             },
             {
               "name": "Paramount+ Amazon Channel",
@@ -15847,13 +15770,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/597/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
-            },
-            {
-              "name": "Peacock Premium Plus",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/597/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
             },
             {
               "name": "Amazon Video",
@@ -15943,7 +15859,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 597
         }
       ]
@@ -15959,7 +15875,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1317845
         }
       ]
@@ -16060,7 +15976,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1114513
         }
       ]
@@ -16140,7 +16056,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 933260
         }
       ]
@@ -16262,7 +16178,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1034541
         }
       ]
@@ -16288,6 +16204,20 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1098378/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg"
+            },
+            {
+              "name": "Cinemax Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1098378/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/ohcwolMl8E743CkS8MnhmJKOlRj.jpg"
+            },
+            {
+              "name": "Cinemax Apple TV Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1098378/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/zXCdY4pczONheFCU9GkrMbGI1o5.jpg"
             },
             {
               "name": "Amazon Video",
@@ -16363,7 +16293,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1098378
         }
       ]
@@ -16520,7 +16450,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1100782
         }
       ]
@@ -16621,7 +16551,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1138194
         }
       ]
@@ -16640,6 +16570,20 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/11460/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+            },
+            {
+              "name": "Paramount+ Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/11460/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "Paramount+ Roku Premium Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/11460/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
             },
             {
               "name": "Netflix Standard with Ads",
@@ -16729,7 +16673,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 11460
         }
       ]
@@ -16802,7 +16746,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 9605
         }
       ]
@@ -16896,7 +16840,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 9479
         }
       ]
@@ -17018,7 +16962,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 958196
         }
       ]
@@ -17126,7 +17070,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1041613
         }
       ]
@@ -17185,7 +17129,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 301365
         }
       ]
@@ -17360,13 +17304,6 @@
               "logo_url": "https://image.tmdb.org/t/p/original/l8nPh3HtqfIJiFTYT7RdNdsv1XD.jpg"
             },
             {
-              "name": "IndieFlix Shorts Amazon Channel",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/653/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/lerlw1kMpDQhfJqC0Z5T0ajCcpQ.jpg"
-            },
-            {
               "name": "Amazon Video",
               "type": "rent",
               "region": "US",
@@ -17454,7 +17391,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 653
         }
       ]
@@ -17485,7 +17422,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1052280
         }
       ]
@@ -17726,7 +17663,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 27475
         }
       ]
@@ -17742,7 +17679,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 16372
         }
       ]
@@ -17878,7 +17815,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 18781
         }
       ]
@@ -17892,7 +17829,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -17904,6 +17841,20 @@
           "year": 1992,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "Amazon Prime Video",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/9374/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+            },
+            {
+              "name": "Amazon Prime Video with Ads",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/9374/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -17985,7 +17936,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 9374
         }
       ]
@@ -17999,7 +17950,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -18099,7 +18050,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 10242
         }
       ]
@@ -18193,7 +18144,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1272
         }
       ]
@@ -18209,7 +18160,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 974320
         }
       ]
@@ -18338,7 +18289,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 18009
         }
       ]
@@ -18509,7 +18460,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 374052
         }
       ]
@@ -18645,7 +18596,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1262983
         }
       ]
@@ -18659,7 +18610,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -18780,7 +18731,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1008392
         }
       ]
@@ -18881,7 +18832,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 4011
         }
       ]
@@ -18897,7 +18848,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1087207
         }
       ]
@@ -18998,7 +18949,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 38810
         }
       ]
@@ -19014,7 +18965,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1361920
         }
       ]
@@ -19073,7 +19024,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 45650
         }
       ]
@@ -19086,13 +19037,6 @@
           "year": 2009,
           "imdb_id": "",
           "streaming_sources": [
-            {
-              "name": "Paramount Plus Apple TV Channel ",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/46420/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
-            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -19174,7 +19118,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 46420
         }
       ]
@@ -19275,7 +19219,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1562
         }
       ]
@@ -19369,7 +19313,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 8337
         }
       ]
@@ -19540,7 +19484,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1216191
         }
       ]
@@ -19553,6 +19497,13 @@
           "year": 2000,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "Plex",
+              "type": "free",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1359/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg"
+            },
             {
               "name": "Plex Channel",
               "type": "free",
@@ -19662,7 +19613,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1359
         }
       ]
@@ -19676,7 +19627,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     },
@@ -19762,7 +19713,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1100988
         }
       ]
@@ -19856,7 +19807,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 1071585
         }
       ]
@@ -19887,7 +19838,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-08-02",
+          "last_updated": "2025-08-03",
           "tmdb_id": 433808
         }
       ]
@@ -19901,14 +19852,14 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-08-02"
+          "last_updated": "2025-08-03"
         }
       ]
     }
   ],
   "metadata": {
     "podcast_name": "Too Scary; Didn't Watch",
-    "last_updated": "2025-08-02",
+    "last_updated": "2025-08-03",
     "total_episodes": 343,
     "apis_used": [
       "tmdb"
