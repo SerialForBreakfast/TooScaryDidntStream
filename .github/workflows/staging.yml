@@ -102,31 +102,37 @@ jobs:
       with:
         name: staging-build-${{ github.event.pull_request.number }}
 
-    - name: Create staging preview with Surge.sh
+    - name: Create staging preview artifact
       run: |
-        echo "🚀 Creating staging deployment with Surge.sh..."
+        echo "🚀 Creating staging preview..."
         
-        # Install surge globally
-        npm install -g surge
+        # Create a downloadable staging preview
+        cd output
+        zip -r ../staging-preview-pr-${{ github.event.pull_request.number }}.zip .
+        cd ..
         
-        # Create a unique domain for this PR
-        DOMAIN="tooscary-pr-${{ github.event.pull_request.number }}.surge.sh"
+        # Generate staging info
+        echo "PR #${{ github.event.pull_request.number }} Staging Preview" > staging-info.txt
+        echo "Generated: $(date)" >> staging-info.txt
+        echo "Commit: ${{ github.sha }}" >> staging-info.txt
+        echo "" >> staging-info.txt
+        echo "To view this staging preview:" >> staging-info.txt
+        echo "1. Download the staging-preview-pr-${{ github.event.pull_request.number }}.zip artifact" >> staging-info.txt
+        echo "2. Extract the files locally" >> staging-info.txt
+        echo "3. Open index.html in your browser" >> staging-info.txt
         
-        # Deploy to surge (anonymous, temporary)
-        npx surge ./output $DOMAIN --token anonymous
-        
-        # Save the URL
-        echo "STAGING_URL=https://$DOMAIN" >> $GITHUB_ENV
-        echo "Staging deployment created at: https://$DOMAIN"
+        # Create a simple staging URL (GitHub artifact download)
+        echo "STAGING_URL=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
+        echo "Staging preview created as downloadable artifact"
 
-    - name: Verify staging deployment
-      run: |
-        echo "🔍 Verifying staging deployment..."
-        echo "Waiting 10 seconds for deployment to propagate..."
-        sleep 10
-        
-        # Test the staging URL
-        curl -f -s "${{ env.STAGING_URL }}" > /dev/null && echo "✅ Staging URL is accessible!" || echo "⚠️ Staging URL not yet accessible"
+    - name: Upload staging preview
+      uses: actions/upload-artifact@v4
+      with:
+        name: staging-preview-pr-${{ github.event.pull_request.number }}
+        path: |
+          staging-preview-pr-${{ github.event.pull_request.number }}.zip
+          staging-info.txt
+        retention-days: 7
 
     - name: Create staging deployment
       uses: actions/github-script@v7
@@ -205,7 +211,7 @@ jobs:
           
           ### 🔗 Direct Links
           
-          **🎬 Staging Movie Browser:** ${{ env.STAGING_URL }}
+          **📦 Staging Preview:** [Download Staging Artifact](${{ env.STAGING_URL }})
           
           **📱 Production Movie Browser:** https://serialforbreakfast.github.io/TooScaryDidntStream/
           
@@ -214,7 +220,14 @@ jobs:
           | Environment | Link | Description |
           |-------------|------|-------------|
           | 🟢 **Production** | [Current Live Site](https://serialforbreakfast.github.io/TooScaryDidntStream/) | Current production version |
-          | 🟡 **Staging** | [PR Preview](${{ env.STAGING_URL }}) | Your changes in this PR |
+          | 📦 **Staging** | [Download Preview](${{ env.STAGING_URL }}) | Download and test your changes locally |
+          
+          ### 🧪 How to Test Staging Preview
+          
+          1. **Download**: Click the "Download Staging Artifact" link above
+          2. **Extract**: Download and extract the \`staging-preview-pr-${{ github.event.pull_request.number }}.zip\` file
+          3. **Open**: Open \`index.html\` in your browser to test the changes
+          4. **Test**: Use the checklist below to verify functionality
           
           ### 📋 Testing Checklist
           
@@ -309,14 +322,7 @@ jobs:
     - name: Cleanup PR-specific staging deployment
       run: |
         echo "🧹 Cleaning up staging deployment for PR #${{ github.event.pull_request.number }}"
-        
-        # Install surge to clean up the deployment
-        npm install -g surge
-        
-        # Remove the surge deployment
-        DOMAIN="tooscary-pr-${{ github.event.pull_request.number }}.surge.sh"
-        npx surge teardown $DOMAIN || echo "Domain may have already been cleaned up"
-        
+        echo "Staging artifacts will be automatically cleaned up after 7 days retention period"
         echo "Staging cleanup completed for PR #${{ github.event.pull_request.number }}"
 
     - name: Cleanup staging artifacts
