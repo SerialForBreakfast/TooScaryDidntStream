@@ -268,102 +268,27 @@ class HTMLGenerator:
         return f"https://podcasts.apple.com/us/podcast/too-scary-didnt-watch/id{podcast_id}?i=1000{episode_number:04d}"
 
     def generate_episode_sidebar(self) -> str:
-        """Generate the episode sidebar with filtering."""
+        """Generate a simple episode sidebar."""
         episodes = self.movies_data.get("episodes", [])
         
         html = '''
         <div class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <h3>Episodes</h3>
-                <button id="toggle-sidebar" class="toggle-sidebar-btn">
-                    <span class="toggle-icon">◀</span>
-                    <span class="toggle-text">Hide Sidebar</span>
-                </button>
+                <button id="toggle" class="toggle-btn">☰</button>
             </div>
-            
-            <div class="filter-section">
-                <h4>Streaming Filters</h4>
-                <div class="streaming-filter">
-                    <label>Show movies available on:</label>
-                    <div class="service-checkboxes">
-                        <label class="checkbox-item">
-                            <input type="checkbox" value="netflix" checked> Netflix
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" value="hbo" checked> HBO Max
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" value="tubi" checked> Tubi
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" value="amazon" checked> Amazon
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" value="itunes" checked> iTunes
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" value="google" checked> Google Play
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" value="pluto" checked> Pluto TV
-                        </label>
-                    </div>
-                    <div class="free-filter">
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="free-only" value="free"> Free only
-                        </label>
-                    </div>
-                    <button id="apply-filter" class="filter-button">Apply Filter</button>
-                    <button id="clear-filter" class="filter-button secondary">Clear All</button>
-                </div>
-            </div>
-            
-            <div class="search-section">
-                <div class="search-container">
-                    <input type="text" id="episode-filter" placeholder="Search episodes..." class="episode-search">
-                    <div class="search-icon">🔍</div>
-                </div>
-            </div>
-            
-            <div class="episode-list" id="episode-list">
+            <div class="episode-list">
         '''
         
-        # Group episodes by first letter
-        episodes_by_letter = {}
+        # Create simple episode links
         for episode in episodes:
+            episode_number = episode["episode_number"]
             title = episode["title"]
-            first_letter = title[0].upper() if title else "Other"
-            if first_letter not in episodes_by_letter:
-                episodes_by_letter[first_letter] = []
-            episodes_by_letter[first_letter].append(episode)
-        
-        # Sort letters alphabetically
-        sorted_letters = sorted(episodes_by_letter.keys())
-        
-        for letter in sorted_letters:
-            html += f'<div class="letter-section" data-letter="{letter}">'
-            html += f'<div class="letter-header">{letter}</div>'
-            
-            # Get episodes for this letter
-            letter_episodes = episodes_by_letter[letter]
-            letter_episodes.sort(key=lambda x: x["title"])
-            
-            for episode in letter_episodes:
-                episode_number = episode["episode_number"]
-                title = episode["title"]
-                air_date = episode["air_date"]
-                
-                html += f'''
-                <div class="episode-item" data-episode="{episode_number}" data-title="{title.lower()}" data-date="{air_date}">
-                    <div class="episode-number">#{episode_number}</div>
-                    <div class="episode-info">
-                        <div class="episode-title">{title}</div>
-                        <div class="episode-date">{air_date}</div>
-                    </div>
-                </div>
-                '''
-            
-            html += '</div>'
+            html += f'''
+                <a href="#episode-{episode_number}" class="episode-link">
+                    #{episode_number}: {title}
+                </a>
+            '''
         
         html += '''
             </div>
@@ -535,792 +460,188 @@ class HTMLGenerator:
         '''
 
     def generate_css(self) -> str:
-        """Generate CSS styles."""
-        return '''
-        <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
-        }
-
-        .container {
-            display: flex;
-            min-height: 100vh;
-            flex-wrap: wrap;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .sidebar {
-            width: 350px;
-            background: white;
-            border-right: 1px solid #e9ecef;
-            overflow-y: auto;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            box-sizing: border-box;
-            transition: transform 0.3s ease;
-            z-index: 1000;
-        }
-
-        .sidebar.hidden {
-            transform: translateX(-100%);
-        }
-
-        .sidebar-header {
-            padding: 20px;
-            border-bottom: 1px solid #e9ecef;
-            background: #f8f9fa;
-        }
-
-        .sidebar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .sidebar-header h3 {
-            margin-bottom: 0;
-            color: #495057;
-            font-size: 1.2rem;
-            flex: 1;
-        }
-
-        .toggle-sidebar-btn {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 12px;
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: #495057;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            white-space: nowrap;
-        }
-
-        .toggle-sidebar-btn:hover {
-            background: #e9ecef;
-            border-color: #adb5bd;
-        }
-
-        .toggle-sidebar-btn.active {
-            background: #007bff;
-            color: white;
-            border-color: #007bff;
-        }
-
-        .toggle-icon {
-            font-size: 1rem;
-        }
-
-        .toggle-text {
-            font-weight: 500;
-        }
-
-        .sidebar-toggle-float {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1001;
-            display: none;
-        }
-
-        .sidebar-toggle-float.show {
-            display: block;
-        }
-
-        .toggle-sidebar-btn.float {
-            background: #007bff;
-            color: white;
-            border-color: #007bff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        .toggle-sidebar-btn.float:hover {
-            background: #0056b3;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .search-container {
-            position: relative;
-        }
-
-        .episode-search {
-            width: 100%;
-            padding: 10px 35px 10px 12px;
-            border: 1px solid #dee2e6;
-            border-radius: 6px;
-            font-size: 14px;
-            background: white;
-        }
-
-        .episode-search:focus {
-            outline: none;
-            border-color: #007bff;
-            box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
-        }
-
-        .search-icon {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #6c757d;
-            font-size: 14px;
-        }
-
-        .episode-list {
-            padding: 0;
-        }
-
-        .filter-section {
-            padding: 20px;
-            border-bottom: 1px solid #e9ecef;
-            background: #f8f9fa;
-        }
-
-        .filter-section h4 {
-            margin-bottom: 15px;
-            color: #495057;
-            font-size: 1rem;
-        }
-
-        .streaming-filter {
-            margin-bottom: 15px;
-        }
-
-        .streaming-filter label {
-            display: block;
-            margin-bottom: 10px;
-            color: #495057;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .service-checkboxes {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-
-        .checkbox-item {
-            display: flex;
-            align-items: center;
-            font-size: 0.85rem;
-            color: #495057;
-            cursor: pointer;
-        }
-
-        .checkbox-item input[type="checkbox"] {
-            margin-right: 8px;
-            cursor: pointer;
-        }
-
-        .filter-button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            cursor: pointer;
-            margin-right: 8px;
-            transition: background-color 0.2s ease;
-        }
-
-        .filter-button:hover {
-            background: #0056b3;
-        }
-
-        .filter-button.secondary {
-            background: #6c757d;
-        }
-
-        .filter-button.secondary:hover {
-            background: #545b62;
-        }
-
-        .search-section {
-            padding: 20px;
-            border-bottom: 1px solid #e9ecef;
-            background: white;
-        }
-
-        .free-filter {
-            margin: 15px 0;
-            padding: 10px;
-            background: #e8f4fd;
-            border-radius: 4px;
-            border-left: 3px solid #007bff;
-        }
-
-        .free-filter .checkbox-item {
-            font-weight: 500;
-            color: #007bff;
-        }
-
-        .letter-section {
-            margin-bottom: 20px;
-        }
-
-        .letter-header {
-            padding: 10px 20px;
-            background: #f8f9fa;
-            font-weight: 600;
-            color: #495057;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .episode-item {
-            display: flex;
-            padding: 12px 20px;
-            border-bottom: 1px solid #f1f3f4;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
-
-        .episode-item:hover {
-            background: #f8f9fa;
-        }
-
-        .episode-item.hidden {
-            display: none;
-        }
-
-        .episode-number {
-            font-weight: 600;
-            color: #007bff;
-            margin-right: 12px;
-            font-size: 0.9rem;
-            min-width: 40px;
-        }
-
-        .episode-info {
-            flex: 1;
-        }
-
-        .episode-title {
-            font-weight: 500;
-            color: #495057;
-            margin-bottom: 2px;
-            font-size: 0.9rem;
-        }
-
-        .episode-date {
-            font-size: 0.8rem;
-            color: #6c757d;
-        }
-
-        .main-content {
-            flex: 1;
-            margin-left: 350px;
-            padding: 30px;
-            max-width: calc(100vw - 350px);
-            box-sizing: border-box;
-            flex-wrap: wrap;
-            transition: all 0.3s ease;
-            min-height: 100vh;
-        }
-
-        .main-content.sidebar-hidden {
-            margin-left: 0;
-            max-width: 100vw;
-            width: 100%;
-        }
-
-        .header {
-            margin-bottom: 40px;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .header-text {
-            text-align: left;
-        }
-
-        .header-text h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .header-text p {
-            color: #6c757d;
-            font-size: 1.1rem;
-        }
-
-        .header-controls {
-            display: flex;
-            gap: 15px;
-        }
-
-        .sort-button {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .sort-button:hover {
-            background: #0056b3;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-
-        .sort-button:active {
-            transform: translateY(0);
-        }
-
-        .sort-button #sort-icon {
-            font-size: 16px;
-            transition: transform 0.2s ease;
-        }
-
-        .episode {
-            background: white;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            max-width: 100%;
-            box-sizing: border-box;
-            flex-wrap: wrap;
-        }
-
-        .episode-header {
-            margin-bottom: 15px;
-        }
-
-        .episode-title-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .episode-header h3 {
-            color: #2c3e50;
-            font-size: 1.4rem;
-            margin-bottom: 5px;
-            flex: 1;
-        }
-
-        .episode-meta {
-            color: #6c757d;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .podcast-link {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 6px 12px;
-            background: #e8f4fd;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-        }
-
-        .podcast-link:hover {
-            background: #d1ecf1;
-            color: #0056b3;
-            text-decoration: none;
-        }
-
-        .podcast-icon {
-            font-size: 1rem;
-        }
-
-        .episode-description {
-            color: #6c757d;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        .movies {
-            display: grid;
-            gap: 20px;
-        }
-
-        .movie {
-            border: 1px solid #e9ecef;
-            border-radius: 6px;
-            padding: 20px;
-            background: #fafbfc;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .movie-content {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .movie-poster {
-            flex-shrink: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .poster-container {
-            position: relative;
-            display: block;
-        }
-
-        .poster-image {
-            width: 120px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background: #f8f9fa;
-        }
-
-        .poster-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-        }
-
-        /* Responsive poster sizes */
-        @media screen and (max-width: 768px) {
-            .poster-image {
-                width: 100px;
-                height: 150px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .poster-image {
-                width: 80px;
-                height: 120px;
-            }
-        }
-
-        .movie-details {
-            flex: 1;
-        }
-
-        .movie-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .movie-header h4 {
-            color: #2c3e50;
-            font-size: 1.2rem;
-        }
-
-        .imdb-link a {
-            color: #f3ce13;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .movie-notes {
-            color: #6c757d;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-        }
-
-        .streaming-sources {
-            margin-top: 15px;
-        }
-
-        .streaming-section {
-            margin-bottom: 15px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .section-label {
-            font-weight: 600;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            color: #6c757d;
-            margin-bottom: 8px;
-            letter-spacing: 0.5px;
-        }
-
-        .section-sources {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .source {
-            display: flex;
-            align-items: center;
-            padding: 8px 12px;
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 20px;
-            text-decoration: none;
-            color: #495057;
-            font-size: 0.9rem;
-            transition: all 0.2s ease;
-        }
-
-        .source:hover {
-            background: #e9ecef;
-            transform: translateY(-1px);
-            text-decoration: none;
-            color: #495057;
-        }
-
-        .source-logo {
-            width: 16px;
-            height: 16px;
-            margin-right: 6px;
-            border-radius: 2px;
-        }
-
-        .stats-dashboard {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .stat-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive styles for tablets */
-        @media screen and (max-width: 1024px) {
-            .main-content {
-                padding: 20px;
-            }
-
-            .episode-header h3 {
-                font-size: 1.2rem;
-            }
-
-            .movie-header h4 {
-                font-size: 1rem;
-            }
-        }
-
-        /* Responsive styles for mobile */
-        @media screen and (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                flex-wrap: wrap;
-                max-width: 100%;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-                max-height: 500px;
-                border-right: none;
-                border-bottom: 1px solid #e9ecef;
-                position: relative;
-                transform: none;
-                transition: max-height 0.3s ease, opacity 0.3s ease;
-            }
-
-            .sidebar.hidden {
-                max-height: 0;
-                opacity: 0;
-                overflow: hidden;
-                border-bottom: none;
-            }
-
-            .sidebar-header {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 15px;
-            }
-
-            .toggle-sidebar-btn {
-                align-self: flex-end;
-                font-size: 0.8rem;
-                padding: 6px 10px;
-            }
-
-            .sidebar-toggle-float {
-                top: 10px;
-                left: 10px;
-            }
-
-            .main-content {
-                margin-left: 0;
-                max-width: 100%;
-                width: 100%;
-                padding: 20px;
-                transition: all 0.3s ease;
-            }
-
-            .main-content.sidebar-hidden {
-                margin-left: 0;
-                max-width: 100%;
-                width: 100%;
-            }
-
-            .header-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .header-controls {
-                margin-top: 15px;
-            }
-
-            .episode {
-                padding: 15px;
-            }
-
-            .movie-content {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .movie-poster {
-                margin-bottom: 15px;
-            }
-
-            .movie-header {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .streaming-section {
-                flex-direction: column;
-            }
-
-            .section-sources {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .source {
-                justify-content: center;
-                min-width: 120px;
-            }
-        }
-
-        /* Medium screens (tablets) */
-        @media screen and (min-width: 769px) and (max-width: 1024px) {
-            .sidebar {
-                width: 300px;
-            }
-
-            .main-content {
-                margin-left: 300px;
-                max-width: calc(100vw - 300px);
-            }
-
-            .main-content.sidebar-hidden {
-                margin-left: 0;
-                max-width: 100vw;
-                width: 100%;
-            }
-
-            .sidebar-toggle-float {
-                display: block;
-            }
-
-            .sidebar-toggle-float.show {
-                display: block;
-            }
-        }
-
-        /* Extra small screens */
-        @media screen and (max-width: 480px) {
-            .main-content {
-                padding: 15px;
-            }
-
-            .episode {
-                padding: 10px;
-            }
-
-            .movie {
-                padding: 15px;
-            }
-
-            .header-text h1 {
-                font-size: 1.8rem;
-            }
-
-            .episode-header h3 {
-                font-size: 1.1rem;
-            }
-
-            .movie-header h4 {
-                font-size: 1rem;
-            }
-        }
-        </style>
-        '''
+        """Return modern, responsive CSS."""
+        return """
+    <style>
+    :root{
+      --bg:#f6f7f9;
+      --card-bg:#fff;
+      --primary:#0d6efd;
+      --text:#212529;
+      --muted:#6c757d;
+      --radius:10px;
+      --shadow:0 2px 8px rgb(0 0 0 / .05);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+    body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+    /* ---- LAYOUT ---- */
+    .layout{display:flex;min-height:100vh}
+    /* SIDEBAR */
+    #sidebar{
+      background:var(--card-bg);
+      width:280px;
+      flex:0 0 280px;
+      border-right:1px solid #e5e7eb;
+      overflow-y:auto;
+      transition:transform .25s ease;
+    }
+    body.sidebar-collapsed #sidebar{transform:translateX(-100%)}
+    .sidebar-header{padding:1rem;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center}
+    .episode-list{padding:.5rem 0}
+    .episode-list a{
+      display:block;padding:.5rem 1rem;text-decoration:none;color:var(--text);font-size:.9rem;
+    }
+    .episode-list a:hover{background:var(--bg)}
+    /* MAIN */
+    .content{
+      flex:1;
+      min-width:0;
+      padding:1.5rem 2rem;
+      transition:margin-left .25s ease;
+    }
+    @media(min-width:768px){
+      body:not(.sidebar-collapsed) .content{margin-left:0}
+    }
+    /* HEADER */
+    .page-title{font-size:1.75rem;font-weight:600;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
+    .toggle-btn{background:transparent;border:none;font-size:1.25rem;cursor:pointer;color:var(--primary)}
+    /* EPISODE CARD */
+    .episode-card{
+      background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:1.25rem;margin-bottom:1.5rem;
+    }
+    .episode-card h2{font-size:1.1rem;margin-bottom:.5rem}
+    .movie-grid{display:grid;gap:1rem;margin-top:1rem}
+    @media(min-width:600px){.movie-grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}}
+    .movie{background:var(--bg);border-radius:var(--radius);padding:.75rem;text-align:center}
+    .movie img{width:100%;border-radius:var(--radius);object-fit:cover;aspect-ratio:2/3;background:#dfe1e4}
+    .sources{margin-top:.5rem;font-size:.75rem;display:flex;flex-wrap:wrap;gap:.25rem;justify-content:center}
+    .src{padding:.15rem .4rem;background:var(--card-bg);border:1px solid #dee2e6;border-radius:var(--radius);white-space:nowrap}
+    /* SIDEBAR TOGGLE */
+    .sidebar-toggle-float{
+      position:fixed;
+      top:20px;
+      left:20px;
+      z-index:1001;
+      display:none;
+      transition:opacity 0.3s ease;
+    }
+    .sidebar-toggle-float.show{
+      display:block;
+      opacity:1;
+    }
+    .sidebar-toggle-float:not(.show){
+      opacity:0;
+      pointer-events:none;
+    }
+    .toggle-sidebar-btn{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      padding:8px 12px;
+      background:#f8f9fa;
+      border:1px solid #dee2e6;
+      border-radius:6px;
+      font-size:0.85rem;
+      color:#495057;
+      cursor:pointer;
+      transition:all 0.2s ease;
+      white-space:nowrap;
+    }
+    .toggle-sidebar-btn:hover{
+      background:#e9ecef;
+      border-color:#adb5bd;
+    }
+    .toggle-sidebar-btn.float{
+      background:#007bff;
+      color:white;
+      border-color:#007bff;
+      box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    }
+    .toggle-sidebar-btn.float:hover{
+      background:#0056b3;
+      transform:translateY(-1px);
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    }
+    /* RESPONSIVE DESIGN */
+    @media(max-width:1200px){
+      #sidebar{width:240px;flex:0 0 240px}
+      .main-content{
+        margin-left:240px;
+        width:calc(100vw - 240px);
+        max-width:calc(100vw - 240px);
+      }
+      .main-content.sidebar-hidden{
+        margin-left:0;
+        width:100vw;
+        max-width:100vw;
+      }
+    }
+    @media(max-width:900px){
+      #sidebar{width:220px;flex:0 0 220px}
+      .main-content{
+        margin-left:220px;
+        width:calc(100vw - 220px);
+        max-width:calc(100vw - 220px);
+      }
+    }
+    /* MOBILE OFF-CANVAS TOGGLER */
+    @media(max-width:767px){
+      #sidebar{position:fixed;top:0;left:0;height:100vh;z-index:999;width:280px}
+      .main-content{
+        margin-left:0;
+        width:100vw;
+        max-width:100vw;
+        padding:1rem;
+      }
+      .overlay{
+        content:"";position:fixed;inset:0;background:rgba(0,0,0,.35);
+        opacity:0;pointer-events:none;transition:opacity .25s ease;
+      }
+      body.sidebar-open .overlay{opacity:1;pointer-events:auto}
+    }
+    </style>
+    """
 
     def generate_javascript(self) -> str:
+        """Tiny JS for sidebar toggle & smooth scroll."""
+        return """
+    <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+
+      const body=document.body;
+      const sidebar=document.getElementById('sidebar');
+      const toggle=document.getElementById('toggle');
+      const links=[...document.querySelectorAll('.episode-link')];
+
+      // ---- Sidebar toggle ----
+      const setState=open=>{
+        body.classList.toggle('sidebar-open',open);
+        body.classList.toggle('sidebar-collapsed',!open);
+      };
+      toggle.addEventListener('click',()=>setState(!body.classList.contains('sidebar-open')));
+      // close when clicking outside (mobile)
+      document.addEventListener('click',e=>{
+        if(body.classList.contains('sidebar-open') && !sidebar.contains(e.target) && e.target!==toggle){
+          setState(false);
+        }
+      });
+
+      // ---- Smooth scroll to episode ----
+      links.forEach(a=>{
+        a.addEventListener('click',e=>{
+          e.preventDefault();
+          const id=a.getAttribute('href').slice(1);
+          const el=document.getElementById(id);
+          if(el){el.scrollIntoView({behavior:'smooth',block:'start'})}
+          setState(false); // auto-close on mobile
+        });
+      });
+    });
+    </script>
+    """
+
+    def generate_filtering_javascript(self) -> str:
         """Generate JavaScript for filtering functionality."""
         return r'''
         <script>
@@ -1624,29 +945,14 @@ class HTMLGenerator:
             {self.generate_css()}
         </head>
         <body>
-            <div class="container">
+            <div class="layout">
+                <div class="overlay"></div>
                 {self.generate_episode_sidebar()}
                 
-                <div class="main-content" id="main-content">
-                    <div class="sidebar-toggle-float" id="sidebar-toggle-float">
-                        <button class="toggle-sidebar-btn float">
-                            <span class="toggle-icon">▶</span>
-                            <span class="toggle-text">Show Sidebar</span>
-                        </button>
-                    </div>
-                    <div class="header">
-                        <div class="header-content">
-                            <div class="header-text">
-                                <h1>Too Scary; Didn't Watch</h1>
-                                <p>Find where to stream movies mentioned in the podcast</p>
-                            </div>
-                            <div class="header-controls">
-                                <button id="sort-button" class="sort-button" onclick="toggleSort()">
-                                    <span id="sort-icon">↓</span>
-                                    <span id="sort-text">A-Z</span>
-                                </button>
-                            </div>
-                        </div>
+                <div class="content">
+                    <div class="page-title">
+                        <h1>Too Scary; Didn't Watch</h1>
+                        <button id="toggle" class="toggle-btn">☰</button>
                     </div>
                     
                     {self.generate_stats_dashboard()}
