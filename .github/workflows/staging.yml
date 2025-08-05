@@ -102,40 +102,58 @@ jobs:
       with:
         name: staging-build-${{ github.event.pull_request.number }}
 
-    - name: Deploy to GitHub Pages staging subdirectory
+    - name: Deploy staging to unique GitHub Pages branch
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./output
-        publish_branch: gh-pages
-        destination_dir: staging/pr-${{ github.event.pull_request.number }}
-        keep_files: true
+        publish_branch: staging-pr-${{ github.event.pull_request.number }}
+        force_orphan: true
 
-    - name: Set staging URL and verify
+    - name: Temporarily switch GitHub Pages to staging branch
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const stagingBranch = 'staging-pr-${{ github.event.pull_request.number }}';
+          
+          try {
+            // Switch GitHub Pages to use the staging branch
+            await github.rest.repos.updateInformationAboutPagesSite({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              source: {
+                branch: stagingBranch,
+                path: '/'
+              }
+            });
+            
+            const stagingUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/`;
+            console.log(`✅ GitHub Pages switched to staging branch: ${stagingBranch}`);
+            console.log(`🔗 Staging URL: ${stagingUrl}`);
+            core.exportVariable('STAGING_URL', stagingUrl);
+            
+          } catch (error) {
+            console.log(`❌ Failed to switch GitHub Pages: ${error.message}`);
+            // Fallback to production URL with note
+            const fallbackUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/`;
+            core.exportVariable('STAGING_URL', fallbackUrl);
+          }
+
+    - name: Wait for GitHub Pages to update
       run: |
-        # Set the staging URL
-        STAGING_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/staging/pr-${{ github.event.pull_request.number }}/"
-        echo "STAGING_URL=$STAGING_URL" >> $GITHUB_ENV
-        echo "🚀 Staging deployed to: $STAGING_URL"
+        echo "⏳ Waiting for GitHub Pages to switch to staging branch..."
+        sleep 90
         
-        # Wait for GitHub Pages to update
-        echo "⏳ Waiting for GitHub Pages to propagate..."
-        sleep 45
-        
-        # Test if the staging URL is accessible
-        echo "🔍 Testing staging URL accessibility..."
-        for i in {1..12}; do
-          if curl -f -s "$STAGING_URL" > /dev/null; then
+        echo "🔍 Testing staging URL: ${{ env.STAGING_URL }}"
+        for i in {1..8}; do
+          if curl -f -s "${{ env.STAGING_URL }}" > /dev/null; then
             echo "✅ Staging URL is accessible!"
-            exit 0
+            break
           else
-            echo "⏳ Attempt $i/12: Waiting for Pages to propagate..."
-            sleep 15
+            echo "⏳ Attempt $i/8: Waiting for Pages to update..."
+            sleep 20
           fi
         done
-        
-        echo "⚠️ Staging URL may take additional time to become accessible"
-        echo "🔗 URL: $STAGING_URL"
 
     - name: Create staging deployment
       uses: actions/github-script@v7
@@ -223,14 +241,14 @@ jobs:
           | Environment | Link | Description |
           |-------------|------|-------------|
           | 🟢 **Production** | [Current Live Site](https://serialforbreakfast.github.io/TooScaryDidntStream/) | Current production version |
-          | 🟡 **Staging** | [PR Preview](${{ env.STAGING_URL }}) | Your changes in this PR |
+          | 🟡 **Staging** | [PR Preview](${{ env.STAGING_URL }}) | Your changes with TMDB API access |
           
           ### 🧪 How to Test Staging Preview
           
           1. **Visit**: Click the "Staging Movie Browser" link above
-          2. **Test**: The staging site includes your PR changes with TMDB API access
-          3. **Compare**: Compare with production to see differences
-          4. **Verify**: Use the checklist below to ensure functionality
+          2. **Test**: Live staging site with your PR changes and TMDB API access
+          3. **Compare**: Compare functionality with production site
+          4. **Verify**: Use the checklist below to ensure everything works
           
           ### 📋 Testing Checklist
           
@@ -322,10 +340,32 @@ jobs:
     needs: deploy-staging
     
     steps:
-    - name: Cleanup PR-specific staging deployment
+    - name: Restore production GitHub Pages
+      uses: actions/github-script@v7
+      with:
+        script: |
+          try {
+            // Switch GitHub Pages back to production branch
+            await github.rest.repos.updateInformationAboutPagesSite({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              source: {
+                branch: 'gh-pages',
+                path: '/'
+              }
+            });
+            console.log('✅ GitHub Pages restored to production branch (gh-pages)');
+          } catch (error) {
+            console.log(`⚠️ Could not restore GitHub Pages: ${error.message}`);
+          }
+
+    - name: Cleanup staging branch
       run: |
-        echo "🧹 Cleaning up staging deployment for PR #${{ github.event.pull_request.number }}"
-        echo "Staging artifacts will be automatically cleaned up after 7 days retention period"
+        echo "🧹 Cleaning up staging branch for PR #${{ github.event.pull_request.number }}"
+        
+        # Delete the staging branch
+        git push origin --delete staging-pr-${{ github.event.pull_request.number }} || echo "Staging branch may already be deleted"
+        
         echo "Staging cleanup completed for PR #${{ github.event.pull_request.number }}"
 
     - name: Cleanup staging artifacts
