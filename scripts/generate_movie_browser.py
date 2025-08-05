@@ -350,6 +350,7 @@ class MovieBrowserGenerator:
         }
 
         .service-tag {
+            display: inline-block;
             padding: 0.25rem 0.75rem;
             background: #edf2f7;
             border: 1px solid #e2e8f0;
@@ -359,11 +360,13 @@ class MovieBrowserGenerator:
             color: #4a5568;
             text-decoration: none;
             transition: all 0.2s;
+            cursor: pointer;
         }
 
         .service-tag:hover {
             background: #e2e8f0;
             transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .service-tag.subscription {
@@ -372,10 +375,20 @@ class MovieBrowserGenerator:
             color: #22543d;
         }
 
+        .service-tag.subscription:hover {
+            background: #9ae6b4;
+            border-color: #68d391;
+        }
+
         .service-tag.rent {
             background: #fed7d7;
             border-color: #fbb6ce;
             color: #742a2a;
+        }
+
+        .service-tag.rent:hover {
+            background: #fbb6ce;
+            border-color: #f687b3;
         }
 
         .service-tag.buy {
@@ -384,10 +397,20 @@ class MovieBrowserGenerator:
             color: #2a4365;
         }
 
+        .service-tag.buy:hover {
+            background: #90cdf4;
+            border-color: #63b3ed;
+        }
+
         .service-tag.free {
             background: #d9f7be;
             border-color: #b7eb8f;
             color: #237804;
+        }
+
+        .service-tag.free:hover {
+            background: #b7eb8f;
+            border-color: #95de64;
         }
 
         .episode-link {
@@ -627,9 +650,14 @@ class MovieBrowserGenerator:
                 <div class="service-type">
                     <div class="service-type-label">${{type}}</div>
                     <div class="services-list">
-                        ${{services.map(service => `
-                            <span class="service-tag ${{type}}">${{service.name}}</span>
-                        `).join('')}}
+                        ${{services.map(service => {{
+                            const url = service.web_url || '#';
+                            const target = service.web_url ? '_blank' : '_self';
+                            const rel = service.web_url ? 'noopener noreferrer' : '';
+                            return `
+                                <a href="${{url}}" target="${{target}}" rel="${{rel}}" class="service-tag ${{type}}">${{service.name}}</a>
+                            `;
+                        }}).join('')}}
                     </div>
                 </div>
             `).join('');
