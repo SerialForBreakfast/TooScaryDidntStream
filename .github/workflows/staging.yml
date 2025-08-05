@@ -27,6 +27,18 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Comment deployment start
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: '🚀 **Staging deployment started** for this PR. Building movie browser with poster caching... ⏳'
+          });
+    
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
@@ -95,8 +107,19 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./output
-        publish_branch: staging-pages
+        publish_branch: gh-pages
         destination_dir: staging/pr-${{ github.event.pull_request.number }}
+        keep_files: true
+
+    - name: Verify staging deployment
+      run: |
+        echo "🔍 Verifying staging deployment..."
+        echo "Staging URL: https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/"
+        echo "Waiting 30 seconds for GitHub Pages to update..."
+        sleep 30
+        
+        # Try to verify the deployment (will return exit code 0 if successful)
+        curl -f -s "https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/" > /dev/null || echo "⚠️ Staging URL not yet accessible - may take a few minutes to propagate"
 
     - name: Create staging deployment
       uses: actions/github-script@v7
@@ -173,30 +196,101 @@ jobs:
           
           const comment = `## 🚀 PR-Specific Staging Deployment Complete
           
-          **Preview URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/
-          **Production URL:** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
+          ### 🔗 Direct Links
           
-          **Before & After Comparison:**
-          - **Before (Production):** https://serialforbreakfast.github.io/TooScaryDidntStream/output/index.html
-          - **After (Staging):** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/
+          **🎬 Staging Movie Browser:** https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/
           
-          **Change Summary:**
+          **📱 Production Movie Browser:** https://serialforbreakfast.github.io/TooScaryDidntStream/
+          
+          ### 📊 Before & After Comparison
+          
+          | Environment | Link | Description |
+          |-------------|------|-------------|
+          | 🟢 **Production** | [Current Live Site](https://serialforbreakfast.github.io/TooScaryDidntStream/) | Current production version |
+          | 🟡 **Staging** | [PR Preview](https://serialforbreakfast.github.io/TooScaryDidntStream/staging/pr-${{ github.event.pull_request.number }}/) | Your changes in this PR |
+          
+          ### 📋 Testing Checklist
+          
+          - [ ] Movie browser loads correctly
+          - [ ] Streaming service filters work
+          - [ ] Search functionality works
+          - [ ] Movie posters display properly
+          - [ ] Responsive design works on mobile
+          - [ ] Streaming service links are clickable
+          
+          ### 📈 Change Summary
+          
           ${summary}
           
-          **Next Steps:**
-          1. Compare staging vs production using the links above
-          2. Test functionality and responsive design
-          3. Complete the testing checklist in the PR template
-          4. Approve and merge to trigger production deployment
+          ### 🎯 Next Steps
+          
+          1. **Test the staging version** using the links above
+          2. **Compare with production** to verify your changes
+          3. **Complete the testing checklist** 
+          4. **Request review** when ready
+          5. **Merge to deploy** to production
+          
+          ### ⏱️ Note
+          
+          Staging URLs may take 2-5 minutes to become accessible after deployment due to GitHub Pages propagation.
           
           ---
-          *This is an automated PR-specific staging deployment for PR #${{ github.event.pull_request.number }}*`;
+          *🤖 Automated staging deployment for PR #${{ github.event.pull_request.number }} | Built with TMDB poster caching*`;
           
+          // Check for existing deployment comment
+          const { data: comments } = await github.rest.issues.listComments({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number
+          });
+          
+          const existingComment = comments.find(comment => 
+            comment.body.includes('PR-Specific Staging Deployment Complete') &&
+            comment.body.includes(`pr-${{ github.event.pull_request.number }}`)
+          );
+          
+          if (existingComment) {
+            // Update existing comment
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: existingComment.id,
+              body: comment
+            });
+          } else {
+            // Create new comment
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment
+            });
+          }
+
+  notify-failure:
+    if: failure() && github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    needs: [build-and-test, deploy-staging]
+    
+    steps:
+    - name: Comment deployment failure
+      uses: actions/github-script@v7
+      with:
+        script: |
           await github.rest.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: comment
+            body: `❌ **Staging deployment failed** for PR #${{ github.event.pull_request.number }}
+            
+            Please check the [workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.
+            
+            Common issues:
+            - Data validation errors
+            - TMDB API issues
+            - Build script errors
+            
+            Try pushing a new commit to re-trigger the deployment.`
           });
 
   cleanup-staging:
