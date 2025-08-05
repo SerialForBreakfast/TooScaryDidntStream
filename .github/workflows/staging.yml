@@ -102,58 +102,80 @@ jobs:
       with:
         name: staging-build-${{ github.event.pull_request.number }}
 
-    - name: Deploy staging to unique GitHub Pages branch
+    - name: Create staging directory structure  
+      run: |
+        echo "Setting up staging directory with GitHub Pages compatibility..."
+        
+        # Create staging directory structure
+        mkdir -p staging-deploy/pr-${{ github.event.pull_request.number }}
+        
+        # Copy the built output to the PR subdirectory
+        cp -r output/* staging-deploy/pr-${{ github.event.pull_request.number }}/
+        
+        # Create a root index.html that redirects to the correct directory
+        cat > staging-deploy/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Staging Environment</title>
+            <script>
+                // Auto-redirect to the latest staging environment
+                const path = window.location.pathname;
+                if (path.endsWith('/staging/') || path.endsWith('/staging')) {
+                    // Redirect to the PR-specific staging
+                    window.location.href = './pr-${{ github.event.pull_request.number }}/';
+                }
+            </script>
+        </head>
+        <body>
+            <h1>Staging Environment</h1>
+            <p><a href="./pr-${{ github.event.pull_request.number }}/">View PR #${{ github.event.pull_request.number }} Staging</a></p>
+        </body>
+        </html>
+        EOF
+
+    - name: Deploy staging files to GitHub Pages 
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./output
-        publish_branch: staging-pr-${{ github.event.pull_request.number }}
-        force_orphan: true
+        publish_dir: ./staging-deploy
+        publish_branch: gh-pages
+        destination_dir: staging
+        keep_files: true
 
-    - name: Temporarily switch GitHub Pages to staging branch
-      uses: actions/github-script@v7
-      with:
-        script: |
-          const stagingBranch = 'staging-pr-${{ github.event.pull_request.number }}';
-          
-          try {
-            // Switch GitHub Pages to use the staging branch
-            await github.rest.repos.updateInformationAboutPagesSite({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              source: {
-                branch: stagingBranch,
-                path: '/'
-              }
-            });
-            
-            const stagingUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/`;
-            console.log(`✅ GitHub Pages switched to staging branch: ${stagingBranch}`);
-            console.log(`🔗 Staging URL: ${stagingUrl}`);
-            core.exportVariable('STAGING_URL', stagingUrl);
-            
-          } catch (error) {
-            console.log(`❌ Failed to switch GitHub Pages: ${error.message}`);
-            // Fallback to production URL with note
-            const fallbackUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/`;
-            core.exportVariable('STAGING_URL', fallbackUrl);
-          }
-
-    - name: Wait for GitHub Pages to update
+    - name: Set staging URL and test
       run: |
-        echo "⏳ Waiting for GitHub Pages to switch to staging branch..."
-        sleep 90
+        # Set the staging URL
+        STAGING_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/staging/pr-${{ github.event.pull_request.number }}/"
+        echo "STAGING_URL=$STAGING_URL" >> $GITHUB_ENV
+        echo "🚀 Staging deployed to: $STAGING_URL"
         
-        echo "🔍 Testing staging URL: ${{ env.STAGING_URL }}"
-        for i in {1..8}; do
-          if curl -f -s "${{ env.STAGING_URL }}" > /dev/null; then
-            echo "✅ Staging URL is accessible!"
+        # Wait for GitHub Pages to update 
+        echo "⏳ Waiting for GitHub Pages to propagate staging files..."
+        sleep 60
+        
+        # Test staging URL accessibility  
+        echo "🔍 Testing staging URL: $STAGING_URL"
+        for i in {1..10}; do
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$STAGING_URL" || echo "000")
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Staging URL is accessible! (HTTP $HTTP_CODE)"
             break
           else
-            echo "⏳ Attempt $i/8: Waiting for Pages to update..."
-            sleep 20
+            echo "⏳ Attempt $i/10: HTTP $HTTP_CODE - waiting for Pages to update..."
+            sleep 15
           fi
         done
+        
+        # Final status check
+        FINAL_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$STAGING_URL" || echo "000")
+        if [ "$FINAL_CODE" = "200" ]; then
+          echo "✅ Final check: Staging URL is accessible!"
+        else
+          echo "⚠️ Final check: HTTP $FINAL_CODE - staging may need more time to propagate"
+          echo "💡 Try the URL in a few minutes: $STAGING_URL"
+        fi
 
     - name: Create staging deployment
       uses: actions/github-script@v7
@@ -340,33 +362,35 @@ jobs:
     needs: deploy-staging
     
     steps:
-    - name: Restore production GitHub Pages
+    - name: Cleanup staging subdirectory
       uses: actions/github-script@v7
       with:
         script: |
+          const fs = require('fs');
+          
           try {
-            // Switch GitHub Pages back to production branch
-            await github.rest.repos.updateInformationAboutPagesSite({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              source: {
-                branch: 'gh-pages',
-                path: '/'
-              }
-            });
-            console.log('✅ GitHub Pages restored to production branch (gh-pages)');
+            // Create empty staging directory to remove the PR-specific subdirectory
+            fs.mkdirSync('cleanup', { recursive: true });
+            fs.writeFileSync('cleanup/.gitkeep', '# Cleaning up staging directory');
+            
+            console.log('✅ Prepared cleanup directory');
           } catch (error) {
-            console.log(`⚠️ Could not restore GitHub Pages: ${error.message}`);
+            console.log(`⚠️ Could not prepare cleanup: ${error.message}`);
           }
 
-    - name: Cleanup staging branch
+    - name: Remove staging subdirectory from gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./cleanup
+        publish_branch: gh-pages
+        destination_dir: staging/pr-${{ github.event.pull_request.number }}
+        keep_files: true
+
+    - name: Cleanup staging files
       run: |
-        echo "🧹 Cleaning up staging branch for PR #${{ github.event.pull_request.number }}"
-        
-        # Delete the staging branch
-        git push origin --delete staging-pr-${{ github.event.pull_request.number }} || echo "Staging branch may already be deleted"
-        
-        echo "Staging cleanup completed for PR #${{ github.event.pull_request.number }}"
+        echo "🧹 Cleaned up staging subdirectory for PR #${{ github.event.pull_request.number }}"
+        echo "Staging files removed from /staging/pr-${{ github.event.pull_request.number }}/"
 
     - name: Cleanup staging artifacts
       uses: actions/github-script@v7
