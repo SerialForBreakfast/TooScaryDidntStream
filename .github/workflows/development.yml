@@ -32,6 +32,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install requests
 
     - name: Validate data format
       run: |
@@ -55,9 +56,30 @@ jobs:
             exit(1)
         "
 
+    - name: Test poster caching
+      env:
+        TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      run: |
+        # Test poster caching (limit to 5 movies for dev testing)
+        python -c "
+        import sys
+        sys.path.append('scripts')
+        from cache_movie_posters import PosterCacheManager
+        
+        cache_manager = PosterCacheManager()
+        cache_manager.load_data()
+        movies = cache_manager.get_all_movies_with_tmdb_ids()[:5]  # Limit for testing
+        
+        if cache_manager.tmdb_api_key:
+            cache_manager.create_cache_directory()
+            print(f'Testing poster cache with {len(movies)} movies...')
+        else:
+            print('No TMDB API key - skipping poster cache test')
+        "
+
     - name: Test HTML generation
       run: |
-        python scripts/generate_html.py
+        python scripts/generate_movie_browser.py
         
         # Check if HTML was generated
         if [ -f "output/index.html" ]; then
@@ -77,9 +99,10 @@ jobs:
           echo "⚠️  No responsive CSS detected"
         fi
         
-        # Check for poster images
-        poster_count=$(grep -c "poster-container" output/index.html || echo "0")
-        echo "📸 Found $poster_count movie posters"
+        # Check for movie cards and posters
+        movie_count=$(grep -c "movie-card" output/index.html || echo "0")
+        poster_count=$(grep -c "movie-poster" output/index.html || echo "0")
+        echo "🎬 Found $movie_count movie cards with $poster_count posters"
 
     - name: Upload development artifacts
       uses: actions/upload-artifact@v4

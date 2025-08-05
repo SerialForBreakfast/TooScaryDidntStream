@@ -1,0 +1,2 @@
+# This file ensures the posters directory exists in git
+# Cached movie posters will be stored here during CI/CD builds
