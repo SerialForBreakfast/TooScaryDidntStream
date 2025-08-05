@@ -60,9 +60,15 @@ jobs:
       run: |
         python scripts/fetch_streaming_info.py
 
+    - name: Cache movie posters (staging)
+      env:
+        TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      run: |
+        python scripts/cache_movie_posters.py
+
     - name: Generate HTML (staging)
       run: |
-        python scripts/generate_html.py
+        python scripts/generate_movie_browser.py
 
     - name: Upload staging artifacts
       uses: actions/upload-artifact@v4

@@ -5,8 +5,11 @@ Generate a new movie-focused UI for the streaming tracker.
 
 import json
 import logging
+import os
+import requests
 from typing import Dict, List, Any, Set
 from collections import defaultdict
+from pathlib import Path
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -16,6 +19,79 @@ class MovieBrowserGenerator:
     def __init__(self):
         self.movies_data = None
         self.streaming_data = None
+        self.tmdb_api_key = None
+        self.tmdb_base_url = "https://api.themoviedb.org/3"
+        self.tmdb_poster_base_url = "https://image.tmdb.org/t/p"
+        self._load_tmdb_config()
+
+    def _load_tmdb_config(self):
+        """Load TMDB API configuration."""
+        # Try to load from .env file first
+        env_file = Path('.env')
+        if env_file.exists():
+            with open(env_file, 'r') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#') and '=' in line:
+                        key, value = line.split('=', 1)
+                        os.environ[key] = value
+        
+        # Get API key from environment
+        self.tmdb_api_key = os.getenv('TMDB_API_KEY')
+        
+        if self.tmdb_api_key:
+            logger.info("TMDB API key loaded - real movie posters enabled")
+        else:
+            logger.warning("No TMDB API key found - using placeholder posters")
+            logger.info("Run 'python scripts/setup_tmdb.py' to set up movie posters")
+
+    def load_poster_manifest(self) -> Dict[str, Any]:
+        """Load cached poster manifest."""
+        try:
+            manifest_path = Path("output/poster_manifest.json")
+            if manifest_path.exists():
+                with open(manifest_path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        except Exception as e:
+            logger.warning(f"Could not load poster manifest: {e}")
+        return {}
+
+    def get_poster_url(self, tmdb_id: int, title: str, year: int) -> Dict[str, str]:
+        """Get movie poster URLs from cached files or create placeholder."""
+        # Load cached poster manifest
+        poster_manifest = self.load_poster_manifest()
+        
+        # Check if we have cached posters for this movie
+        if tmdb_id and str(tmdb_id) in poster_manifest:
+            cached_posters = poster_manifest[str(tmdb_id)].get('posters', {})
+            if cached_posters:
+                return {
+                    'small': cached_posters.get('w342', cached_posters.get('w500', '')),
+                    'medium': cached_posters.get('w500', cached_posters.get('w342', '')),
+                    'large': cached_posters.get('w780', cached_posters.get('w500', ''))
+                }
+        
+        # Create attractive gradient placeholder
+        encoded_title = title.replace(' ', '%20').replace('&', '%26').replace("'", "")
+        # Use different colors for different decades to make browsing more visually interesting
+        if year and year >= 2020:
+            color1, color2 = "4F46E5", "7C3AED"  # Purple/Indigo for 2020s
+        elif year and year >= 2010:
+            color1, color2 = "059669", "0D9488"  # Emerald/Teal for 2010s
+        elif year and year >= 2000:
+            color1, color2 = "DC2626", "EA580C"  # Red/Orange for 2000s
+        elif year and year >= 1990:
+            color1, color2 = "2563EB", "1D4ED8"  # Blue for 1990s
+        else:
+            color1, color2 = "7C2D12", "92400E"  # Brown/Amber for older movies
+        
+        # Create placeholder with gradient background
+        placeholder = f"https://via.placeholder.com/500x750/{color1}/ffffff?text={encoded_title}%0A({year})"
+        return {
+            'small': placeholder,
+            'medium': placeholder,
+            'large': placeholder
+        }
 
     def load_data(self):
         """Load movie and streaming data."""
@@ -57,13 +133,30 @@ class MovieBrowserGenerator:
                 key = (episode_num, movie_title.lower(), movie_year)
                 streaming_sources = streaming_lookup.get(key, [])
                 
+                # Get TMDB ID from streaming data for poster lookup
+                tmdb_id = None
+                for episode_data in self.streaming_data.get("episodes", []):
+                    if episode_data["episode_number"] == episode_num:
+                        for stream_movie in episode_data.get("movies", []):
+                            if (stream_movie["title"].lower() == movie_title.lower() and 
+                                stream_movie.get("year") == movie_year):
+                                tmdb_id = stream_movie.get("tmdb_id")
+                                break
+                        if tmdb_id:
+                            break
+                
+                # Get poster URLs
+                poster_urls = self.get_poster_url(tmdb_id, movie_title, movie_year)
+                
                 movie_info = {
                     "title": movie_title,
                     "year": movie_year,
                     "episode": episode_num,
                     "episode_title": episode_title,
                     "notes": movie.get("notes", ""),
-                    "streaming_sources": streaming_sources
+                    "streaming_sources": streaming_sources,
+                    "poster_urls": poster_urls,
+                    "tmdb_id": tmdb_id
                 }
                 
                 movies_with_streaming.append(movie_info)
@@ -278,19 +371,61 @@ class MovieBrowserGenerator:
 
         .movie-poster {
             width: 100%;
-            height: 200px;
+            height: 300px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             border-bottom: 1px solid #e2e8f0;
             position: relative;
-            color: white;
+            overflow: hidden;
+        }
+
+        .movie-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover .movie-poster img {
+            transform: scale(1.05);
         }
 
         .movie-poster .placeholder {
-            font-size: 3rem;
-            opacity: 0.7;
+            font-size: 2.5rem;
+            opacity: 0.9;
+            color: white;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .movie-poster .loading {
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Enhanced placeholder styling for different decades */
+        .movie-poster.decade-2020s {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+
+        .movie-poster.decade-2010s {
+            background: linear-gradient(135deg, #059669 0%, #0D9488 100%);
+        }
+
+        .movie-poster.decade-2000s {
+            background: linear-gradient(135deg, #DC2626 0%, #EA580C 100%);
+        }
+
+        .movie-poster.decade-1990s {
+            background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+        }
+
+        .movie-poster.decade-older {
+            background: linear-gradient(135deg, #7C2D12 0%, #92400E 100%);
         }
 
         .episode-badge {
@@ -614,7 +749,7 @@ class MovieBrowserGenerator:
             grid.innerHTML = filteredMovies.map(movie => `
                 <div class="movie-card">
                     <div class="movie-poster">
-                        <div class="placeholder">🎬</div>
+                        ${{renderMoviePoster(movie)}}
                         <div class="episode-badge">Episode ${{movie.episode}}</div>
                     </div>
                     <div class="movie-info">
@@ -631,6 +766,50 @@ class MovieBrowserGenerator:
                     </div>
                 </div>
             `).join('');
+        }}
+
+        // Get decade class for styling
+        function getDecadeClass(year) {{
+            if (year >= 2020) return 'decade-2020s';
+            if (year >= 2010) return 'decade-2010s';
+            if (year >= 2000) return 'decade-2000s';
+            if (year >= 1990) return 'decade-1990s';
+            return 'decade-older';
+        }}
+
+        // Render movie poster with responsive images
+        function renderMoviePoster(movie) {{
+            if (!movie.poster_urls) {{
+                const decadeClass = getDecadeClass(movie.year);
+                return `<div class="placeholder ${{decadeClass}}">🎬<br/>${{movie.title}}</div>`;
+            }}
+
+            const posterUrls = movie.poster_urls;
+            const decadeClass = getDecadeClass(movie.year);
+            
+            // Check if we have real poster URLs or just placeholders
+            const hasRealPoster = !posterUrls.small.includes('via.placeholder.com');
+            
+            if (hasRealPoster) {{
+                return `
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="${{posterUrls.large}}">
+                        <source media="(min-width: 480px)" srcset="${{posterUrls.medium}}">
+                        <img src="${{posterUrls.small}}" 
+                             alt="${{movie.title}} poster" 
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.classList.add('${{decadeClass}}'); this.parentElement.querySelector('.placeholder').style.display='flex';">
+                    </picture>
+                    <div class="placeholder" style="display: none;">🎬<br/>${{movie.title}}</div>
+                `;
+            }} else {{
+                return `
+                    <img src="${{posterUrls.small}}" 
+                         alt="${{movie.title}} placeholder" 
+                         loading="lazy"
+                         style="opacity: 0.9;">
+                `;
+            }}
         }}
 
         // Render streaming services for a movie
