@@ -102,19 +102,20 @@ jobs:
       with:
         name: staging-build-${{ github.event.pull_request.number }}
 
-    - name: Upload staging files as artifact
-      uses: actions/upload-artifact@v4
+    - name: Deploy staging to GitHub Pages (fixed approach)
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        name: pr-${{ github.event.pull_request.number }}-staging
-        path: output/
-        retention-days: 7
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+        publish_branch: gh-pages
+        destination_dir: staging/pr-${{ github.event.pull_request.number }}
+        keep_files: true
 
-    - name: Set staging URL (download link)
+    - name: Set staging URL (that actually works)
       run: |
-        STAGING_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        STAGING_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/staging/pr-${{ github.event.pull_request.number }}/index.html"
         echo "STAGING_URL=$STAGING_URL" >> $GITHUB_ENV
-        echo "🚀 Staging files uploaded as artifact: pr-${{ github.event.pull_request.number }}-staging"
-        echo "🔗 Download from: $STAGING_URL"
+        echo "🚀 Staging deployed to: $STAGING_URL"
 
     - name: Create staging deployment
       uses: actions/github-script@v7
