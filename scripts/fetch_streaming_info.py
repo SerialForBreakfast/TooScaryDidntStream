@@ -34,11 +34,19 @@ class StreamingInfoFetcher:
     """Fetches streaming availability data for movies with smart caching."""
     
     def __init__(self):
+        # Load API keys
         self.tmdb_api_key = os.getenv('TMDB_API_KEY')
-        
-        if not self.tmdb_api_key:
-            logger.error("TMDB_API_KEY not found. Please set the environment variable.")
+        self.watchmode_api_key = os.getenv('WATCHMODE_API_KEY')
+
+        # Validate at least one provider key is available
+        if not self.tmdb_api_key and not self.watchmode_api_key:
+            logger.error("Neither WATCHMODE_API_KEY nor TMDB_API_KEY found. Please set at least one of them.")
             sys.exit(1)
+
+        if self.watchmode_api_key:
+            logger.info("Watchmode API key loaded – direct streaming links enabled")
+        if self.tmdb_api_key:
+            logger.info("TMDB API key loaded – fallback streaming data & posters enabled")
             
         self.tmdb_base_url = "https://api.themoviedb.org/3"
         
@@ -161,6 +169,69 @@ class StreamingInfoFetcher:
             logger.error(f"Failed to get watch providers for TMDB ID {tmdb_id}: {e}")
             return []
     
+    # --------------------------- Watchmode integration ---------------------------
+    def search_movie_watchmode(self, title: str, year: int) -> Optional[Dict[str, Any]]:
+        """Search for a movie on Watchmode API and return the first matching result."""
+        if not self.watchmode_api_key:
+            return None
+        try:
+            params = {
+                'apiKey': self.watchmode_api_key,
+                'search_field': 'name',
+                'search_value': title,
+                'types': 'movie'
+            }
+            url = "https://api.watchmode.com/v1/search/"
+            self._rate_limit()
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            for result in data.get('title_results', []):
+                if year and result.get('year') and result['year'] != year:
+                    continue
+                logger.info(f"Found {title} ({year}) on Watchmode: ID {result['id']}")
+                return result
+        except Exception as e:
+            logger.error(f"Watchmode search failed for {title}: {e}")
+        return None
+
+    def get_watch_providers_watchmode(self, watchmode_id: int) -> List[Dict[str, Any]]:
+        """Get streaming sources for a title from Watchmode API (region = US)."""
+        if not self.watchmode_api_key:
+            return []
+        try:
+            params = {
+                'apiKey': self.watchmode_api_key,
+                'regions': 'US'
+            }
+            url = f"https://api.watchmode.com/v1/title/{watchmode_id}/sources/"
+            self._rate_limit()
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            streaming_sources = []
+            # Map Watchmode's type codes to our canonical names
+            type_map = {
+                'sub': 'subscription',
+                'buy': 'buy',
+                'rent': 'rent',
+                'free': 'free'
+            }
+            for src in data:
+                src_type = type_map.get(src.get('type'), src.get('type', 'unknown'))
+                streaming_sources.append({
+                    'name': src.get('name', 'Unknown'),
+                    'type': src_type,
+                    'region': src.get('region', 'US'),
+                    'web_url': src.get('web_url') or src.get('ios_appstore_url') or src.get('android_playstore_url') or '',
+                    'logo_url': src.get('logo_100px', '')
+                })
+            logger.info(f"Found {len(streaming_sources)} streaming sources for Watchmode ID {watchmode_id}")
+            return streaming_sources
+        except Exception as e:
+            logger.error(f"Failed to get Watchmode sources for ID {watchmode_id}: {e}")
+            return []
+
     def is_movie_recently_updated(self, movie_title: str, episode_number: int) -> bool:
         """Check if a movie was recently updated (within cache duration)."""
         if not self.streaming_data:
@@ -204,36 +275,67 @@ class StreamingInfoFetcher:
         return movies_to_update
     
     def fetch_movie_streaming_info(self, movie: Dict[str, Any], episode_number: int) -> Dict[str, Any]:
-        """Fetch streaming information for a single movie."""
+        """Fetch streaming availability for a single movie.
+        Priority order:
+        1. Watchmode (direct provider URLs)
+        2. TMDB watch/providers (JustWatch aggregated page)
+        This keeps TMDB as a fallback for completeness while giving users proper deep links when available.
+        """
         title = movie.get("title", "Unknown")
         year = movie.get("year", "")
-        
-        # Search for movie on TMDB
-        tmdb_movie = self.search_movie_tmdb(title, year)
-        
-        if tmdb_movie:
-            tmdb_id = tmdb_movie["id"]
-            streaming_sources = self.get_watch_providers_tmdb(tmdb_id)
-            
-            return {
-                "title": title,
-                "year": year,
-                "imdb_id": movie.get("imdb_id", ""),
-                "streaming_sources": streaming_sources,
-                "data_sources": ["tmdb"],
-                "last_updated": datetime.now().strftime("%Y-%m-%d"),
-                "tmdb_id": tmdb_id
-            }
-        else:
-            logger.warning(f"Could not find streaming data for {title} ({year})")
-            return {
-                "title": title,
-                "year": year,
-                "imdb_id": movie.get("imdb_id", ""),
-                "streaming_sources": [],
-                "data_sources": [],
-                "last_updated": datetime.now().strftime("%Y-%m-%d")
-            }
+
+        watchmode_sources: List[Dict[str, Any]] = []
+        tmdb_sources: List[Dict[str, Any]] = []
+        watchmode_id = None
+        tmdb_id = None
+
+        # ---- Watchmode (preferred) ----
+        if self.watchmode_api_key:
+            wm_movie = self.search_movie_watchmode(title, year)
+            if wm_movie:
+                watchmode_id = wm_movie["id"]
+                watchmode_sources = self.get_watch_providers_watchmode(watchmode_id)
+                # Re-use TMDB ID if Watchmode returns it
+                if wm_movie.get("tmdb_id") and not tmdb_id:
+                    tmdb_id = wm_movie["tmdb_id"]
+
+        # ---- TMDB fallback / supplement ----
+        if self.tmdb_api_key and not tmdb_id:
+            tmdb_movie = self.search_movie_tmdb(title, year)
+            if tmdb_movie:
+                tmdb_id = tmdb_movie["id"]
+
+        if self.tmdb_api_key and tmdb_id:
+            tmdb_sources = self.get_watch_providers_tmdb(tmdb_id)
+
+        # Merge sources, preferring Watchmode versions where available
+        streaming_sources = watchmode_sources or []
+        if tmdb_sources:
+            existing_keys = {(s.get("name"), s.get("type")) for s in streaming_sources}
+            for src in tmdb_sources:
+                key = (src.get("name"), src.get("type"))
+                if key not in existing_keys:
+                    streaming_sources.append(src)
+
+        data_sources = []
+        if watchmode_sources:
+            data_sources.append("watchmode")
+        if tmdb_sources:
+            data_sources.append("tmdb")
+
+        if not streaming_sources:
+            logger.warning(f"No streaming data found for {title} ({year})")
+
+        return {
+            "title": title,
+            "year": year,
+            "imdb_id": movie.get("imdb_id", ""),
+            "streaming_sources": streaming_sources,
+            "data_sources": data_sources,
+            "last_updated": datetime.now().strftime("%Y-%m-%d"),
+            "tmdb_id": tmdb_id,
+            "watchmode_id": watchmode_id
+        }
     
     def load_movies_data(self) -> Dict[str, Any]:
         """Load movies data from JSON file."""

@@ -8,6 +8,7 @@ import logging
 import requests
 from datetime import datetime
 from typing import Dict, List, Any
+from urllib.parse import quote_plus
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -230,8 +231,8 @@ class HTMLGenerator:
             return f"{self.tmdb_poster_base_url}/w500{poster_path}"
         
         # Fallback to a better placeholder with movie info
-        encoded_title = movie_title.replace(' ', '+')
-        return f"https://via.placeholder.com/500x750/2c3e50/ffffff?text={encoded_title}+({year})"
+        encoded_title = quote_plus(f"{movie_title} ({year})")
+        return f"https://via.placeholder.com/500x750/2c3e50/ffffff?text={encoded_title}"
 
     def get_movie_poster_urls(self, movie_title: str, year: int) -> Dict[str, str]:
         """Get multiple poster sizes for responsive design."""
@@ -250,8 +251,8 @@ class HTMLGenerator:
             }
         else:
             # Fallback placeholder
-            encoded_title = movie_title.replace(' ', '+')
-            placeholder_url = f"https://via.placeholder.com/500x750/2c3e50/ffffff?text={encoded_title}+({year})"
+            encoded_title = quote_plus(f"{movie_title} ({year})")
+            placeholder_url = f"https://via.placeholder.com/500x750/2c3e50/ffffff?text={encoded_title}"
             poster_urls = {
                 'small': placeholder_url,
                 'medium': placeholder_url,
