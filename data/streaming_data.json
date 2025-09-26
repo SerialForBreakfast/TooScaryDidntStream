@@ -110,7 +110,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 530385,
           "watchmode_id": null
         }
@@ -198,7 +198,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 310131,
           "watchmode_id": null
         }
@@ -258,7 +258,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 764,
           "watchmode_id": null
         }
@@ -367,7 +367,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 346364,
           "watchmode_id": null
         }
@@ -483,7 +483,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 474350,
           "watchmode_id": null
         }
@@ -498,7 +498,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -621,7 +621,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 23827,
           "watchmode_id": null
         }
@@ -772,7 +772,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 30497,
           "watchmode_id": null
         }
@@ -916,7 +916,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 170,
           "watchmode_id": null
         }
@@ -1039,7 +1039,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 503919,
           "watchmode_id": null
         }
@@ -1148,7 +1148,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1359977,
           "watchmode_id": null
         }
@@ -1163,7 +1163,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1421084,
           "watchmode_id": null
         }
@@ -1178,7 +1178,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1318854,
           "watchmode_id": null
         }
@@ -1193,7 +1193,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -1302,7 +1302,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 807,
           "watchmode_id": null
         }
@@ -1322,6 +1322,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/348/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+            },
+            {
+              "name": "AMC Plus Apple TV Channel ",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/348/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
             },
             {
               "name": "AMC+ Amazon Channel",
@@ -1411,7 +1418,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 348,
           "watchmode_id": null
         }
@@ -1520,7 +1527,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 274,
           "watchmode_id": null
         }
@@ -1535,7 +1542,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1385377,
           "watchmode_id": null
         }
@@ -1616,7 +1623,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1140017,
           "watchmode_id": null
         }
@@ -1631,7 +1638,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -1803,7 +1810,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 242224,
           "watchmode_id": null
         }
@@ -1817,6 +1824,20 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "AMC+ Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/9552/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+            },
+            {
+              "name": "AMC",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/9552/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/92Kx25Od0habmgRBTqT6XWgwgKt.jpg"
+            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -1891,7 +1912,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 9552,
           "watchmode_id": null
         }
@@ -2070,7 +2091,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 830764,
           "watchmode_id": null
         }
@@ -2207,7 +2228,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 565,
           "watchmode_id": null
         }
@@ -2222,7 +2243,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1294691,
           "watchmode_id": null
         }
@@ -2237,7 +2258,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -2332,7 +2353,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1013474,
           "watchmode_id": null
         }
@@ -2347,7 +2368,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1212149,
           "watchmode_id": null
         }
@@ -2463,7 +2484,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 270303,
           "watchmode_id": null
         }
@@ -2478,7 +2499,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -2615,7 +2636,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 447332,
           "watchmode_id": null
         }
@@ -2630,7 +2651,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -2767,7 +2788,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1010600,
           "watchmode_id": null
         }
@@ -2782,7 +2803,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 671290,
           "watchmode_id": null
         }
@@ -2891,7 +2912,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 2667,
           "watchmode_id": null
         }
@@ -3014,7 +3035,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 638965,
           "watchmode_id": null
         }
@@ -3109,7 +3130,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 91586,
           "watchmode_id": null
         }
@@ -3162,7 +3183,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1384336,
           "watchmode_id": null
         }
@@ -3177,7 +3198,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1317845,
           "watchmode_id": null
         }
@@ -3192,7 +3213,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3207,7 +3228,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3222,7 +3243,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1326337,
           "watchmode_id": null
         }
@@ -3282,7 +3303,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1440016,
           "watchmode_id": null
         }
@@ -3384,7 +3405,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 4232,
           "watchmode_id": null
         }
@@ -3399,7 +3420,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1324730,
           "watchmode_id": null
         }
@@ -3414,7 +3435,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3429,7 +3450,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3444,7 +3465,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1329470,
           "watchmode_id": null
         }
@@ -3459,7 +3480,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3474,7 +3495,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1047397,
           "watchmode_id": null
         }
@@ -3555,7 +3576,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1455726,
           "watchmode_id": null
         }
@@ -3570,7 +3591,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1253191,
           "watchmode_id": null
         }
@@ -3585,7 +3606,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3600,11 +3621,25 @@
           "imdb_id": "",
           "streaming_sources": [
             {
+              "name": "AMC+ Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/377/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+            },
+            {
               "name": "AMC+ Roku Premium Channel",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/377/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/gAGrSQCTAisxy2CsWbijVvJEnRo.jpg"
+            },
+            {
+              "name": "AMC",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/377/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/92Kx25Od0habmgRBTqT6XWgwgKt.jpg"
             },
             {
               "name": "Amazon Video",
@@ -3687,7 +3722,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 377,
           "watchmode_id": null
         }
@@ -3702,7 +3737,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1397154,
           "watchmode_id": null
         }
@@ -3717,7 +3752,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1382553,
           "watchmode_id": null
         }
@@ -3732,7 +3767,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1306887,
           "watchmode_id": null
         }
@@ -3792,7 +3827,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 28340,
           "watchmode_id": null
         }
@@ -3807,7 +3842,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1452770,
           "watchmode_id": null
         }
@@ -3923,7 +3958,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 2756,
           "watchmode_id": null
         }
@@ -3938,7 +3973,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4040,7 +4075,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 176,
           "watchmode_id": null
         }
@@ -4055,7 +4090,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4070,7 +4105,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1395437,
           "watchmode_id": null
         }
@@ -4085,7 +4120,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4100,7 +4135,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1179855,
           "watchmode_id": null
         }
@@ -4115,7 +4150,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4130,7 +4165,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4145,7 +4180,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1311681,
           "watchmode_id": null
         }
@@ -4160,7 +4195,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1454234,
           "watchmode_id": null
         }
@@ -4175,7 +4210,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4190,7 +4225,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1309401,
           "watchmode_id": null
         }
@@ -4205,7 +4240,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4220,7 +4255,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4235,7 +4270,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4250,7 +4285,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4282,7 +4317,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 433808,
           "watchmode_id": null
         }
@@ -4297,7 +4332,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4312,7 +4347,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4346,13 +4381,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/376570/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pSUa7lMYLoQAU00ikXoHxmOfTZ9.jpg"
-            },
-            {
-              "name": "fuboTV",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/376570/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
             },
             {
               "name": "AMC Plus Apple TV Channel ",
@@ -4397,13 +4425,6 @@
               "logo_url": "https://image.tmdb.org/t/p/original/kLfq0I2MwiUFUY9yI1GwOeKxX8f.jpg"
             },
             {
-              "name": "Shout! Factory Amazon Channel",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/376570/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/ivRp15loTWoVy3eEHALoYEyXI8J.jpg"
-            },
-            {
               "name": "Amazon Video",
               "type": "rent",
               "region": "US",
@@ -4477,7 +4498,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 376570,
           "watchmode_id": null
         }
@@ -4492,7 +4513,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1479491,
           "watchmode_id": null
         }
@@ -4507,7 +4528,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4522,7 +4543,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4537,7 +4558,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1496199,
           "watchmode_id": null
         }
@@ -4552,7 +4573,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4567,7 +4588,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4582,7 +4603,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1407694,
           "watchmode_id": null
         }
@@ -4597,7 +4618,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4612,7 +4633,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1392190,
           "watchmode_id": null
         }
@@ -4627,7 +4648,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4642,7 +4663,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4657,7 +4678,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1306554,
           "watchmode_id": null
         }
@@ -4672,7 +4693,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1407011,
           "watchmode_id": null
         }
@@ -4704,7 +4725,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1372665,
           "watchmode_id": null
         }
@@ -4719,7 +4740,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4734,7 +4755,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4836,7 +4857,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 8914,
           "watchmode_id": null
         }
@@ -4868,7 +4889,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1014505,
           "watchmode_id": null
         }
@@ -4883,7 +4904,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4898,7 +4919,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1360817,
           "watchmode_id": null
         }
@@ -4972,7 +4993,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 411088,
           "watchmode_id": null
         }
@@ -4987,7 +5008,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5117,7 +5138,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 520763,
           "watchmode_id": null
         }
@@ -5132,7 +5153,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5147,7 +5168,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1360838,
           "watchmode_id": null
         }
@@ -5162,7 +5183,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1340847,
           "watchmode_id": null
         }
@@ -5177,7 +5198,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5279,7 +5300,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 539972,
           "watchmode_id": null
         }
@@ -5357,13 +5378,6 @@
               "logo_url": "https://image.tmdb.org/t/p/original/uauVx3dGWt0GICqdMCBYJObd3Mo.jpg"
             },
             {
-              "name": "Amazon Prime Video",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/28503/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-            },
-            {
               "name": "fuboTV",
               "type": "subscription",
               "region": "US",
@@ -5418,13 +5432,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/28503/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/fbveJTcro9Xw2KuPIIoPPePHiwy.jpg"
-            },
-            {
-              "name": "Amazon Prime Video with Ads",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/28503/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
             },
             {
               "name": "Troma NOW",
@@ -5514,7 +5521,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 28503,
           "watchmode_id": null
         }
@@ -5529,7 +5536,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5544,7 +5551,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1059500,
           "watchmode_id": null
         }
@@ -5559,7 +5566,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5574,7 +5581,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5589,7 +5596,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5712,7 +5719,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1159311,
           "watchmode_id": null
         }
@@ -5800,7 +5807,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 9426,
           "watchmode_id": null
         }
@@ -5815,7 +5822,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5830,7 +5837,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5845,7 +5852,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5860,7 +5867,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1217947,
           "watchmode_id": null
         }
@@ -5875,7 +5882,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5890,7 +5897,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5905,7 +5912,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1333100,
           "watchmode_id": null
         }
@@ -5920,7 +5927,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5935,7 +5942,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6142,7 +6149,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 359246,
           "watchmode_id": null
         }
@@ -6157,7 +6164,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6172,7 +6179,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6187,7 +6194,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6289,7 +6296,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 679,
           "watchmode_id": null
         }
@@ -6405,7 +6412,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 9823,
           "watchmode_id": null
         }
@@ -6420,7 +6427,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6435,7 +6442,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6450,7 +6457,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6465,7 +6472,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6480,7 +6487,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1259112,
           "watchmode_id": null
         }
@@ -6495,7 +6502,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6509,13 +6516,6 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
-            {
-              "name": "fuboTV",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/747/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-            },
             {
               "name": "Starz Apple TV Channel",
               "type": "subscription",
@@ -6597,7 +6597,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 747,
           "watchmode_id": null
         }
@@ -6699,7 +6699,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 4232,
           "watchmode_id": null
         }
@@ -6808,7 +6808,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 578,
           "watchmode_id": null
         }
@@ -6823,7 +6823,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6838,7 +6838,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6853,7 +6853,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1382911,
           "watchmode_id": null
         }
@@ -6868,7 +6868,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1396252,
           "watchmode_id": null
         }
@@ -6883,7 +6883,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6898,7 +6898,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6913,7 +6913,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6928,7 +6928,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6943,7 +6943,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7080,7 +7080,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 7340,
           "watchmode_id": null
         }
@@ -7175,7 +7175,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 760104,
           "watchmode_id": null
         }
@@ -7200,7 +7200,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 787752,
           "watchmode_id": null
         }
@@ -7215,7 +7215,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7230,7 +7230,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7245,7 +7245,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7260,7 +7260,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7275,7 +7275,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7290,7 +7290,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1299372,
           "watchmode_id": null
         }
@@ -7305,7 +7305,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1270400,
           "watchmode_id": null
         }
@@ -7320,11 +7320,25 @@
           "imdb_id": "",
           "streaming_sources": [
             {
+              "name": "AMC+ Amazon Channel",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/13207/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+            },
+            {
               "name": "YouTube TV",
               "type": "subscription",
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/13207/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
+            {
+              "name": "AMC",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/13207/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/92Kx25Od0habmgRBTqT6XWgwgKt.jpg"
             },
             {
               "name": "Amazon Video",
@@ -7400,7 +7414,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 13207,
           "watchmode_id": null
         }
@@ -7415,7 +7429,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1444020,
           "watchmode_id": null
         }
@@ -7524,7 +7538,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 819876,
           "watchmode_id": null
         }
@@ -7647,7 +7661,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 482373,
           "watchmode_id": null
         }
@@ -7662,7 +7676,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7771,7 +7785,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1137242,
           "watchmode_id": null
         }
@@ -7798,13 +7812,6 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/756999/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-            },
-            {
-              "name": "Starz Apple TV Channel",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/756999/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
             },
             {
               "name": "NBC",
@@ -7908,7 +7915,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 756999,
           "watchmode_id": null
         }
@@ -7923,7 +7930,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7938,7 +7945,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7953,7 +7960,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8027,7 +8034,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 28609,
           "watchmode_id": null
         }
@@ -8150,7 +8157,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 762504,
           "watchmode_id": null
         }
@@ -8252,7 +8259,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 520023,
           "watchmode_id": null
         }
@@ -8354,7 +8361,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1129598,
           "watchmode_id": null
         }
@@ -8477,7 +8484,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 760161,
           "watchmode_id": null
         }
@@ -8492,7 +8499,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8507,7 +8514,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 723294,
           "watchmode_id": null
         }
@@ -8522,7 +8529,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1341663,
           "watchmode_id": null
         }
@@ -8624,7 +8631,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 913290,
           "watchmode_id": null
         }
@@ -8656,7 +8663,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1252428,
           "watchmode_id": null
         }
@@ -8671,7 +8678,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8686,7 +8693,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8701,7 +8708,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8796,7 +8803,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 949423,
           "watchmode_id": null
         }
@@ -8919,7 +8926,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 760161,
           "watchmode_id": null
         }
@@ -8934,7 +8941,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8949,7 +8956,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8964,7 +8971,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1203307,
           "watchmode_id": null
         }
@@ -8979,7 +8986,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1447868,
           "watchmode_id": null
         }
@@ -9074,7 +9081,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 619730,
           "watchmode_id": null
         }
@@ -9089,7 +9096,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9104,7 +9111,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9213,7 +9220,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 593643,
           "watchmode_id": null
         }
@@ -9343,7 +9350,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 791177,
           "watchmode_id": null
         }
@@ -9452,7 +9459,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 899112,
           "watchmode_id": null
         }
@@ -9467,7 +9474,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9482,7 +9489,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9497,7 +9504,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9512,7 +9519,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9527,7 +9534,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9542,7 +9549,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9557,7 +9564,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9572,7 +9579,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9688,7 +9695,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 968051,
           "watchmode_id": null
         }
@@ -9811,7 +9818,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 597,
           "watchmode_id": null
         }
@@ -9826,7 +9833,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9893,7 +9900,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1502439,
           "watchmode_id": null
         }
@@ -9995,7 +10002,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 4232,
           "watchmode_id": null
         }
@@ -10010,7 +10017,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10252,7 +10259,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 40037,
           "watchmode_id": null
         }
@@ -10389,7 +10396,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 882598,
           "watchmode_id": null
         }
@@ -10404,7 +10411,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10562,7 +10569,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 21484,
           "watchmode_id": null
         }
@@ -10678,7 +10685,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 798286,
           "watchmode_id": null
         }
@@ -10794,7 +10801,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 713704,
           "watchmode_id": null
         }
@@ -10809,7 +10816,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10824,7 +10831,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1219884,
           "watchmode_id": null
         }
@@ -10839,7 +10846,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10854,7 +10861,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10956,7 +10963,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1114513,
           "watchmode_id": null
         }
@@ -10971,7 +10978,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1321952,
           "watchmode_id": null
         }
@@ -11059,7 +11066,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 837,
           "watchmode_id": null
         }
@@ -11168,7 +11175,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 440021,
           "watchmode_id": null
         }
@@ -11183,7 +11190,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11198,7 +11205,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11213,7 +11220,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1424034,
           "watchmode_id": null
         }
@@ -11315,7 +11322,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 11932,
           "watchmode_id": null
         }
@@ -11330,7 +11337,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11345,7 +11352,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1296966,
           "watchmode_id": null
         }
@@ -11475,7 +11482,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1008042,
           "watchmode_id": null
         }
@@ -11490,7 +11497,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11522,7 +11529,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1244657,
           "watchmode_id": null
         }
@@ -11537,7 +11544,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11632,7 +11639,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 11675,
           "watchmode_id": null
         }
@@ -11664,7 +11671,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1306141,
           "watchmode_id": null
         }
@@ -11787,7 +11794,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 16307,
           "watchmode_id": null
         }
@@ -11802,7 +11809,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11817,7 +11824,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11832,7 +11839,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11847,7 +11854,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11862,7 +11869,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11877,7 +11884,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1219584,
           "watchmode_id": null
         }
@@ -11892,7 +11899,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11907,7 +11914,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11932,7 +11939,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 820609,
           "watchmode_id": null
         }
@@ -11947,7 +11954,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11961,13 +11968,6 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
-            {
-              "name": "fuboTV",
-              "type": "subscription",
-              "region": "US",
-              "web_url": "https://www.themoviedb.org/movie/8966/watch",
-              "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -12056,7 +12056,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 8966,
           "watchmode_id": null
         }
@@ -12071,7 +12071,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12152,7 +12152,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1297970,
           "watchmode_id": null
         }
@@ -12167,7 +12167,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12182,7 +12182,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12197,7 +12197,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12212,7 +12212,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12227,7 +12227,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1163379,
           "watchmode_id": null
         }
@@ -12242,7 +12242,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12257,7 +12257,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12272,7 +12272,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12381,7 +12381,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 829410,
           "watchmode_id": null
         }
@@ -12396,7 +12396,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12411,7 +12411,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12499,7 +12499,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 10494,
           "watchmode_id": null
         }
@@ -12514,7 +12514,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1336305,
           "watchmode_id": null
         }
@@ -12529,7 +12529,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1303095,
           "watchmode_id": null
         }
@@ -12544,7 +12544,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 946932,
           "watchmode_id": null
         }
@@ -12559,7 +12559,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12591,7 +12591,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 4552,
           "watchmode_id": null
         }
@@ -12606,7 +12606,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12729,7 +12729,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 864168,
           "watchmode_id": null
         }
@@ -12894,7 +12894,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 141,
           "watchmode_id": null
         }
@@ -12996,7 +12996,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 467938,
           "watchmode_id": null
         }
@@ -13147,7 +13147,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 938614,
           "watchmode_id": null
         }
@@ -13263,7 +13263,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 50619,
           "watchmode_id": null
         }
@@ -13358,7 +13358,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 790,
           "watchmode_id": null
         }
@@ -13467,7 +13467,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 264660,
           "watchmode_id": null
         }
@@ -13576,7 +13576,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 661950,
           "watchmode_id": null
         }
@@ -13622,7 +13622,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 37707,
           "watchmode_id": null
         }
@@ -13710,7 +13710,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 567,
           "watchmode_id": null
         }
@@ -13826,7 +13826,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 18239,
           "watchmode_id": null
         }
@@ -13935,7 +13935,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 50620,
           "watchmode_id": null
         }
@@ -14051,7 +14051,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1072342,
           "watchmode_id": null
         }
@@ -14174,7 +14174,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 858017,
           "watchmode_id": null
         }
@@ -14332,7 +14332,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1214509,
           "watchmode_id": null
         }
@@ -14448,7 +14448,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1111873,
           "watchmode_id": null
         }
@@ -14564,7 +14564,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 530385,
           "watchmode_id": null
         }
@@ -14673,7 +14673,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 437342,
           "watchmode_id": null
         }
@@ -14761,7 +14761,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 310131,
           "watchmode_id": null
         }
@@ -14891,7 +14891,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 931944,
           "watchmode_id": null
         }
@@ -14951,7 +14951,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 764,
           "watchmode_id": null
         },
@@ -15083,7 +15083,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 765,
           "watchmode_id": null
         }
@@ -15206,7 +15206,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1023922,
           "watchmode_id": null
         }
@@ -15364,7 +15364,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 762441,
           "watchmode_id": null
         }
@@ -15473,7 +15473,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1226578,
           "watchmode_id": null
         }
@@ -15603,7 +15603,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1032823,
           "watchmode_id": null
         }
@@ -15712,7 +15712,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 718821,
           "watchmode_id": null
         }
@@ -15828,7 +15828,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 869291,
           "watchmode_id": null
         }
@@ -15923,7 +15923,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 945961,
           "watchmode_id": null
         }
@@ -16081,7 +16081,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 49787,
           "watchmode_id": null
         }
@@ -16113,7 +16113,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 521935,
           "watchmode_id": null
         }
@@ -16257,7 +16257,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 2668,
           "watchmode_id": null
         }
@@ -16394,7 +16394,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 294963,
           "watchmode_id": null
         }
@@ -16517,7 +16517,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 597,
           "watchmode_id": null
         }
@@ -16532,7 +16532,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1317845,
           "watchmode_id": null
         }
@@ -16634,7 +16634,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1114513,
           "watchmode_id": null
         }
@@ -16715,7 +16715,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 933260,
           "watchmode_id": null
         }
@@ -16859,7 +16859,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1034541,
           "watchmode_id": null
         }
@@ -16975,7 +16975,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1098378,
           "watchmode_id": null
         }
@@ -17133,7 +17133,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1100782,
           "watchmode_id": null
         }
@@ -17235,7 +17235,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1138194,
           "watchmode_id": null
         }
@@ -17386,7 +17386,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 11460,
           "watchmode_id": null
         }
@@ -17460,7 +17460,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 9605,
           "watchmode_id": null
         }
@@ -17555,7 +17555,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 9479,
           "watchmode_id": null
         }
@@ -17685,7 +17685,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 958196,
           "watchmode_id": null
         }
@@ -17794,7 +17794,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1041613,
           "watchmode_id": null
         }
@@ -17854,7 +17854,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 301365,
           "watchmode_id": null
         }
@@ -18131,7 +18131,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 653,
           "watchmode_id": null
         }
@@ -18163,7 +18163,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1052280,
           "watchmode_id": null
         }
@@ -18405,7 +18405,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 27475,
           "watchmode_id": null
         }
@@ -18420,7 +18420,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 16372,
           "watchmode_id": null
         }
@@ -18550,7 +18550,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 18781,
           "watchmode_id": null
         }
@@ -18565,7 +18565,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -18674,7 +18674,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 9374,
           "watchmode_id": null
         }
@@ -18689,7 +18689,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -18791,7 +18791,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 10242,
           "watchmode_id": null
         }
@@ -18886,7 +18886,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1272,
           "watchmode_id": null
         }
@@ -18901,7 +18901,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 974320,
           "watchmode_id": null
         }
@@ -19017,7 +19017,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 18009,
           "watchmode_id": null
         }
@@ -19189,7 +19189,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 374052,
           "watchmode_id": null
         }
@@ -19326,7 +19326,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1262983,
           "watchmode_id": null
         }
@@ -19341,7 +19341,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -19464,7 +19464,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1008392,
           "watchmode_id": null
         }
@@ -19478,6 +19478,20 @@
           "year": 1988,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "AMC",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/4011/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/92Kx25Od0habmgRBTqT6XWgwgKt.jpg"
+            },
+            {
+              "name": "Philo",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/4011/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
+            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -19566,7 +19580,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 4011,
           "watchmode_id": null
         }
@@ -19581,7 +19595,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1087207,
           "watchmode_id": null
         }
@@ -19683,7 +19697,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 38810,
           "watchmode_id": null
         }
@@ -19698,7 +19712,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1361920,
           "watchmode_id": null
         }
@@ -19758,7 +19772,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 45650,
           "watchmode_id": null
         }
@@ -19881,7 +19895,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 46420,
           "watchmode_id": null
         }
@@ -20018,7 +20032,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1562,
           "watchmode_id": null
         }
@@ -20113,7 +20127,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 8337,
           "watchmode_id": null
         }
@@ -20285,7 +20299,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1216191,
           "watchmode_id": null
         }
@@ -20464,7 +20478,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1359,
           "watchmode_id": null
         }
@@ -20479,7 +20493,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -20574,7 +20588,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1100988,
           "watchmode_id": null
         }
@@ -20662,7 +20676,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 1071585,
           "watchmode_id": null
         }
@@ -20694,7 +20708,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": 433808,
           "watchmode_id": null
         }
@@ -20709,7 +20723,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2025-09-25",
+          "last_updated": "2025-09-26",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -20718,7 +20732,7 @@
   ],
   "metadata": {
     "podcast_name": "Too Scary; Didn't Watch",
-    "last_updated": "2025-09-25",
+    "last_updated": "2025-09-26",
     "total_episodes": 343,
     "apis_used": [
       "tmdb"
