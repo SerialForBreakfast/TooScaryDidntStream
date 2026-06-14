@@ -16,6 +16,13 @@
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
             },
             {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/530385/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
+            {
               "name": "HBO Max",
               "type": "subscription",
               "region": "US",
@@ -96,7 +103,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 530385,
           "watchmode_id": null
         }
@@ -118,6 +125,13 @@
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
             },
             {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/310131/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
+            {
               "name": "HBO Max",
               "type": "subscription",
               "region": "US",
@@ -198,7 +212,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 310131,
           "watchmode_id": null
         }
@@ -258,7 +272,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 764,
           "watchmode_id": null
         }
@@ -278,6 +292,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/346364/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/346364/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Cinemax Amazon Channel",
@@ -381,7 +402,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 346364,
           "watchmode_id": null
         }
@@ -401,6 +422,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/474350/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/474350/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Cinemax Amazon Channel",
@@ -511,7 +539,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 474350,
           "watchmode_id": null
         }
@@ -526,7 +554,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -581,6 +609,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/23827/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/23827/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Amazon Video",
@@ -656,7 +691,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 23827,
           "watchmode_id": null
         }
@@ -807,7 +842,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 30497,
           "watchmode_id": null
         }
@@ -902,7 +937,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 170,
           "watchmode_id": null
         }
@@ -922,6 +957,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/503919/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/503919/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -1004,7 +1046,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 503919,
           "watchmode_id": null
         }
@@ -1106,7 +1148,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1359977,
           "watchmode_id": null
         }
@@ -1121,7 +1163,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1449641,
           "watchmode_id": null
         }
@@ -1136,7 +1178,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1336780,
           "watchmode_id": null
         }
@@ -1151,7 +1193,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -1239,7 +1281,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 807,
           "watchmode_id": null
         }
@@ -1327,7 +1369,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 348,
           "watchmode_id": null
         }
@@ -1471,7 +1513,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 274,
           "watchmode_id": null
         }
@@ -1486,7 +1528,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1385377,
           "watchmode_id": null
         }
@@ -1553,7 +1595,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1140017,
           "watchmode_id": null
         }
@@ -1568,7 +1610,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -1616,6 +1658,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/242224/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/242224/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -1726,7 +1775,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 242224,
           "watchmode_id": null
         }
@@ -1814,7 +1863,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 9552,
           "watchmode_id": null
         }
@@ -1944,7 +1993,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 830764,
           "watchmode_id": null
         }
@@ -1964,6 +2013,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/120/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/120/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -2060,7 +2116,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 120,
           "watchmode_id": null
         }
@@ -2075,7 +2131,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1563216,
           "watchmode_id": null
         }
@@ -2090,7 +2146,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -2124,6 +2180,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1013474/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1013474/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "UP Faith & Family Apple TV Channel",
@@ -2178,7 +2241,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1013474,
           "watchmode_id": null
         }
@@ -2205,6 +2268,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1079091/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1079091/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Amazon Video",
@@ -2287,7 +2357,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1079091,
           "watchmode_id": null
         }
@@ -2307,6 +2377,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/270303/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/rcBwnERpNfPfWB5DaSTyEMCZbCA.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/270303/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -2389,7 +2466,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 270303,
           "watchmode_id": null
         }
@@ -2404,7 +2481,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -2562,7 +2639,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 447332,
           "watchmode_id": null
         }
@@ -2577,7 +2654,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -2611,6 +2688,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1010600/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/9laPF1MAiUxlqM8T98F3Gj0bhzd.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1010600/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Peacock Premium Plus",
@@ -2707,7 +2791,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1010600,
           "watchmode_id": null
         }
@@ -2741,6 +2825,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1287842/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1287842/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -2844,7 +2935,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1287842,
           "watchmode_id": null
         }
@@ -2864,6 +2955,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/2667/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/2667/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -2946,7 +3044,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 2667,
           "watchmode_id": null
         }
@@ -2961,7 +3059,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1243226,
           "watchmode_id": null
         }
@@ -3056,7 +3154,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1173559,
           "watchmode_id": null
         }
@@ -3076,6 +3174,20 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1384336/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pSUa7lMYLoQAU00ikXoHxmOfTZ9.jpg"
+            },
+            {
+              "name": "Bloodstream",
+              "type": "free",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1384336/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/qlsnWCrmcisQH5JnEDxPV2v2vlb.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1384336/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -3130,7 +3242,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1384336,
           "watchmode_id": null
         }
@@ -3246,7 +3358,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 616820,
           "watchmode_id": null
         }
@@ -3261,7 +3373,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3276,7 +3388,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3291,7 +3403,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1326337,
           "watchmode_id": null
         }
@@ -3311,6 +3423,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1440016/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1440016/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "UP Faith & Family Apple TV Channel",
@@ -3379,7 +3498,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1440016,
           "watchmode_id": null
         }
@@ -3537,7 +3656,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 4232,
           "watchmode_id": null
         }
@@ -3552,7 +3671,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1324730,
           "watchmode_id": null
         }
@@ -3567,7 +3686,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3582,7 +3701,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3597,7 +3716,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1425153,
           "watchmode_id": null
         }
@@ -3612,7 +3731,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3627,7 +3746,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1307154,
           "watchmode_id": null
         }
@@ -3708,7 +3827,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1455726,
           "watchmode_id": null
         }
@@ -3740,7 +3859,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 752434,
           "watchmode_id": null
         }
@@ -3755,7 +3874,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -3770,7 +3889,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1459441,
           "watchmode_id": null
         }
@@ -3795,7 +3914,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1307027,
           "watchmode_id": null
         }
@@ -3810,7 +3929,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1382553,
           "watchmode_id": null
         }
@@ -3825,7 +3944,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1495977,
           "watchmode_id": null
         }
@@ -3934,7 +4053,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1131438,
           "watchmode_id": null
         }
@@ -3949,7 +4068,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1452770,
           "watchmode_id": null
         }
@@ -4051,7 +4170,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 2756,
           "watchmode_id": null
         }
@@ -4066,7 +4185,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4086,6 +4205,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/176/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/176/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Netflix Standard with Ads",
@@ -4182,7 +4308,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 176,
           "watchmode_id": null
         }
@@ -4197,7 +4323,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4212,7 +4338,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1395437,
           "watchmode_id": null
         }
@@ -4227,7 +4353,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4242,7 +4368,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 727010,
           "watchmode_id": null
         }
@@ -4257,7 +4383,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4272,7 +4398,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4287,7 +4413,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1386662,
           "watchmode_id": null
         }
@@ -4302,7 +4428,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1454234,
           "watchmode_id": null
         }
@@ -4317,7 +4443,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4332,7 +4458,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1287052,
           "watchmode_id": null
         }
@@ -4347,7 +4473,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4362,7 +4488,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4377,7 +4503,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4392,7 +4518,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4424,7 +4550,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 433808,
           "watchmode_id": null
         }
@@ -4439,7 +4565,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4454,7 +4580,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4516,6 +4642,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/376570/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/376570/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -4640,7 +4773,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 376570,
           "watchmode_id": null
         }
@@ -4655,7 +4788,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1449636,
           "watchmode_id": null
         }
@@ -4670,7 +4803,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -4685,7 +4818,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1024409,
           "watchmode_id": null
         }
@@ -4740,6 +4873,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/10331/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pSUa7lMYLoQAU00ikXoHxmOfTZ9.jpg"
+            },
+            {
+              "name": "Bloodstream",
+              "type": "free",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/10331/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/qlsnWCrmcisQH5JnEDxPV2v2vlb.jpg"
             },
             {
               "name": "YOW.tv",
@@ -5011,7 +5151,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 10331,
           "watchmode_id": null
         }
@@ -5026,7 +5166,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5041,7 +5181,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1586245,
           "watchmode_id": null
         }
@@ -5054,10 +5194,27 @@
           "title": "LUCKY",
           "year": 2024,
           "imdb_id": "",
-          "streaming_sources": [],
-          "data_sources": [],
-          "last_updated": "2026-06-13",
-          "tmdb_id": 1302889,
+          "streaming_sources": [
+            {
+              "name": "Netflix",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1239511/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+            },
+            {
+              "name": "Netflix Standard with Ads",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1239511/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+            }
+          ],
+          "data_sources": [
+            "tmdb"
+          ],
+          "last_updated": "2026-06-14",
+          "tmdb_id": 1239511,
           "watchmode_id": null
         }
       ]
@@ -5071,7 +5228,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5086,7 +5243,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1392190,
           "watchmode_id": null
         }
@@ -5101,7 +5258,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5116,7 +5273,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5131,7 +5288,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5146,7 +5303,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1407011,
           "watchmode_id": null
         }
@@ -5255,7 +5412,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 826680,
           "watchmode_id": null
         }
@@ -5270,7 +5427,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5285,7 +5442,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5394,7 +5551,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 8914,
           "watchmode_id": null
         }
@@ -5440,7 +5597,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1014505,
           "watchmode_id": null
         }
@@ -5455,7 +5612,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5470,7 +5627,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1360817,
           "watchmode_id": null
         }
@@ -5558,7 +5715,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 411088,
           "watchmode_id": null
         }
@@ -5573,7 +5730,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5724,7 +5881,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 520763,
           "watchmode_id": null
         }
@@ -5739,7 +5896,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5754,7 +5911,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1282966,
           "watchmode_id": null
         }
@@ -5769,7 +5926,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1340847,
           "watchmode_id": null
         }
@@ -5784,7 +5941,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -5893,7 +6050,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 539972,
           "watchmode_id": null
         }
@@ -5950,6 +6107,13 @@
               "logo_url": "https://image.tmdb.org/t/p/original/uauVx3dGWt0GICqdMCBYJObd3Mo.jpg"
             },
             {
+              "name": "Bloodstream",
+              "type": "free",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/28503/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/qlsnWCrmcisQH5JnEDxPV2v2vlb.jpg"
+            },
+            {
               "name": "Artiflix",
               "type": "free",
               "region": "US",
@@ -5976,6 +6140,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/28503/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/efu1Cqc63XrPBoreYnf2mn0Nizj.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/28503/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "MGM Plus",
@@ -6121,7 +6292,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 28503,
           "watchmode_id": null
         }
@@ -6136,7 +6307,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6191,6 +6362,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/6977/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/6977/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "MGM Plus",
@@ -6287,7 +6465,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 6977,
           "watchmode_id": null
         }
@@ -6302,7 +6480,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6317,7 +6495,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6332,7 +6510,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6448,7 +6626,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1159311,
           "watchmode_id": null
         }
@@ -6536,7 +6714,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 9426,
           "watchmode_id": null
         }
@@ -6551,7 +6729,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6566,7 +6744,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6581,7 +6759,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6596,7 +6774,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1217947,
           "watchmode_id": null
         }
@@ -6611,7 +6789,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6626,7 +6804,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6641,7 +6819,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1292788,
           "watchmode_id": null
         }
@@ -6656,7 +6834,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6671,7 +6849,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6714,6 +6892,13 @@
               "logo_url": "https://image.tmdb.org/t/p/original/pSUa7lMYLoQAU00ikXoHxmOfTZ9.jpg"
             },
             {
+              "name": "Bloodstream",
+              "type": "free",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/359246/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/qlsnWCrmcisQH5JnEDxPV2v2vlb.jpg"
+            },
+            {
               "name": "YOW.tv",
               "type": "free",
               "region": "US",
@@ -6754,6 +6939,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/359246/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/359246/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -6878,7 +7070,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 359246,
           "watchmode_id": null
         }
@@ -6893,7 +7085,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6908,7 +7100,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -6923,7 +7115,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7018,7 +7210,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 679,
           "watchmode_id": null
         }
@@ -7038,6 +7230,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/9823/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/9823/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -7120,7 +7319,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 9823,
           "watchmode_id": null
         }
@@ -7135,7 +7334,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7155,6 +7354,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/11324/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/rcBwnERpNfPfWB5DaSTyEMCZbCA.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/11324/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "MGM Plus",
@@ -7258,7 +7464,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 11324,
           "watchmode_id": null
         }
@@ -7273,7 +7479,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7288,7 +7494,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7348,7 +7554,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1970,
           "watchmode_id": null
         }
@@ -7363,7 +7569,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7451,7 +7657,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 747,
           "watchmode_id": null
         }
@@ -7609,7 +7815,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 4232,
           "watchmode_id": null
         }
@@ -7629,6 +7835,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/578/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/578/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Starz",
@@ -7718,7 +7931,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 578,
           "watchmode_id": null
         }
@@ -7733,7 +7946,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7748,7 +7961,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7763,7 +7976,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1382911,
           "watchmode_id": null
         }
@@ -7778,7 +7991,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1396252,
           "watchmode_id": null
         }
@@ -7793,7 +8006,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7808,7 +8021,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7823,7 +8036,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7838,7 +8051,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7853,7 +8066,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -7894,6 +8107,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/7340/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/efu1Cqc63XrPBoreYnf2mn0Nizj.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/7340/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "MGM Plus",
@@ -7976,7 +8196,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 7340,
           "watchmode_id": null
         }
@@ -8071,7 +8291,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 760104,
           "watchmode_id": null
         }
@@ -8096,7 +8316,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 787752,
           "watchmode_id": null
         }
@@ -8111,7 +8331,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8126,7 +8346,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8141,7 +8361,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8156,7 +8376,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8171,7 +8391,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8191,6 +8411,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1299372/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1299372/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -8294,7 +8521,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1299372,
           "watchmode_id": null
         }
@@ -8308,6 +8535,20 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "fuboTV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/607/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/607/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
             {
               "name": "Amazon Video",
               "type": "rent",
@@ -8396,7 +8637,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 607,
           "watchmode_id": null
         }
@@ -8484,7 +8725,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 13207,
           "watchmode_id": null
         }
@@ -8499,7 +8740,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1444020,
           "watchmode_id": null
         }
@@ -8601,7 +8842,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 819876,
           "watchmode_id": null
         }
@@ -8724,7 +8965,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 482373,
           "watchmode_id": null
         }
@@ -8739,7 +8980,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8754,7 +8995,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1587117,
           "watchmode_id": null
         }
@@ -8870,7 +9111,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 756999,
           "watchmode_id": null
         }
@@ -8885,7 +9126,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8900,7 +9141,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8915,7 +9156,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -8929,6 +9170,13 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1315096/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
             {
               "name": "HBO Max",
               "type": "subscription",
@@ -8947,7 +9195,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1315096,
           "watchmode_id": null
         }
@@ -9056,7 +9304,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 762504,
           "watchmode_id": null
         }
@@ -9165,7 +9413,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 520023,
           "watchmode_id": null
         }
@@ -9267,7 +9515,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1129598,
           "watchmode_id": null
         }
@@ -9397,7 +9645,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 760161,
           "watchmode_id": null
         }
@@ -9412,7 +9660,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9427,7 +9675,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1405492,
           "watchmode_id": null
         }
@@ -9442,7 +9690,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1476799,
           "watchmode_id": null
         }
@@ -9537,7 +9785,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 913290,
           "watchmode_id": null
         }
@@ -9632,7 +9880,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1252428,
           "watchmode_id": null
         }
@@ -9647,7 +9895,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9662,7 +9910,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9677,7 +9925,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9772,7 +10020,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 949423,
           "watchmode_id": null
         }
@@ -9902,7 +10150,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 760161,
           "watchmode_id": null
         }
@@ -9917,7 +10165,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9932,7 +10180,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9947,7 +10195,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -9962,7 +10210,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1447868,
           "watchmode_id": null
         }
@@ -10057,7 +10305,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 619730,
           "watchmode_id": null
         }
@@ -10072,7 +10320,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10087,7 +10335,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10210,7 +10458,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 593643,
           "watchmode_id": null
         }
@@ -10305,7 +10553,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 791177,
           "watchmode_id": null
         }
@@ -10407,7 +10655,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 899112,
           "watchmode_id": null
         }
@@ -10422,7 +10670,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10437,7 +10685,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10452,7 +10700,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10467,7 +10715,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10482,7 +10730,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10497,7 +10745,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10512,7 +10760,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10527,7 +10775,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10541,6 +10789,13 @@
           "year": 2024,
           "imdb_id": "",
           "streaming_sources": [
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/968051/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
             {
               "name": "Cinemax Amazon Channel",
               "type": "subscription",
@@ -10650,7 +10905,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 968051,
           "watchmode_id": null
         }
@@ -10698,6 +10953,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/597/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/597/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Paramount+ Roku Premium Channel",
@@ -10801,7 +11063,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 597,
           "watchmode_id": null
         }
@@ -10816,7 +11078,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -10831,7 +11093,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1457679,
           "watchmode_id": null
         }
@@ -10989,7 +11251,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 4232,
           "watchmode_id": null
         }
@@ -11004,7 +11266,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11134,7 +11396,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 713704,
           "watchmode_id": null
         }
@@ -11271,7 +11533,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 882598,
           "watchmode_id": null
         }
@@ -11286,7 +11548,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11320,6 +11582,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/21484/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/21484/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Criterion Channel",
@@ -11444,7 +11713,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 21484,
           "watchmode_id": null
         }
@@ -11553,7 +11822,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 798286,
           "watchmode_id": null
         }
@@ -11683,7 +11952,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 713704,
           "watchmode_id": null
         }
@@ -11698,7 +11967,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11713,7 +11982,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1389220,
           "watchmode_id": null
         }
@@ -11728,7 +11997,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1594584,
           "watchmode_id": null
         }
@@ -11743,7 +12012,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -11763,6 +12032,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1114513/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1114513/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Starz",
@@ -11866,7 +12142,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1114513,
           "watchmode_id": null
         }
@@ -11881,7 +12157,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1321952,
           "watchmode_id": null
         }
@@ -11969,7 +12245,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 837,
           "watchmode_id": null
         }
@@ -11989,6 +12265,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/440021/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/440021/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Cinemax Amazon Channel",
@@ -12085,7 +12368,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 440021,
           "watchmode_id": null
         }
@@ -12100,7 +12383,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12115,7 +12398,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12130,7 +12413,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1251366,
           "watchmode_id": null
         }
@@ -12232,7 +12515,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 11932,
           "watchmode_id": null
         }
@@ -12247,7 +12530,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12262,7 +12545,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1296966,
           "watchmode_id": null
         }
@@ -12364,7 +12647,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1008042,
           "watchmode_id": null
         }
@@ -12379,7 +12662,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12411,7 +12694,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1244657,
           "watchmode_id": null
         }
@@ -12426,7 +12709,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12446,6 +12729,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/11675/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/11675/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Cinemax Amazon Channel",
@@ -12542,7 +12832,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 11675,
           "watchmode_id": null
         }
@@ -12581,7 +12871,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1306141,
           "watchmode_id": null
         }
@@ -12608,6 +12898,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/16307/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pSUa7lMYLoQAU00ikXoHxmOfTZ9.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/16307/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "BFI Player Amazon Channel",
@@ -12690,7 +12987,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 16307,
           "watchmode_id": null
         }
@@ -12705,7 +13002,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12720,7 +13017,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12735,7 +13032,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12750,7 +13047,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12765,7 +13062,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12780,7 +13077,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1433262,
           "watchmode_id": null
         }
@@ -12795,7 +13092,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12810,7 +13107,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12835,7 +13132,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 820609,
           "watchmode_id": null
         }
@@ -12850,7 +13147,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -12870,6 +13167,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/8966/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/8966/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -12959,7 +13263,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 8966,
           "watchmode_id": null
         }
@@ -12974,7 +13278,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13048,7 +13352,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1297970,
           "watchmode_id": null
         }
@@ -13063,7 +13367,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13078,7 +13382,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13093,7 +13397,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13108,7 +13412,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13123,7 +13427,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1353787,
           "watchmode_id": null
         }
@@ -13138,7 +13442,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13153,7 +13457,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13168,7 +13472,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13277,7 +13581,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 829410,
           "watchmode_id": null
         }
@@ -13292,7 +13596,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13307,7 +13611,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13327,6 +13631,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/10494/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/10494/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -13409,7 +13720,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 10494,
           "watchmode_id": null
         }
@@ -13504,7 +13815,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1358251,
           "watchmode_id": null
         }
@@ -13519,7 +13830,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1303095,
           "watchmode_id": null
         }
@@ -13534,7 +13845,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 946932,
           "watchmode_id": null
         }
@@ -13549,7 +13860,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13581,7 +13892,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 4552,
           "watchmode_id": null
         }
@@ -13596,7 +13907,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -13705,7 +14016,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 864168,
           "watchmode_id": null
         }
@@ -13842,7 +14153,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 141,
           "watchmode_id": null
         }
@@ -13944,7 +14255,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 467938,
           "watchmode_id": null
         }
@@ -13992,6 +14303,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/938614/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/938614/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -14095,7 +14413,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 938614,
           "watchmode_id": null
         }
@@ -14115,6 +14433,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/50619/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/50619/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -14204,7 +14529,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 50619,
           "watchmode_id": null
         }
@@ -14231,6 +14556,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/790/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pSUa7lMYLoQAU00ikXoHxmOfTZ9.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/790/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -14285,7 +14617,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 790,
           "watchmode_id": null
         }
@@ -14408,7 +14740,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 264660,
           "watchmode_id": null
         }
@@ -14449,6 +14781,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/509635/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/509635/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Netflix Standard with Ads",
@@ -14545,7 +14884,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 509635,
           "watchmode_id": null
         }
@@ -14591,7 +14930,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 37707,
           "watchmode_id": null
         }
@@ -14693,7 +15032,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 567,
           "watchmode_id": null
         }
@@ -14715,6 +15054,13 @@
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
             },
             {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/18239/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
+            {
               "name": "HBO Max",
               "type": "subscription",
               "region": "US",
@@ -14802,7 +15148,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 18239,
           "watchmode_id": null
         }
@@ -14824,6 +15170,13 @@
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
             },
             {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/50619/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+            },
+            {
               "name": "HBO Max",
               "type": "subscription",
               "region": "US",
@@ -14911,7 +15264,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 50619,
           "watchmode_id": null
         }
@@ -15006,7 +15359,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1072342,
           "watchmode_id": null
         }
@@ -15115,7 +15468,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 858017,
           "watchmode_id": null
         }
@@ -15156,6 +15509,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1214509/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1214509/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -15273,7 +15633,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1214509,
           "watchmode_id": null
         }
@@ -15368,7 +15728,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1111873,
           "watchmode_id": null
         }
@@ -15388,6 +15748,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/530385/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/530385/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -15470,7 +15837,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 530385,
           "watchmode_id": null
         }
@@ -15565,7 +15932,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 437342,
           "watchmode_id": null
         }
@@ -15585,6 +15952,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/310131/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/310131/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "HBO Max",
@@ -15667,7 +16041,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 310131,
           "watchmode_id": null
         }
@@ -15701,6 +16075,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/931944/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/931944/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -15797,7 +16178,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 931944,
           "watchmode_id": null
         }
@@ -15857,7 +16238,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 764,
           "watchmode_id": null
         },
@@ -15900,6 +16281,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/765/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/765/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -15996,7 +16384,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 765,
           "watchmode_id": null
         }
@@ -16091,7 +16479,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1023922,
           "watchmode_id": null
         }
@@ -16146,6 +16534,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/762441/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/762441/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "MGM Plus",
@@ -16263,7 +16658,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 762441,
           "watchmode_id": null
         }
@@ -16372,7 +16767,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1226578,
           "watchmode_id": null
         }
@@ -16392,6 +16787,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1032823/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1032823/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Cinemax Amazon Channel",
@@ -16495,7 +16897,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1032823,
           "watchmode_id": null
         }
@@ -16597,7 +16999,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 718821,
           "watchmode_id": null
         }
@@ -16713,7 +17115,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 869291,
           "watchmode_id": null
         }
@@ -16740,6 +17142,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/945961/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/945961/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Amazon Video",
@@ -16815,7 +17224,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 945961,
           "watchmode_id": null
         }
@@ -16856,6 +17265,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/49787/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/49787/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -16959,7 +17375,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 49787,
           "watchmode_id": null
         }
@@ -16974,7 +17390,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 521935,
           "watchmode_id": null
         }
@@ -17097,7 +17513,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 2668,
           "watchmode_id": null
         }
@@ -17145,6 +17561,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/294963/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/294963/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -17255,7 +17678,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 294963,
           "watchmode_id": null
         }
@@ -17303,6 +17726,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/597/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/597/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Paramount+ Roku Premium Channel",
@@ -17406,7 +17836,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 597,
           "watchmode_id": null
         }
@@ -17522,7 +17952,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 616820,
           "watchmode_id": null
         }
@@ -17542,6 +17972,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1114513/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1114513/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Starz",
@@ -17645,7 +18082,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1114513,
           "watchmode_id": null
         }
@@ -17665,6 +18102,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/933260/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/933260/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "MUBI",
@@ -17733,7 +18177,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 933260,
           "watchmode_id": null
         }
@@ -17774,6 +18218,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1034541/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1034541/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Screambox Amazon Channel",
@@ -17877,7 +18328,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1034541,
           "watchmode_id": null
         }
@@ -18000,7 +18451,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1098378,
           "watchmode_id": null
         }
@@ -18055,6 +18506,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1100782/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1100782/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -18165,7 +18623,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1100782,
           "watchmode_id": null
         }
@@ -18185,6 +18643,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1138194/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1138194/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Cinemax Amazon Channel",
@@ -18281,7 +18746,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1138194,
           "watchmode_id": null
         }
@@ -18308,6 +18773,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/11460/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/9laPF1MAiUxlqM8T98F3Gj0bhzd.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/11460/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Starz",
@@ -18411,7 +18883,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 11460,
           "watchmode_id": null
         }
@@ -18499,7 +18971,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 9605,
           "watchmode_id": null
         }
@@ -18594,7 +19066,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 9479,
           "watchmode_id": null
         }
@@ -18696,7 +19168,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1022789,
           "watchmode_id": null
         }
@@ -18805,7 +19277,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1041613,
           "watchmode_id": null
         }
@@ -18886,7 +19358,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 301365,
           "watchmode_id": null
         }
@@ -18990,6 +19462,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/653/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/653/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -19177,7 +19656,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 653,
           "watchmode_id": null
         }
@@ -19209,7 +19688,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1052280,
           "watchmode_id": null
         }
@@ -19271,6 +19750,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/27475/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/27475/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -19430,7 +19916,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 27475,
           "watchmode_id": null
         }
@@ -19450,12 +19936,19 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/16372/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/16372/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             }
           ],
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 16372,
           "watchmode_id": null
         }
@@ -19489,6 +19982,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/18781/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/18781/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Amazon Prime Video with Ads",
@@ -19578,7 +20078,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 18781,
           "watchmode_id": null
         }
@@ -19593,7 +20093,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -19634,6 +20134,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/9374/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/9374/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Amazon Video",
@@ -19709,7 +20216,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 9374,
           "watchmode_id": null
         }
@@ -19724,7 +20231,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -19833,7 +20340,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 10242,
           "watchmode_id": null
         }
@@ -19907,7 +20414,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1272,
           "watchmode_id": null
         }
@@ -19922,7 +20429,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 974320,
           "watchmode_id": null
         }
@@ -19949,6 +20456,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/18009/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/18009/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Starz",
@@ -20052,7 +20566,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 18009,
           "watchmode_id": null
         }
@@ -20086,6 +20600,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/374052/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/374052/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -20224,7 +20745,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 374052,
           "watchmode_id": null
         }
@@ -20265,6 +20786,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1262983/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1262983/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -20368,7 +20896,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1262983,
           "watchmode_id": null
         }
@@ -20383,7 +20911,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -20492,7 +21020,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1008392,
           "watchmode_id": null
         }
@@ -20512,6 +21040,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/4011/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/gAGrSQCTAisxy2CsWbijVvJEnRo.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/4011/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "AMC",
@@ -20615,7 +21150,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 4011,
           "watchmode_id": null
         }
@@ -20630,7 +21165,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1087207,
           "watchmode_id": null
         }
@@ -20732,7 +21267,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 38810,
           "watchmode_id": null
         }
@@ -20747,7 +21282,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1361920,
           "watchmode_id": null
         }
@@ -20821,7 +21356,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 45650,
           "watchmode_id": null
         }
@@ -20909,7 +21444,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 46420,
           "watchmode_id": null
         }
@@ -21011,7 +21546,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1562,
           "watchmode_id": null
         }
@@ -21099,7 +21634,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 8337,
           "watchmode_id": null
         }
@@ -21154,6 +21689,13 @@
               "region": "US",
               "web_url": "https://www.themoviedb.org/movie/1216191/watch",
               "logo_url": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+            },
+            {
+              "name": "YouTube TV",
+              "type": "subscription",
+              "region": "US",
+              "web_url": "https://www.themoviedb.org/movie/1216191/watch",
+              "logo_url": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
             },
             {
               "name": "Philo",
@@ -21271,7 +21813,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1216191,
           "watchmode_id": null
         }
@@ -21359,7 +21901,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1359,
           "watchmode_id": null
         }
@@ -21374,7 +21916,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -21469,7 +22011,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1100988,
           "watchmode_id": null
         }
@@ -21578,7 +22120,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 1071585,
           "watchmode_id": null
         }
@@ -21610,7 +22152,7 @@
           "data_sources": [
             "tmdb"
           ],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": 433808,
           "watchmode_id": null
         }
@@ -21625,7 +22167,7 @@
           "imdb_id": "",
           "streaming_sources": [],
           "data_sources": [],
-          "last_updated": "2026-06-13",
+          "last_updated": "2026-06-14",
           "tmdb_id": null,
           "watchmode_id": null
         }
@@ -21634,7 +22176,7 @@
   ],
   "metadata": {
     "podcast_name": "Too Scary; Didn't Watch",
-    "last_updated": "2026-06-13",
+    "last_updated": "2026-06-14",
     "total_episodes": 343,
     "apis_used": [
       "tmdb"
